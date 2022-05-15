@@ -113,7 +113,7 @@
   <section class="joinTheTeam">
     <div class="container">
       <div class="row">
-        <div class="col-8">
+        <div class="col-12 col-md-8">
           <div class="textArea">
             <h6>Join the Team</h6>
             <p>We are a young and dynamic team with high energy. In June 2020, we took action to make
@@ -126,60 +126,7 @@
       </div>
     </div>
   </section>
-  <section class="faq">
-        <div class="container">
-            <div class="row specialRow">
-                <div class="col-12 col-lg-12">
-                    <div class="content">
-                        <div id="accordion" class="accordion-container">
-                            <article class="content-entry">
-                                <h4 class="article-title"><i></i>SR. lvl unity developer SR. lvl unity developer SR. lvl unity developer</h4>
-                                <div class="accordion-content">
-                                    <p>SR. lvl unity developer</p>
-                                </div>
-                            </article>
-                            <article class="content-entry">
-                                <h4 class="article-title"><i></i>Lorem ipsum dolor sit amet</h4>
-                                <div class="accordion-content">
-                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                                </div>
-                            </article>
-                            <article class="content-entry">
-                                <h4 class="article-title"><i></i>Lorem ipsum dolor sit amet</h4>
-                                <div class="accordion-content">
-                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                                </div>
-                            </article>
-                            <article class="content-entry">
-                                <h4 class="article-title"><i></i>Lorem ipsum dolor sit amet</h4>
-                                <div class="accordion-content">
-                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                                </div>
-                            </article>
-                            <article class="content-entry">
-                                <h4 class="article-title"><i></i>Lorem ipsum dolor sit amet</h4>
-                                <div class="accordion-content">
-                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                                </div>
-                            </article>
-                            <article class="content-entry">
-                                <h4 class="article-title"><i></i>Lorem ipsum dolor sit amet</h4>
-                                <div class="accordion-content">
-                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                                </div>
-                            </article>
-                            <article class="content-entry">
-                                <h4 class="article-title"><i></i>Lorem ipsum dolor sit amet</h4>
-                                <div class="accordion-content">
-                                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section></section>
   <?php include './layers/footer.php'; ?>
 </body>
 <script src="./assets/js/jquery-3.6.0.min.js"></script>
@@ -187,39 +134,7 @@
 <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="./assets/js/main.js?v=12"></script>
 <script type="text/javascript">
-    $(function() {
-        var Accordion = function(el, multiple) {
-            this.el = el || {};
-            this.multiple = multiple || false;
 
-            var links = this.el.find(".article-title");
-            links.on(
-                "click", {
-                    el: this.el,
-                    multiple: this.multiple,
-                },
-                this.dropdown
-            );
-        };
-
-        Accordion.prototype.dropdown = function(e) {
-            var $el = e.data.el;
-            ($this = $(this)), ($next = $this.next());
-
-            $next.slideToggle();
-            $this.parent().toggleClass("open");
-
-            if (!e.data.multiple) {
-                $el
-                    .find(".accordion-content")
-                    .not($next)
-                    .slideUp()
-                    .parent()
-                    .removeClass("open");
-            }
-        };
-        var accordion = new Accordion($(".accordion-container"), false);
-    });
 </script>
 
 </html>

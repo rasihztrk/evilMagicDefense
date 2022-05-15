@@ -116,10 +116,10 @@ $(document).ready(function () {
       },
       1200: {
         items: 8,
-      1300: {
-        items: 9,
-      }, },
-     
+        1300: {
+          items: 9,
+        },
+      },
     },
   });
 
@@ -141,28 +141,125 @@ $(document).ready(function () {
       },
       1200: {
         items: 8,
-      1300: {
-        items: 9,
-      }, },
-     
+        1300: {
+          items: 9,
+        },
+      },
     },
   });
 
-
+  $(".owl-Four").owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    center: true,
+    slideTransition: "linear",
+    autoplaySpeed: 6000,
+    smartSpeed: 6000,
+    rtl: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1200: {
+        items: 8,
+        1300: {
+          items: 9,
+        },
+      },
+    },
+  });
 });
-
 
 $(document).ready(function () {
   $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
-    // Do something
-    console.log(scroll);
     if (scroll >= "200") {
-      $("nav").css({"background-color":"rgb(0 0 0 / 56%)"})
+      $("nav").css({ "background-color": "rgb(0 0 0 / 56%)" });
     } else if (scroll <= "200") {
-      $("nav").css({"background-color":"transparent"})
-
+      $("nav").css({ "background-color": "transparent" });
     }
   });
+
+  var clickNav = true;
+
+  $(".navbar-toggler").click(function () {
+    if (clickNav) {
+      clickNav = false;
+      var scroll = $(window).scrollTop();
+      if (scroll <= "200") {
+        $("nav").css({ "background-color": "black" });
+      }
+      if (scroll >= "200") {
+        $("nav").css({ "background-color": "black" });
+      }
+    } else if (!clickNav) {
+      clickNav = true;
+      var scroll = $(window).scrollTop();
+      if (scroll <= "200") {
+        $("nav").css({ "background-color": "transparent" });
+      }
+      if (scroll >= "200") {
+        $("nav").css({ "background-color": "rgb(0 0 0 / 56%)" });
+      }
+    }
+  });
+
+  const currentLocation = location.href;
+  const menuItem = document.querySelectorAll(".nav-link");
+  const menuLength = menuItem.length;
+  for (let i = 0; i < menuLength; i++) {
+    if (menuItem[i].href === currentLocation) {
+      menuItem[i].className = "nav-link menuActive";
+    }
+  }
+
+  $(function () {
+    var Accordion = function (el, multiple) {
+      this.el = el || {};
+      this.multiple = multiple || false;
+
+      var links = this.el.find(".article-title");
+      links.on(
+        "click",
+        {
+          el: this.el,
+          multiple: this.multiple,
+        },
+        this.dropdown
+      );
+    };
+
+    Accordion.prototype.dropdown = function (e) {
+      var $el = e.data.el;
+      ($this = $(this)), ($next = $this.next());
+
+      $next.slideToggle();
+      $this.parent().toggleClass("open");
+
+      if (!e.data.multiple) {
+        $el
+          .find(".accordion-content")
+          .not($next)
+          .slideUp()
+          .parent()
+          .removeClass("open");
+      }
+    };
+    var accordion = new Accordion($(".accordion-container"), false);
+  });
+
+  AOS.init({
+    duration: 1200,
+  });
+
+  $("#longRoadMap").click(function() {
+    alert("sdasd");
+  });
+
+
 
 });
