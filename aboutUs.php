@@ -105,6 +105,11 @@
               <p class="name">Ç. Erim Çakır</p>
               <p class="position">CEO</p>
             </div>
+            <div class="person">
+              <img src="./assets/img/icon/Varlık142x.png" alt="">
+              <p class="name">Ç. Erim Çakır</p>
+              <p class="position">CEO</p>
+            </div>
           </div>
         </div>
       </div>

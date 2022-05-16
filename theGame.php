@@ -139,9 +139,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <div class="slideText">
-                        <p class="example-right">This content will be added to the game in later DLC’s <span><img src="./assets/img/icon/clock.png" alt=""> </span>This content will be added to the game in later DLC’s <span><img src="./assets/img/icon/clock.png" alt=""></span></span>This content will be added to the game in later DLC’s <span><img src="./assets/img/icon/clock.png" alt=""></span></p>
+                    <div class="marquee">
+                        <div>
+                            </span>This content will be added to the game in later DLC’s &nbsp; <img class="clock" src="./assets/img/icon/clock.png" alt="">&nbsp; This content will be added to the game in later DLC’s &nbsp;  <img  class="clock" src="./assets/img/icon/clock.png" alt=""> &nbsp;</span>
+                            </span>This content will be added to the game in later DLC’s &nbsp; <img class="clock" src="./assets/img/icon/clock.png" alt="">&nbsp; his content will be added to the game in later DLC’s &nbsp; <img  class="clock" src="./assets/img/icon/clock.png" alt=""> &nbsp;</span>
+                            </span>This content will be added to the game in later DLC’s &nbsp; <img class="clock" src="./assets/img/icon/clock.png" alt="">&nbsp; his content will be added to the game in later DLC’s &nbsp; <img  class="clock" src="./assets/img/icon/clock.png" alt=""> &nbsp;</span>
+                        </div>
                     </div>
+                    <style>
+
+                    </style>
                 </div>
             </div>
         </div>
@@ -238,7 +245,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h6>It's &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  <span>YOUR</span> turn to rule the World!</h6>
+                    <h6>It's &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>YOUR</span> turn to rule the World!</h6>
                     <button>Whitepaper</button>
                 </div>
             </div>

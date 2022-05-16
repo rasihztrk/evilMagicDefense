@@ -83,7 +83,7 @@
                 <div class="col-12">
                     <div class="hoodBTn">
                         <div class="hood">
-                            <h6>BUY AN EVIL WIZARD &</h6>
+                            <h6>BECOME AN EVIL WIZARD &</h6>
                             <h6>JOIN THE DEFENSE</h6>
                             <a href="">
                                 <img src="./assets/img/icon/discort.svg" alt="">

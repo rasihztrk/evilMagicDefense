@@ -106,18 +106,20 @@
     </video>
   </section>
   <section class="roadMap">
-    <div class="container-fluid">
+    <div class="container-fluid heightRoadMap">
       <div class="row">
         <div class="col-12">
           <div id="journey" class="rHood">
             <h6>JOURNEY</h6>
-            <img class="d-none d-lg-block" src="./assets/img/icon/roadMapLine.png" alt="">
+            <img class="d-none d-lg-block" id="roadMapLine" src="./assets/img/icon/roadMapLine.png" alt="">
           </div>
         </div>
       </div>
       <div class="row firstArea">
         <div class="col-12 col-lg-6">
-          <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p1.png" alt="">
+          <div class="phaseArea" data-aos="fade-up">
+            <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p1.png" alt="">
+          </div>
           <div class="textArea" data-aos="fade-up">
             <p>EMD’s very first NFT colleection</p>
             <p>Evil Wizards</p>
@@ -126,20 +128,22 @@
           </div>
         </div>
         <div class="col-12 col-lg-6  position-relative">
-          <div class="imgArea d-none d-lg-block">
+          <div class="imgArea d-none d-lg-block" data-aos="fade-up">
             <img src="./assets/img/icon/cart.png" alt="">
           </div>
         </div>
       </div>
       <div class="row secondArea">
         <div class="col-12 col-lg-6 position-relative">
-          <div class="imgArea d-none d-lg-block">
+          <div class="imgArea d-none d-lg-block" data-aos="fade-up">
             <img class="opacityImag" src="./assets/img/icon/paladin.png" alt="">
             <img class="imgS" src="./assets/img/icon/monk.png" alt="">
           </div>
         </div>
         <div class="col-12 col-lg-6">
-          <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p2.png" alt="">
+          <div class="phaseArea" data-aos="fade-up">
+            <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p2.png" alt="">
+          </div>
           <div class="textArea" data-aos="fade-up">
             <p>UP!</p>
             <p>Fusion the <br> team</p>
@@ -154,7 +158,11 @@
       </div>
       <div class="row thirtArea">
         <div class="col-12 col-lg-6">
-          <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p3.png" alt="">
+          <div class="phaseArea">
+            <div class="phaseArea" data-aos="fade-up">
+              <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p3.png" alt="">
+            </div>
+          </div>
           <div class="textArea" data-aos="fade-up">
             <p>IDO</p>
             <p>EMD Token</p>
@@ -167,7 +175,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-6 position-relative">
-          <div class="imgArea d-none d-lg-block">
+          <div class="imgArea d-none d-lg-block" data-aos="fade-up">
             <img class="opacityImag" src="./assets/img/icon/circle.png" alt="">
             <img class="imgS" src="./assets/img/icon/circle.png" alt="">
           </div>
@@ -175,12 +183,14 @@
       </div>
       <div class="row fourthArea">
         <div class="col-12 col-lg-6 position-relative">
-          <div class="imgArea d-none d-lg-block">
+          <div class="imgArea d-none d-lg-block" data-aos="fade-up">
             <img class="imgS" src="./assets/img/icon/Artifactweapons.png" alt="">
           </div>
         </div>
         <div class="col-12 col-lg-6">
-          <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p4.png" alt="">
+          <div class="phaseArea" data-aos="fade-up">
+            <img class="phaseImg d-block d-lg-none phaseFour" src="./assets/img/icon/p4.png" alt="">
+          </div>
           <div class="textArea" data-aos="fade-up">
             <p>NFT</p>
             <p>First set of</p>
@@ -194,16 +204,69 @@
           </div>
         </div>
       </div>
-      <div class="phaseArea d-block d-lg-none">
-        <img src="./assets/img/icon/p5.png" alt="">
-        <img src="./assets/img/icon/p6.png" alt="">
-        <img src="./assets/img/icon/p7.png" alt="">
+      <div class="row fiveArea d-none">
+        <div class="col-12 col-lg-6">
+          <div class="phaseArea" data-aos="fade-up">
+            <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p4.png" alt="">
+          </div>
+          <div class="textArea" data-aos="fade-up">
+            <p>First set of</p>
+            <p>Ancient Items <br> release</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+              sed diam nonummy nibh euismod tincidunt ut laoreet
+              dolore magna aliquam erat volutpat. Ut wisi enim ad
+              minim veniam, quis nostrud exerci tation ullamcorper
+              suscipit lobortis nisl ut aliquip ex</p>
+            <button>The Team</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 position-relative">
+        </div>
+      </div>
+      <div class="row sixArea d-none">
+        <div class="col-12 col-lg-6 position-relative">
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="phaseArea" data-aos="fade-up">
+            <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p4.png" alt="">
+          </div>
+          <div class="textArea" data-aos="fade-up">
+            <p>First set of</p>
+            <p>Ancient Items <br> release</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+              sed diam nonummy nibh euismod tincidunt ut laoreet
+              dolore magna aliquam erat volutpat. Ut wisi enim ad
+              minim veniam, quis nostrud exerci tation ullamcorper
+              suscipit lobortis nisl ut aliquip ex</p>
+            <button>The Team</button>
+          </div>
+        </div>
+      </div>
+      <div class="row sevenArea d-none">
+        <div class="col-12 col-lg-6">
+          <div class="phaseArea" data-aos="fade-up">
+            <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p4.png" alt="">
+          </div>
+          <div class="textArea" data-aos="fade-up">
+            <p>First set of</p>
+            <p>Ancient Items <br> release</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+              sed diam nonummy nibh euismod tincidunt ut laoreet
+              dolore magna aliquam erat volutpat. Ut wisi enim ad
+              minim veniam, quis nostrud exerci tation ullamcorper
+              suscipit lobortis nisl ut aliquip ex</p>
+            <button>The Team</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 position-relative">
+        </div>
       </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="buttonArea">
+        <div class="buttonArea" data-aos="fade-up">
           <button id="longRoadMap">READ MORE</button>
+          <button id="CloseRoadMap" class="d-none">X</button>
         </div>
       </div>
     </div>

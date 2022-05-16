@@ -37,7 +37,7 @@ $(document).ready(function () {
     var timeintervalTwo = setInterval(updateClockTwo, 1000);
   }
 
-  var deadlineTwo = "June 12 2022 19:00:00 UTC";
+  var deadlineTwo = "June 27 2022 19:00:00 UTC";
   initializeClockTwo("countdownTwo", deadlineTwo);
 });
 
@@ -80,24 +80,11 @@ $(document).ready(function () {
     var timeinterval = setInterval(updateClock, 1000);
   }
 
-  var deadline = "june 12 2022 19:30:00 UTC";
+  var deadline = "june 27 2022 19:30:00 UTC";
   initializeClock("countdown", deadline);
 });
 
 $(document).ready(function () {
-  $(".owl-one").owlCarousel({
-    items: 1,
-    loop: true,
-    margin: 0,
-    padding: 0,
-    lazyLoad: true,
-    nav: true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    dots: true,
-  });
-
   $(".owl-Two").owlCarousel({
     loop: true,
     margin: 10,
@@ -256,10 +243,45 @@ $(document).ready(function () {
     duration: 1200,
   });
 
-  $("#longRoadMap").click(function() {
-    alert("sdasd");
-  });
+  if (window.innerWidth >= 992) {
+    $("#longRoadMap").click(function () {
+      $("#roadMapLine").attr("src", "./assets/img/icon/roadMapLineTwo.png");
+      $(".fiveArea").removeClass("d-none");
+      $(".sixArea").removeClass("d-none");
+      $("#longRoadMap").addClass("d-none");
+      $("#CloseRoadMap").removeClass("d-none");
+      $(".sevenArea").removeClass("d-none");
+      $(".heightRoadMap").animate({ height: "5900px" }, 1000);
+    });
 
+    $("#CloseRoadMap").click(function () {
+      $("#roadMapLine").attr("src", "./assets/img/icon/roadMapLine.png");
+      $(".fiveArea").addClass("d-none");
+      $(".sixArea").addClass("d-none");
+      $(".sevenArea").addClass("d-none");
+      $("#longRoadMap").removeClass("d-none");
+      $("#CloseRoadMap").addClass("d-none");
+      $(".heightRoadMap").animate({ height: "4000px" }, 1000);
+    });
+  } else if (window.innerWidth <= 992) {
+    $("#longRoadMap").click(function () {
+      $("#roadMapLine").attr("src", "./assets/img/icon/roadMapLineTwo.png");
+      $(".fiveArea").removeClass("d-none");
+      $(".sixArea").removeClass("d-none");
+      $("#longRoadMap").addClass("d-none");
+      $("#CloseRoadMap").removeClass("d-none");
+      $(".sevenArea").removeClass("d-none");
+      $(".heightRoadMap").animate({ height: "100%" }, 1000);
+    });
 
-
+    $("#CloseRoadMap").click(function () {
+      $("#roadMapLine").attr("src", "./assets/img/icon/roadMapLine.png");
+      $(".fiveArea").addClass("d-none");
+      $(".sixArea").addClass("d-none");
+      $(".sevenArea").addClass("d-none");
+      $("#longRoadMap").removeClass("d-none");
+      $("#CloseRoadMap").addClass("d-none");
+      $(".heightRoadMap").animate({ height: "100%" }, 1000);
+    });
+  }
 });

@@ -13,7 +13,7 @@
                         <a class="nav-link" href="./">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#journey">JOURNEY</a>
+                        <a class="nav-link" href="./#journey">JOURNEY</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./theGame.php">THE GAME</a>
@@ -25,7 +25,7 @@
                         <a class="nav-link" href="./aboutUs.php">ABOUT US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">GALLERY</a>
+                        <a class="nav-link eyes" href="#">GALLERY</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">DOCS</a>
@@ -34,16 +34,16 @@
                 <form class="d-flex">
                     <div class="socialArea">
                         <a href="">
-                            <img src="./assets/img/icon/medium.png" alt="">
+                            <img class="twitterNav" src="./assets/img/icon/twitter.png" alt="">
                         </a>
                         <a href="">
-                            <img src="./assets/img/icon/instagram.png" alt="">
+                            <img class="discodNav" src="./assets/img/icon/discort.png" alt="">
                         </a>
                         <a href="">
-                            <img src="./assets/img/icon/twitter.png" alt="">
+                            <img class="mediumNav" src="./assets/img/icon/medium.png" alt="">
                         </a>
                         <a href="">
-                            <img src="./assets/img/icon/discort.png" alt="">
+                            <img class="instagramNav" src="./assets/img/icon/instagram.png" alt="">
                         </a>
                     </div>
                     <a href="">
