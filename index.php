@@ -221,24 +221,24 @@
       </div>
     </div>
     <div class="nftTExt">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="imgArea">
-            <img class="img-fluid" src="./assets/img/icon/Varlık142x.png" alt="">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="imgArea">
+              <img class="img-fluid" src="./assets/img/icon/Varlık142x.png" alt="">
+            </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="textAreaBtn">
-            <p class="one">Check the</p>
-            <h6>Gallery</h6>
-            <p class="two">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad </p>
-            <button>GO</button>
+          <div class="col-12 col-md-6">
+            <div class="textAreaBtn">
+              <p class="one">Check the</p>
+              <h6>Gallery</h6>
+              <p class="two">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad </p>
+              <button>GO</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-</div>
     <div class="carousel-wrap">
       <div class="owl-carousel owl-Three owl-theme">
         <div><img src="./assets/img/icon/Varlık142x.png"></div>
@@ -251,7 +251,6 @@
       </div>
     </div>
   </section>
-  
   <section class="faq">
     <div class="container">
       <div class="row specialRow">

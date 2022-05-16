@@ -85,8 +85,11 @@
                         <div class="hood">
                             <h6>BUY AN EVIL WIZARD &</h6>
                             <h6>JOIN THE DEFENSE</h6>
+                            <a href="">
+                                <img src="./assets/img/icon/discort.svg" alt="">
+                            </a>
                         </div>
-                        <div class="btn">
+                        <div class="btn d-none">
                             <a href="">
                                 <button></button>
                             </a>

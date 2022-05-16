@@ -13,2787 +13,19 @@ body {
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
-}
-
-.mb-60 {
-  margin-bottom: 60px;
-}
-
-.mt-50 {
-  margin-top: 50px !important;
-}
-
-.menuActive {
-  color: #06eab3 !important;
-  &::after {
-    width: 100%;
-    height: 20px;
-    content: " ";
-    position: absolute;
-    bottom: -15px;
-    left: -2px;
-    background-image: url("../img/icon/navbottom.png");
-    background-repeat: no-repeat;
-    background-size: 100% 60%;
-    background-position: center;
-  }
-}
-
-nav {
-  position: fixed !important;
-  width: 100% !important;
-  z-index: 999999;
-  .navbar-collapse {
-    display: block;
-    align-items: center !important;
-    justify-content: end;
-
-    .mobilArea {
-      display: flex;
-      .navbar-nav {
-        align-content: space-between;
-        gap: 20px;
-        width: 100%;
-        justify-content: right;
-        margin-right: 20px !important;
-        .nav-item {
-          .nav-link {
-            position: relative;
-            font-family: "Cornerstone";
-            color: white;
-            padding: 0px;
-            height: 100%;
-            font-size: 18px;
-          }
-        }
-      }
-      form {
-        .socialArea {
-          display: flex;
-          gap: 20px;
-          margin-right: 28px;
-          a {
-            &:first-child {
-              img {
-                width: 15px;
-                height: 15px;
-              }
-            }
-            &:nth-child(2) {
-              img {
-                width: 15px;
-                height: 15px;
-              }
-            }
-            &:nth-child(3) {
-              img {
-                width: 22px;
-                height: 16px;
-              }
-            }
-            &:nth-child(4) {
-              img {
-                width: 25px;
-                height: 18px;
-              }
-            }
-          }
-        }
-        .btnConnect {
-          background-color: #f1036a;
-          color: white;
-          box-shadow: -1px 2px 0px 5px #a80068;
-          border: 0px;
-          outline: 0px;
-          font-family: "BohemianSoul-Regular";
-          padding: 3px 50px;
-          border-radius: 5px;
-        }
-      }
-    }
-  }
-}
-
-.mainHeader {
-  position: relative;
-  height: 100vh;
-  background-image: url("../img/headerBg.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  .headerArea {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: mymove 6s;
-    animation-iteration-count: infinite;
-    @keyframes mymove {
-      0% {
-        top: 50%;
-      }
-      25% {
-        top: 45%;
-      }
-      50% {
-        top: 50%;
-      }
-      75% {
-        top: 45%;
-      }
-      100% {
-        top: 50%;
-      }
-    }
-    img {
-      width: 500px;
-      height: 500px;
-    }
-  }
-}
-
-.timeArea {
-  background-color: #00051c;
-  padding: 150px 0px;
-  .textMntdate {
-    text-align: center;
-    font-size: 56px;
-    color: #15ceaf;
-    font-family: "Cornerstone";
-  }
-
-  .hood {
-    h3 {
-      text-align: center;
-      color: #06eab3;
-      font-size: 2rem;
-      font-family: "Cornerstone";
-    }
-  }
-  .date {
-    gap: 20px;
-    margin: 30px 0px;
-    justify-content: center;
-    display: flex;
-    font-size: 2.75rem;
-
-    h3 {
-      color: #06eab3;
-      font-family: "Cornerstone";
-      text-align: center;
-      font-size: 2.75rem;
-    }
-  }
-  #countdownTwo,
-  #countdown {
-    justify-content: center;
-    gap: 20px;
-    display: flex;
-    text-align: center;
-    span {
-      font-size: 2.75rem;
-      font-family: "Cornerstone";
-      font-size: 26px;
-      color: #06eab3;
-    }
-    .timeName {
-      font-size: 2rem;
-      font-family: "Cornerstone";
-      color: #06eab3;
-      margin-top: 10px;
-    }
-  }
-  .countdown-sectionTwo {
-    span {
-      color: #06eab3;
-      font-family: "Cornerstone";
-      text-align: center;
-      font-size: 2rem !important;
-    }
-  }
-}
-
-.roadMap {
-  margin-bottom: 150px;
-  position: relative;
-  .container-fluid {
-    height: 4300px;
-    .rHood {
-      text-align: center;
-      h6 {
-        font-size: 56px;
-        color: #15ceaf;
-        font-family: "Cornerstone";
-      }
-      img {
-        position: absolute;
-        left: 46%;
-        transform: translateX(-50%);
-        margin-top: 100px;
-        z-index: 10;
-      }
-    }
-    .firstArea {
-      text-align-last: center;
-      margin-top: 350px;
-      p {
-        &:first-child {
-          color: #3b3f51;
-          font-size: 36px;
-          text-align: center;
-          margin: 0px;
-          font-family: "BohemianSoul-Regular";
-        }
-        &:nth-child(2) {
-          color: white;
-          font-size: 80px;
-          text-align: center;
-          margin: 0px;
-          font-family: "BohemianSoul-Regular";
-        }
-        &:nth-child(3) {
-          font-size: 56px;
-          color: white;
-          text-align: center;
-          margin: 0px;
-          font-family: "BohemianSoul-Regular";
-        }
-      }
-      button {
-        background-color: #f1036a;
-        color: white;
-        -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-        box-shadow: -1px 2px 0px 5px #a80068;
-        border: 0px;
-        outline: 0px;
-        font-family: "BohemianSoul-Regular";
-        padding: 3px 50px;
-        border-radius: 5px;
-        margin-top: 70px;
-        font-size: 36px;
-      }
-      .imgArea {
-        img {
-          width: 1000px;
-          position: absolute;
-          left: -140px;
-          top: -148px;
-          z-index: 11;
-        }
-      }
-    }
-
-    .secondArea {
-      text-align-last: center;
-      margin-top: 350px;
-      position: relative;
-      .textArea {
-        display: block;
-        text-align: -webkit-center;
-        p {
-          &:first-child {
-            color: #595c6b;
-            font-size: 124px;
-            text-align: center;
-            margin: 0px;
-            font-family: "BohemianSoul-Regular";
-            position: absolute;
-            right: 212px;
-            top: 108px;
-            -webkit-transform: rotate(22deg);
-            transform: rotate(22deg);
-            z-index: -1;
-          }
-          &:nth-child(2) {
-            color: white;
-            font-size: 80px;
-            line-height: 106px;
-            margin: 0px;
-            margin-bottom: 20px;
-            font-family: "BohemianSoul-Regular";
-          }
-          &:nth-child(3) {
-            font-size: 18px;
-            color: #595c6b;
-            text-align: center;
-            margin: 0px;
-            text-align: start;
-            margin: 0px 100px;
-          }
-        }
-        button {
-          background-color: #f1036a;
-          color: white;
-          -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-          box-shadow: -1px 2px 0px 5px #a80068;
-          border: 0px;
-          font-size: 36px;
-          outline: 0px;
-          font-family: "BohemianSoul-Regular";
-          padding: 3px 50px;
-          border-radius: 5px;
-          margin-top: 70px;
-        }
-      }
-      .imgArea {
-        .opacityImag {
-          width: 1000px;
-          position: absolute;
-          left: 127px;
-          top: -295px;
-        }
-        .imgS {
-          width: 750px;
-          position: absolute;
-          right: -72px;
-          top: 26px;
-          z-index: 11;
-        }
-      }
-    }
-
-    .thirtArea {
-      text-align-last: center;
-      margin-top: 850px;
-
-      .textArea {
-        position: relative;
-        display: block;
-        text-align: -webkit-center;
-        p {
-          &:first-child {
-            color: #595c6b;
-            font-size: 194px;
-            text-align: center;
-            margin: 0px;
-            font-family: "BohemianSoul-Regular";
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: -96px;
-            z-index: -1;
-          }
-          &:nth-child(2) {
-            color: white;
-            font-size: 80px;
-            line-height: 106px;
-            margin: 0px;
-            margin-bottom: 50px;
-            font-family: "BohemianSoul-Regular";
-          }
-          &:nth-child(3) {
-            font-size: 18px;
-            color: #595c6b;
-            text-align: center;
-            margin: 0px;
-            text-align: start;
-            margin: 0px 100px;
-          }
-        }
-        button {
-          background-color: #f1036a;
-          color: white;
-          -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-          box-shadow: -1px 2px 0px 5px #a80068;
-          border: 0px;
-          font-size: 36px;
-          outline: 0px;
-          font-family: "BohemianSoul-Regular";
-          padding: 3px 50px;
-          border-radius: 5px;
-          margin-top: 70px;
-        }
-      }
-      .imgArea {
-        .opacityImag {
-          width: 400px;
-          position: absolute;
-          left: 130px;
-          top: -90px;
-        }
-        .imgS {
-          width: 350px;
-          position: absolute;
-          left: 300px;
-          top: 26px;
-          z-index: 11;
-        }
-      }
-    }
-
-    .fourthArea {
-      text-align-last: center;
-      margin-top: 400px;
-      .textArea {
-        display: block;
-        text-align: -webkit-center;
-        position: relative;
-        p {
-          &:first-child {
-            color: #595c6b;
-            font-size: 194px;
-            text-align: center;
-            margin: 0px;
-            font-family: "BohemianSoul-Regular";
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            top: -95px;
-            z-index: -1;
-          }
-          &:nth-child(2) {
-            color: white;
-            font-size: 44px;
-            line-height: 44px;
-            margin: 0px;
-            margin-bottom: 0px;
-            font-family: "BohemianSoul-Regular";
-          }
-          &:nth-child(3) {
-            color: white;
-            font-size: 80px;
-            line-height: 106px;
-            margin: 0px;
-            margin-bottom: 50px;
-            font-family: "BohemianSoul-Regular";
-          }
-          &:nth-child(4) {
-            font-size: 18px;
-            color: #595c6b;
-            text-align: center;
-            margin: 0px;
-            text-align: start;
-            margin: 0px 100px;
-          }
-        }
-        button {
-          background-color: #f1036a;
-          color: white;
-          -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-          box-shadow: -1px 2px 0px 5px #a80068;
-          border: 0px;
-          font-size: 36px;
-          outline: 0px;
-          font-family: "BohemianSoul-Regular";
-          padding: 3px 50px;
-          border-radius: 5px;
-          margin-top: 70px;
-        }
-      }
-      .imgArea {
-        position: relative;
-        .imgS {
-          width: 800px;
-          position: absolute;
-          top: 14px;
-          left: 67%;
-          z-index: 11;
-          transform: translateX(-50%);
-        }
-      }
-    }
-  }
-  .container {
-    .buttonArea {
-      text-align-last: center;
-      display: block;
-      button {
-        background-image: url("../img/icon/arrowR.png");
-        background-color: transparent;
-        background-size: 38px;
-        background-repeat: no-repeat;
-        background-position: right center;
-        padding: 20px 45px;
-        padding-left: 0px;
-        color: #11a692;
-        font-size: 24px;
-        border: 0px;
-        outline: 0px;
-        font-family: "Cornerstone";
-        z-index: 9999;
-      }
-    }
-  }
-}
-
-.sliderOne {
-  position: relative;
-  .owl-carousel {
-    .owl-nav {
-      .owl-prev {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 200px;
-        width: 25px;
-        height: 25px;
-        background-image: url("../img/icon/prev.png");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        font-size: 0px;
-      }
-
-      .owl-next {
-        right: 100px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 25px;
-        height: 25px;
-        background-image: url("../img/icon/next.png");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        font-size: 0px;
-      }
-    }
-    .owl-dots {
-      gap: 20px;
-      display: flex;
-      position: absolute;
-      bottom: 100px;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 10px;
-      width: 300px;
-      justify-content: center;
-      button {
-        width: 10px;
-        height: 10px;
-        background-color: #a3a3a3;
-        border-radius: 10px;
-      }
-    }
-
-    .owl-item {
-      .textArea {
-        p {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          font-size: 46px;
-          color: white;
-          font-family: "Cornerstone";
-        }
-      }
-    }
-  }
-}
-
-.sliderRightLeft {
-  margin: 150px 0px;
-}
-
-.nftTExt {
-  margin: 100px 0px;
-  .row {
-    align-items: center;
-    .textAreaBtn {
-      text-align: center;
-      text-align: -webkit-center;
-      display: block;
-      align-items: center;
-      justify-content: center;
-      .one {
-        font-family: "BohemianSoul-Regular";
-        color: grey;
-        font-size: 22px;
-      }
-      .two {
-        font-size: 18px;
-        width: 450px;
-        color: grey;
-        text-align: justify;
-      }
-      h6 {
-        margin: 10px 0px;
-        font-size: 46px;
-        color: white;
-        font-family: "BohemianSoul-Regular";
-      }
-      button {
-        background-color: #f1036a;
-        color: white;
-        box-shadow: -1px 2px 0px 5px #a80068;
-        border: 0px;
-        outline: 0px;
-        font-family: "BohemianSoul-Regular";
-        padding: 3px 50px;
-        border-radius: 5px;
-      }
-    }
-  }
-}
-
-.owl-Two {
-  margin-bottom: 70px;
-}
-
-footer {
-  padding: 75px;
-  background-image: url("../img/bgFooter.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  text-align: center;
-  justify-content: center;
-  .logorea {
-    img {
-      width: 400px;
-      height: 400px;
-    }
-  }
-  .socialArea {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    img {
-      width: 35px;
-      height: 35px;
-    }
-    .discort {
-      width: 50px !important;
-      height: 35px !important;
-    }
-    .twitter {
-      width: 35px !important;
-      height: 30px !important;
-    }
-  }
-  .textArea {
-    p {
-      font-size: 14px;
-      margin-top: 30px;
-      color: grey;
-    }
-  }
-}
-
-.theGame {
-  overflow-x: hidden;
-}
-
-.spAboutusHeader {
-  background-image: url("../img/Fusion3.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 100vh;
-  position: relative;
-  .headerArea {
-    text-align: center;
-    display: block;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    img {
-      width: 550px;
-      height: auto;
-    }
-    p {
-      margin-top: 20px;
-      color: grey;
-      text-align: start;
-      width: 800px;
-      font-weight: 600;
-    }
-  }
-}
-
-.Ourteam {
-  margin: 200px 0px;
-  .textAreaTeam {
-    h6 {
-      font-size: 46px;
-      text-align: center;
-      color: white;
-      font-family: "BohemianSoul-Regular";
-      margin-bottom: 50px;
-    }
-    p {
-      color: white;
-      font-size: 18px;
-    }
-  }
-}
-
-.teamMate {
-  margin: 150px 0px;
-  .persons {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    .person {
-      display: block;
-      justify-content: center;
-      text-align: center;
-      img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-      }
-      .name {
-        color: #ccbf8b !important;
-        font-size: 18px;
-        font-weight: 700;
-        margin-top: 10px;
-        margin-bottom: 0px !important;
-      }
-      .position {
-        color: grey;
-        font-size: 14px;
-      }
-    }
-  }
-}
-
-.joinTheTeam {
-  background-image: url("../img/Varlık9@2x.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 100px 0px;
-  .textArea {
-    h6 {
-      font-size: 46px;
-      color: white;
-      font-family: "BohemianSoul-Regular";
-    }
-    p {
-      margin: 0px;
-      color: white;
-    }
-  }
-}
-
-.faq {
-  margin-top: 167px;
-  .specialRow {
-    display: flex;
-    place-content: center;
-    .hoodArea {
-      p {
-        font-size: 46px;
-        color: #06eab3;
-        font-family: "Cornerstone";
-        margin-left: 70px;
-      }
-    }
-    .accordion-container {
-      position: relative;
-      width: 100%;
-      outline: 0;
-      cursor: pointer;
-      margin-bottom: 100px !important;
-    }
-
-    .accordion-container .article-title {
-      display: block;
-      position: relative;
-      margin: 30px 0px;
-      padding: 0.625em 0.625em 0.625em 4em;
-      font-size: 1.25em;
-      font-weight: normal;
-      color: white;
-      cursor: pointer;
-    }
-
-    .accordion-container .content-entry i {
-      top: 10px;
-      position: absolute;
-      left: 12px;
-      font-style: normal;
-      width: 30px;
-      height: 30px;
-      font-size: 1.625em;
-      position: absolute;
-      color: white;
-      left: 30px;
-      background-image: url("../img/icon/Varlık7@2x.png");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      color: white;
-      border-radius: 17px;
-    }
-
-    .accordion-container .content-entry i:before {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 20px;
-      background-image: url("../img/icon/plus.png");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      content: " ";
-      height: 20px;
-    }
-
-    .accordion-container .content-entry.open i:before {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 20px;
-      background-image: url("../img/icon/minus.png");
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      content: " ";
-      height: 20px;
-    }
-
-    .accordion-content {
-      display: none;
-      color: white;
-      margin-left: 80px;
-    }
-
-    #content {
-      width: 100%;
-    }
-
-    .accordion-container,
-    #description {
-      width: 90%;
-      margin: 1.875em auto;
-    }
-
-    #description p {
-      line-height: 1.5;
-    }
-
-    #description h2 {
-      text-align: center;
-    }
-
-    @media all and (min-width: 860px) {
-      #content {
-        width: 70%;
-        margin: 0 auto;
-      }
-    }
-  }
-}
-
-.theGameHeader {
-  position: relative;
-  height: 100vh;
-  background-image: url("../img/theGameBg.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  .imgArea {
-    position: absolute;
-    right: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    img {
-      width: 500px;
-      height: auto;
-    }
-  }
-}
-
-.gameArea {
-  height: 1000px;
-  background-image: url("../img/g1BG.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  .imgArea {
-    position: relative;
-    img {
-      position: absolute;
-      left: -300px;
-      width: 1000px;
-      top: 0px;
-      height: auto;
-    }
-  }
-  .textArea {
-    margin: 350px 0px;
-    margin-right: 150px !important;
-    margin-left: 150px !important;
-    h6 {
-      font-size: 46px;
-      text-align: start;
-      color: white;
-      font-family: "BohemianSoul-Regular";
-    }
-    p {
-      font-size: 18px;
-      color: white;
-    }
-  }
-}
-
-.gameAreaTwo {
-  height: 1200px;
-  background-image: url("../img/g2bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  .imgArea {
-    position: relative;
-    img {
-      position: absolute;
-      right: -12px;
-      width: 600px;
-      height: auto;
-      top: 200px;
-    }
-  }
-  .textArea {
-    margin: 500px 0px;
-    margin-left: 300px;
-    h6 {
-      font-size: 46px;
-      text-align: start;
-      color: white;
-      font-family: "BohemianSoul-Regular";
-    }
-    p {
-      font-size: 18px;
-      color: white;
-    }
-  }
-}
-
-.gameAreaThree {
-  height: 1200px;
-  background-image: url("../img/g3BG.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  .imgArea {
-    position: relative;
-    img {
-      position: absolute;
-      left: -564px;
-      width: 1200px;
-      top: 250px;
-      height: auto;
-    }
-  }
-  .textArea {
-    margin: 500px 0px;
-    margin-right: 300px;
-    h6 {
-      font-size: 46px;
-      text-align: start;
-      color: white;
-      font-family: "BohemianSoul-Regular";
-    }
-    p {
-      font-size: 18px;
-      color: white;
-    }
-  }
-}
-
-.gameAreaFour {
-  height: 1200px;
-  background-image: url("../img/g4BG.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  .imgArea {
-    position: relative;
-    img {
-      position: absolute;
-      width: 400px;
-      height: auto;
-      right: 200px;
-      top: 350px;
-    }
-  }
-  .textArea {
-    margin: 500px 0px;
-    margin-left: 300px;
-    h6 {
-      font-size: 46px;
-      text-align: start;
-      color: white;
-      font-family: "BohemianSoul-Regular";
-    }
-    p {
-      font-size: 18px;
-      color: white;
-    }
-  }
-}
-
-.gameText {
-  .textArea {
-    text-align: center;
-    margin: 150px 0px;
-    h6 {
-      color: white;
-      font-size: 46px;
-      font-family: "Cornerstone";
-    }
-    p {
-      color: white;
-      font-size: 18px;
-    }
-  }
-}
-
-.setupClan {
-  background-image: url("../img/g5BG.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  padding: 250px 0px;
-  height: 1200px;
-  .col-12 {
-    display: block;
-    justify-content: center;
-    text-align: -webkit-center;
-    .textArea {
-      width: 550px;
-      margin: 250px 0px;
-      h6 {
-        color: white;
-        font-size: 46px;
-        text-align: start;
-        font-family: "BohemianSoul-Regular";
-        margin-bottom: 20px;
-      }
-      p {
-        text-align: start;
-        font-size: 18px;
-        color: white;
-        margin: 20px 0px;
-      }
-    }
-  }
-  .slideText {
-    position: relative;
-    transform: rotate(355deg);
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    overflow: hidden;
-    white-space: nowrap;
-    p {
-      font-size: 18px;
-      left: 0px;
-      position: absolute;
-      font-family: "Cornerstone";
-      color: #15ceaf;
-      opacity: 1;
-      animation: leftText 25s infinite linear;
-      width: 1920px;
-      text-align: start;
-      span {
-        img {
-          width: 25px;
-          height: 25px;
-        }
-      }
-    }
-  }
-}
-
-.gamemode {
-  margin: 150px 0px;
-  .textArea {
-    h6 {
-      text-align: center;
-      font-size: 46px;
-      color: white;
-      font-family: "BohemianSoul-Regular";
-    }
-    p {
-      font-size: 18px;
-      color: white;
-      margin-top: 30px;
-    }
-  }
-
-  .cardArea {
-    background-image: url("../img/bgGameModeCard.png");
-    margin-top: 75px;
-    text-align: center;
-    background-position-x: center;
-    background-position-y: 50px;
-    background-repeat: no-repeat;
-    background-size: 70% 70%;
-    .cardItems {
-      img {
-        width: 250px;
-        height: auto;
-      }
-      .textArea {
-        padding: 0px 130px;
-        h6 {
-          font-size: 26px;
-          color: #2ff3b5;
-          font-family: "Cornerstone";
-          margin-top: 50px;
-        }
-        p {
-          text-align: start;
-          color: white;
-          font-size: 18px;
-        }
-      }
-    }
-    .cardItemsTwo {
-      position: relative;
-      img {
-        width: 250px;
-        height: auto;
-      }
-      .imgBefore {
-        position: absolute;
-        top: -30px;
-        left: 25px;
-        width: 150px;
-      }
-      .textArea {
-        padding: 0px 1px;
-        h6 {
-          font-size: 26px;
-          color: #2ff3b5;
-          font-family: "Cornerstone";
-          margin-top: 50px;
-        }
-        p {
-          text-align: start;
-          color: white;
-          font-size: 18px;
-        }
-      }
-    }
-  }
-}
-
-.itsyourturn {
-  text-align: center;
-  display: block;
-  justify-content: center;
-  h6 {
-    color: white;
-    -webkit-text-stroke: 2px #513e1d;
-    font-size: 46px;
-    position: relative;
-    font-family: "BohemianSoul-Regular";
-
-    span {
-      width: 150px;
-      position: absolute;
-      color: #f1036a !important;
-      -webkit-text-stroke: 0px;
-      left: 338px;
-      transform: rotate(331deg);
-      -webkit-text-stroke: 2px #513e1d;
-    }
-  }
-  button {
-    background-color: #f1036a;
-    color: white;
-    box-shadow: -1px 2px 0px 5px #a80068;
-    border: 0px;
-    outline: 0px;
-    font-family: "BohemianSoul-Regular";
-    padding: 3px 50px;
-    border-radius: 5px;
-  }
-  margin-bottom: 150px;
-}
-
-.manifestoText {
-  .textArea {
-    margin-top: 200px;
-    margin-bottom: 150px;
-    h6 {
-      color: #333749;
-      font-size: 106px;
-      font-family: "Cornerstone";
-    }
-    p {
-      color: white;
-      margin: 0px;
-      font-size: 18px;
-    }
-  }
-}
-
-.owlFour {
-  margin: 150px 0px;
-}
-
-.openSea {
-  background-image: url("../img/openSeaArea.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  padding-top: 150px;
-  padding-bottom: 100px;
-  .hoodBTn {
-    align-items: center;
-    display: flex;
-    place-content: space-between;
-    .hood {
-      h6 {
-        &:first-child {
-          font-family: "Cornerstone";
-          color: black;
-          font-size: 56px;
-        }
-        &:last-child {
-          font-family: "Cornerstone";
-          color: white;
-          font-size: 76px;
-        }
-      }
-    }
-    .btn {
-      button {
-        width: 100%;
-        border-radius: 25px;
-        background-image: url("../img/icon/btnbg.png");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        width: 400px;
-        height: 100px;
-        border: 0px;
-        outline: 0px;
-      }
-    }
-  }
-}
-
-@-webkit-keyframes leftText {
-  from {
-    left: -1920;
-  }
-  to {
-    left: 2000px;
-  }
-}
-
-@media only screen and (max-width: 1800px) {
-  .roadMap {
-    .container-fluid {
-      .rHood {
-        h6 {
-        }
-        img {
-        }
-      }
-      .firstArea {
-        p {
-          &:first-child {
-          }
-          &:nth-child(2) {
-          }
-          &:nth-child(3) {
-          }
-        }
-        button {
-        }
-        .imgArea {
-          img {
-          }
-        }
-      }
-
-      .secondArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .opacityImag {
-            left: 40px !important;
-          }
-          .imgS {
-          }
-        }
-      }
-
-      .thirtArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .opacityImag {
-          }
-          .imgS {
-          }
-        }
-      }
-
-      .fourthArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-            &:nth-child(4) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .imgS {
-          }
-        }
-      }
-    }
-    .container {
-      .buttonArea {
-        button {
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1700px) {
-  .mainHeader {
-    background-size: cover !important;
-    background-position-x: -400px;
-    nav {
-      .navbar-collapse {
-        .navbar-nav {
-          .nav-item {
-            .nav-link {
-            }
-          }
-        }
-        form {
-          .btnConnect {
-          }
-        }
-      }
-    }
-  }
-
-  .roadMap {
-    .container-fluid {
-      .rHood {
-        h6 {
-        }
-        img {
-        }
-      }
-      .firstArea {
-        p {
-          &:first-child {
-          }
-          &:nth-child(2) {
-          }
-          &:nth-child(3) {
-          }
-        }
-        button {
-        }
-        .imgArea {
-          img {
-            width: 800px !important;
-            top: -50px !important;
-          }
-        }
-      }
-
-      .secondArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .opacityImag {
-            left: -7px !important;
-          }
-          .imgS {
-          }
-        }
-      }
-
-      .thirtArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .opacityImag {
-          }
-          .imgS {
-          }
-        }
-      }
-
-      .fourthArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-            &:nth-child(4) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .imgS {
-          }
-        }
-      }
-    }
-    .container {
-      .buttonArea {
-        button {
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1600px) {
-  .gameArea {
-    .imgArea {
-      img {
-      }
-    }
-    .textArea {
-      margin-right: 150px !important;
-      margin-left: 150px !important;
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .gameAreaThree {
-    .imgArea {
-      img {
-      }
-    }
-    .textArea {
-      margin-right: 150px !important;
-      margin-left: 150px !important;
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .roadMap {
-    .container-fluid {
-      .rHood {
-        h6 {
-        }
-        img {
-        }
-      }
-      .firstArea {
-        p {
-          &:first-child {
-          }
-          &:nth-child(2) {
-          }
-          &:nth-child(3) {
-          }
-        }
-        button {
-        }
-        .imgArea {
-          img {
-          }
-        }
-      }
-
-      .secondArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .opacityImag {
-            left: 32px !important;
-            width: 900px !important;
-          }
-          .imgS {
-          }
-        }
-      }
-
-      .thirtArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .opacityImag {
-          }
-          .imgS {
-          }
-        }
-      }
-
-      .fourthArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-            &:nth-child(4) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .imgS {
-            width: 700px !important;
-          }
-        }
-      }
-    }
-    .container {
-      .buttonArea {
-        button {
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1500px) {
-  .gameAreaTwo {
-    .imgArea {
-      img {
-      }
-    }
-    .textArea {
-      margin-left: 150px;
-      margin-right: unset !important;
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .gameAreaThree {
-    .imgArea {
-      img {
-      }
-    }
-    .textArea {
-      margin: 500px 0px;
-      margin-right: 150px !important;
-      margin-left: 50px !important;
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .gameAreaFour {
-    .imgArea {
-      img {
-        right: 100px !important;
-      }
-    }
-    .textArea {
-      margin-left: 150px;
-      margin-right: unset !important;
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .roadMap {
-    .container-fluid {
-      .rHood {
-        h6 {
-        }
-        img {
-        }
-      }
-      .firstArea {
-        p {
-          &:first-child {
-          }
-          &:nth-child(2) {
-          }
-          &:nth-child(3) {
-          }
-        }
-        button {
-        }
-        .imgArea {
-          img {
-          }
-        }
-      }
-
-      .secondArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .opacityImag {
-            left: 78px !important;
-            width: 800px !important;
-          }
-          .imgS {
-            width: 650px !important;
-          }
-        }
-      }
-
-      .thirtArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .opacityImag {
-          }
-          .imgS {
-          }
-        }
-      }
-
-      .fourthArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-            &:nth-child(4) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .imgS {
-          }
-        }
-      }
-    }
-    .container {
-      .buttonArea {
-        button {
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-  .gameArea {
-    .imgArea {
-      img {
-        width: 800px !important;
-      }
-    }
-    .textArea {
-      margin-left: unset !important;
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .itsyourturn {
-    h6 {
-      span {
-        left: 248px !important;
-      }
-    }
-    button {
-    }
-  }
-
-  .gameAreaTwo {
-    .imgArea {
-      img {
-        width: 400px;
-      }
-    }
-    .textArea {
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .gameAreaThree {
-    .imgArea {
-      img {
-        left: -364px;
-        width: 900px;
-      }
-    }
-    .textArea {
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .gamemode {
-    .textArea {
-      h6 {
-      }
-      p {
-      }
-    }
-
-    .cardArea {
-      .cardItems {
-        img {
-          width: 200px !important;
-        }
-        .textArea {
-          h6 {
-          }
-          p {
-            text-align: center !important;
-          }
-        }
-      }
-      .cardItemsTwo {
-        .imgBefore {
-          width: 130px !important;
-        }
-        img {
-          width: 200px !important;
-        }
-        .imgBefore {
-        }
-        .textArea {
-          h6 {
-          }
-          p {
-            text-align: center !important;
-          }
-        }
-      }
-    }
-  }
-
-  .roadMap {
-    .container-fluid {
-      .rHood {
-        h6 {
-        }
-        img {
-        }
-      }
-      .firstArea {
-        p {
-          &:first-child {
-          }
-          &:nth-child(2) {
-            font-size: 60px !important;
-          }
-          &:nth-child(3) {
-            font-size: 36px !important;
-          }
-        }
-        button {
-          font-size: 27px !important;
-          outline: 0px !important;
-        }
-        .imgArea {
-          img {
-            width: 800px !important;
-          }
-        }
-      }
-
-      .secondArea {
-        .textArea {
-          p {
-            &:first-child {
-              right: 162px;
-              top: 90px;
-            }
-            &:nth-child(2) {
-              font-size: 60px;
-              line-height: 82px;
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-            font-size: 27px;
-            outline: 0px;
-            font-family: "BohemianSoul-Regular";
-            padding: 3px 50px;
-          }
-        }
-        .imgArea {
-          .opacityImag {
-            left: 13px !important;
-            top: -219px !important;
-          }
-          .imgS {
-          }
-        }
-      }
-
-      .thirtArea {
-        .textArea {
-          p {
-            &:first-child {
-              top: -58px !important;
-              font-size: 144px !important;
-            }
-            &:nth-child(2) {
-              font-size: 60px;
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-            font-size: 27px !important;
-            padding: 3px 50px !important;
-          }
-        }
-        .imgArea {
-          .opacityImag {
-            width: 350px !important;
-          }
-          .imgS {
-            left: 194px !important;
-          }
-        }
-      }
-
-      .fourthArea {
-        margin-top: 500px !important;
-        .textArea {
-          p {
-            &:first-child {
-              font-size: 137px !important;
-            }
-            &:nth-child(2) {
-              font-size: 32px !important;
-            }
-            &:nth-child(3) {
-              font-size: 56px !important;
-              line-height: 65px !important;
-            }
-            &:nth-child(4) {
-            }
-          }
-          button {
-            font-size: 27px;
-            outline: 0px;
-            font-family: "BohemianSoul-Regular";
-            padding: 3px 50px;
-          }
-        }
-        .imgArea {
-          .imgS {
-            left: 63% !important;
-          }
-        }
-      }
-    }
-    .container {
-      .buttonArea {
-        button {
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  .gamemode {
-    .textArea {
-      h6 {
-      }
-      p {
-      }
-    }
-
-    .cardArea {
-      .cardItems {
-        img {
-          width: 200px !important;
-        }
-        .textArea {
-          h6 {
-          }
-          p {
-            text-align: center !important;
-          }
-        }
-      }
-      .cardItemsTwo {
-        .imgBefore {
-          width: 130px !important;
-        }
-        img {
-          width: 200px !important;
-        }
-        .imgBefore {
-        }
-        .textArea {
-          h6 {
-          }
-          p {
-            text-align: center !important;
-          }
-        }
-      }
-    }
-  }
-
-  .roadMap {
-    .container-fluid {
-      .rHood {
-        h6 {
-        }
-        img {
-        }
-      }
-      .firstArea {
-        p {
-          &:first-child {
-            font-size: 26px;
-          }
-          &:nth-child(2) {
-            font-size: 56px !important;
-          }
-          &:nth-child(3) {
-            font-size: 36px !important;
-          }
-        }
-        button {
-          font-size: 27px !important;
-          padding: 3px 50px !important;
-        }
-        .imgArea {
-          img {
-            top: -10px !important;
-            left: -76px;
-            width: 600px !important;
-          }
-        }
-      }
-
-      .secondArea {
-        .textArea {
-          p {
-            &:first-child {
-              font-size: 86px;
-              right: 126px;
-              top: 56px;
-            }
-            &:nth-child(2) {
-              font-size: 56px !important;
-              line-height: 66px !important;
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-            font-size: 27px !important;
-            padding: 3px 50px !important;
-          }
-        }
-        .imgArea {
-          .opacityImag {
-            left: 37px !important;
-            width: 700px !important;
-            top: -200px !important;
-          }
-          .imgS {
-            width: 550px !important;
-          }
-        }
-      }
-
-      .thirtArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-            font-size: 27px !important;
-            padding: 3px 50px !important;
-          }
-        }
-        .imgArea {
-          .opacityImag {
-            width: 350px !important;
-          }
-          .imgS {
-            width: 300px;
-          }
-        }
-      }
-
-      .fourthArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-            &:nth-child(4) {
-            }
-          }
-          button {
-            font-size: 27px !important;
-            padding: 3px 50px !important;
-          }
-        }
-        .imgArea {
-          .imgS {
-            width: 600px !important;
-          }
-        }
-      }
-    }
-    .container {
-      .buttonArea {
-        button {
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .gamemode {
-    .textArea {
-      h6 {
-      }
-      p {
-      }
-    }
-
-    .cardArea {
-      background-size: 100% !important;
-      background-position: center !important;
-      .cardItems {
-        img {
-        }
-        .textArea {
-          h6 {
-          }
-          p {
-          }
-        }
-      }
-      .cardItemsTwo {
-        img {
-        }
-        .imgBefore {
-        }
-        .textArea {
-          h6 {
-          }
-          p {
-          }
-        }
-      }
-    }
-  }
-  .theGameHeader {
-    background-size: cover !important;
-    .imgArea {
-    }
-  }
-
-  .gameAreaTwo {
-    height: 800px;
-    background-size: cover !important;
-    background-position: start;
-    .imgArea {
-      img {
-      }
-    }
-    .textArea {
-      margin: 350px !important;
-      margin-left: 100px;
-      margin-right: unset !important;
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-  .gameArea {
-    .imgArea {
-      img {
-        width: 700px !important;
-        top: 60px;
-      }
-    }
-    .textArea {
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .gameAreaThree {
-    height: 800px;
-    background-size: cover !important;
-    background-position: center;
-    .imgArea {
-      img {
-        width: 800px !important;
-        top: 160px !important;
-      }
-    }
-    .textArea {
-      margin: 300px 0px !important;
-      margin-right: 0px !important;
-      margin-left: 50px !important;
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .gameAreaTwo {
-    background-size: cover !important;
-    background-position: left !important;
-    .imgArea {
-      img {
-        width: 400px;
-      }
-    }
-    .textArea {
-      margin-left: 100px !important;
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .gameAreaFour {
-    height: 800px !important;
-    background-size: cover !important;
-    background-position: center !important;
-    .imgArea {
-      img {
-        width: 300px;
-        right: 100px;
-        transform: translateY(-50%);
-        top: 300px;
-      }
-    }
-    .textArea {
-      margin: 250px 0px !important;
-      margin-left: 30px !important;
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .gameArea {
-    background-size: cover !important;
-    background-position: center !important;
-    .imgArea {
-      img {
-      }
-    }
-    .textArea {
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .setupClan {
-    background-size: cover;
-    height: 800px;
-    .col-12 {
-      .textArea {
-        margin: 0px 0px !important;
-        margin-bottom: 100px !important;
-        h6 {
-        }
-        p {
-        }
-      }
-    }
-    .slideText {
-      p {
-        span {
-          img {
-          }
-        }
-      }
-    }
-  }
-
-  nav {
-    .navbar-collapse {
-      .navbar-nav {
-        .nav-item {
-          .nav-link {
-            font-size: 14px !important;
-          }
-        }
-      }
-      form {
-        .socialArea {
-          a {
-            &:first-child {
-              img {
-              }
-            }
-            &:nth-child(2) {
-              img {
-              }
-            }
-            &:nth-child(3) {
-              img {
-              }
-            }
-            &:nth-child(4) {
-              img {
-              }
-            }
-          }
-        }
-        .btnConnect {
-          padding: 3px 20px !important;
-          font-size: 14px;
-        }
-      }
-    }
-  }
-
-  .mainHeader {
-    .headerArea {
-      img {
-        width: 350px;
-        height: 350px;
-      }
-    }
-  }
-
-  footer {
-    .logorea {
-      img {
-        width: 250px !important;
-        height: 250px !important;
-      }
-    }
-    .socialArea {
-      img {
-      }
-      .discort {
-      }
-      .twitter {
-      }
-    }
-    .textArea {
-      p {
-      }
-    }
-  }
-
-  .itsyourturn {
-    h6 {
-      span {
-        left: 160px !important;
-      }
-    }
-    button {
-    }
-  }
-
-  .openSea {
-    .hoodBTn {
-      .hood {
-        h6 {
-          &:first-child {
-            font-size: 42px;
-          }
-          &:last-child {
-            font-size: 54px;
-          }
-        }
-      }
-      .btn {
-        button {
-        }
-      }
-    }
-  }
-
-  .roadMap {
-    .container-fluid {
-      .rHood {
-        h6 {
-        }
-        img {
-        }
-      }
-      .firstArea {
-        .phaseImg {
-          margin-bottom: 100px;
-        }
-        p {
-          &:first-child {
-            font-size: 26px !important;
-          }
-          &:nth-child(2) {
-            font-size: 56px !important;
-          }
-          &:nth-child(3) {
-            font-size: 36px !important;
-          }
-        }
-        button {
-        }
-        .imgArea {
-          img {
-            width: 600px !important;
-            left: -67px !important;
-            top: -20px !important;
-          }
-        }
-      }
-
-      .secondArea {
-        .phaseImg {
-          margin-bottom: 100px;
-        }
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .opacityImag {
-            left: 19px !important;
-          }
-          .imgS {
-          }
-        }
-      }
-
-      .thirtArea {
-        .phaseImg {
-          margin-bottom: 100px;
-        }
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .opacityImag {
-          }
-          .imgS {
-            left: 240px !important;
-          }
-        }
-      }
-
-      .fourthArea {
-        .phaseImg {
-          margin-bottom: 100px;
-        }
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-            &:nth-child(4) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .imgS {
-          }
-        }
-      }
-    }
-    .container {
-      .buttonArea {
-        button {
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .gameArea {
-    .imgArea {
-      img {
-      }
-    }
-    .textArea {
-      margin-right: 50px !important;
-      margin-left: 0px !important;
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .gamemode {
-    .textArea {
-      h6 {
-      }
-      p {
-      }
-    }
-
-    .cardArea {
-      .cardItems {
-        img {
-          width: 150px !important;
-        }
-        .textArea {
-          padding: 0px 30px !important;
-          h6 {
-          }
-          p {
-            text-align: center !important;
-          }
-        }
-      }
-      .cardItemsTwo {
-        .imgBefore {
-          width: 130px !important;
-        }
-        img {
-          width: 150px !important;
-        }
-        .imgBefore {
-        }
-        .textArea {
-          h6 {
-          }
-          p {
-            text-align: center !important;
-          }
-        }
-      }
-    }
-  }
-
-  .gameAreaTwo {
-    .imgArea {
-      img {
-      }
-    }
-    .textArea {
-      margin-left: 50px !important;
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .roadMap {
-    .container-fluid {
-      .rHood {
-        h6 {
-        }
-        img {
-        }
-      }
-      .firstArea {
-        p {
-          &:first-child {
-          }
-          &:nth-child(2) {
-          }
-          &:nth-child(3) {
-          }
-        }
-        button {
-        }
-        .imgArea {
-          img {
-          }
-        }
-      }
-
-      .secondArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .opacityImag {
-            width: 600px !important;
-            left: 63px !important;
-          }
-          .imgS {
-          }
-        }
-      }
-
-      .thirtArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .opacityImag {
-            width: 350px !important;
-          }
-          .imgS {
-            width: 300px;
-          }
-        }
-      }
-
-      .fourthArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-            &:nth-child(4) {
-            }
-          }
-          button {
-          }
-        }
-        .imgArea {
-          .imgS {
-          }
-        }
-      }
-    }
-    .container {
-      .buttonArea {
-        button {
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .gamemode {
-    .textArea {
-      text-align: center;
-      h6 {
-      }
-      p {
-      }
-    }
-
-    .cardArea {
-      .cardItems {
-        img {
-          width: 150px !important;
-        }
-        .textArea {
-          h6 {
-          }
-          p {
-          }
-        }
-      }
-      .cardItemsTwo {
-        img {
-        }
-        .imgBefore {
-        }
-        .textArea {
-          padding: 0px 20px;
-          h6 {
-          }
-          p {
-          }
-        }
-      }
-    }
-  }
-  .theGameHeader {
-    background-image: url("../img/theGameBg.png");
-    background-size: cover !important;
-    .imgArea {
-      position: absolute;
-      right: unset !important;
-      left: 50% !important;
-      top: 50% !important;
-      transform: translate(-50%, -50%);
-    }
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>")
+    .mb-60 {
+    margin-bottom: 60px;
   }
 
-  .setupClan {
-    .col-12 {
-      .textArea {
-        margin: 0px 0px !important;
-        margin-bottom: 100px !important;
-        h6 {
-          text-align: center;
-        }
-        p {
-          text-align: center;
-        }
-      }
-    }
-    .slideText {
-      p {
-        span {
-          img {
-          }
-        }
-      }
-    }
+  .mt-50 {
+    margin-top: 50px !important;
   }
 
   .menuActive {
     color: #06eab3 !important;
     &::after {
-      width: 10%;
+      width: 100%;
       height: 20px;
       content: " ";
       position: absolute;
@@ -2803,377 +35,3396 @@ footer {
       background-repeat: no-repeat;
       background-size: 100% 60%;
       background-position: center;
-      position: absolute;
-      left: 49%;
-      transform: translateX(-50%);
     }
   }
 
   nav {
-    position: relative;
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 999999;
     .navbar-collapse {
-      height: 100vh;
+      display: block;
+      align-items: center !important;
+      justify-content: end;
+
       .mobilArea {
-        display: block !important;
-        position: absolute;
-        left: 50%;
-        top: 40%;
-        transform: translate(-50%, -50%);
+        display: flex;
         .navbar-nav {
+          align-content: space-between;
+          gap: 20px;
+          width: 100%;
+          justify-content: right;
+          margin-right: 20px !important;
           .nav-item {
-            text-align: center !important;
-            &:first-child {
-              margin-top: 50px;
-            }
             .nav-link {
+              position: relative;
+              font-family: "Cornerstone";
+              color: white;
+              padding: 0px;
+              height: 100%;
+              font-size: 18px;
             }
           }
         }
         form {
-          justify-content: center;
-          align-items: center;
-          margin-top: 30px;
+          .socialArea {
+            display: flex;
+            gap: 20px;
+            margin-right: 28px;
+            a {
+              &:first-child {
+                img {
+                  width: 15px;
+                  height: 15px;
+                }
+              }
+              &:nth-child(2) {
+                img {
+                  width: 15px;
+                  height: 15px;
+                }
+              }
+              &:nth-child(3) {
+                img {
+                  width: 22px;
+                  height: 16px;
+                }
+              }
+              &:nth-child(4) {
+                img {
+                  width: 25px;
+                  height: 18px;
+                }
+              }
+            }
+          }
           .btnConnect {
+            background-color: #f1036a;
+            color: white;
+            box-shadow: -1px 2px 0px 5px #a80068;
+            border: 0px;
+            outline: 0px;
+            font-family: "BohemianSoul-Regular";
+            padding: 3px 50px;
+            border-radius: 5px;
           }
         }
       }
     }
   }
 
-  .nftTExt {
-    .row {
-      .textAreaBtn {
-        .one {
+  .mainHeader {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/headerBg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    .headerArea {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: mymove 6s;
+      animation-iteration-count: infinite;
+      @keyframes mymove {
+        0% {
+          top: 50%;
         }
-        .two {
-          width: 300px !important;
+        25% {
+          top: 45%;
         }
+        50% {
+          top: 50%;
+        }
+        75% {
+          top: 45%;
+        }
+        100% {
+          top: 50%;
+        }
+      }
+      img {
+        width: 500px;
+        height: 500px;
+      }
+    }
+  }
+
+  .timeArea {
+    background-color: #00051c;
+    padding: 150px 0px;
+    .textMntdate {
+      text-align: center;
+      font-size: 56px;
+      color: #15ceaf;
+      font-family: "Cornerstone";
+    }
+
+    .hood {
+      h3 {
+        text-align: center;
+        color: #06eab3;
+        font-size: 2rem;
+        font-family: "Cornerstone";
+      }
+    }
+    .date {
+      gap: 20px;
+      margin: 30px 0px;
+      justify-content: center;
+      display: flex;
+      font-size: 2.75rem;
+
+      h3 {
+        color: #06eab3;
+        font-family: "Cornerstone";
+        text-align: center;
+        font-size: 2.75rem;
+      }
+    }
+    #countdownTwo,
+    #countdown {
+      justify-content: center;
+      gap: 20px;
+      display: flex;
+      text-align: center;
+      span {
+        font-size: 2.75rem;
+        font-family: "Cornerstone";
+        font-size: 26px;
+        color: #06eab3;
+      }
+      .timeName {
+        font-size: 2rem;
+        font-family: "Cornerstone";
+        color: #06eab3;
+        margin-top: 10px;
+      }
+    }
+    .countdown-sectionTwo {
+      span {
+        color: #06eab3;
+        font-family: "Cornerstone";
+        text-align: center;
+        font-size: 2rem !important;
+      }
+    }
+  }
+
+  .roadMap {
+    margin-bottom: 150px;
+    position: relative;
+    .container-fluid {
+      height: 4300px;
+      .rHood {
+        text-align: center;
         h6 {
+          font-size: 56px;
+          color: #15ceaf;
+          font-family: "Cornerstone";
+        }
+        img {
+          position: absolute;
+          left: 46%;
+          transform: translateX(-50%);
+          margin-top: 100px;
+          z-index: 10;
+        }
+      }
+      .firstArea {
+        text-align-last: center;
+        margin-top: 350px;
+        p {
+          &:first-child {
+            color: #3b3f51;
+            font-size: 36px;
+            text-align: center;
+            margin: 0px;
+            font-family: "BohemianSoul-Regular";
+          }
+          &:nth-child(2) {
+            color: white;
+            font-size: 80px;
+            text-align: center;
+            margin: 0px;
+            font-family: "BohemianSoul-Regular";
+          }
+          &:nth-child(3) {
+            font-size: 56px;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            font-family: "BohemianSoul-Regular";
+          }
         }
         button {
+          background-color: #f1036a;
+          color: white;
+          -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+          box-shadow: -1px 2px 0px 5px #a80068;
+          border: 0px;
+          outline: 0px;
+          font-family: "BohemianSoul-Regular";
+          padding: 3px 50px;
+          border-radius: 5px;
+          margin-top: 70px;
+          font-size: 36px;
+        }
+        .imgArea {
+          img {
+            width: 1000px;
+            position: absolute;
+            left: -140px;
+            top: -148px;
+            z-index: 11;
+          }
+        }
+      }
+
+      .secondArea {
+        text-align-last: center;
+        margin-top: 350px;
+        position: relative;
+        .textArea {
+          display: block;
+          text-align: -webkit-center;
+          p {
+            &:first-child {
+              color: #595c6b;
+              font-size: 124px;
+              text-align: center;
+              margin: 0px;
+              font-family: "BohemianSoul-Regular";
+              position: absolute;
+              right: 212px;
+              top: 108px;
+              -webkit-transform: rotate(22deg);
+              transform: rotate(22deg);
+              z-index: -1;
+            }
+            &:nth-child(2) {
+              color: white;
+              font-size: 80px;
+              line-height: 106px;
+              margin: 0px;
+              margin-bottom: 20px;
+              font-family: "BohemianSoul-Regular";
+            }
+            &:nth-child(3) {
+              font-size: 18px;
+              color: #595c6b;
+              text-align: center;
+              margin: 0px;
+              text-align: start;
+              margin: 0px 100px;
+            }
+          }
+          button {
+            background-color: #f1036a;
+            color: white;
+            -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+            box-shadow: -1px 2px 0px 5px #a80068;
+            border: 0px;
+            font-size: 36px;
+            outline: 0px;
+            font-family: "BohemianSoul-Regular";
+            padding: 3px 50px;
+            border-radius: 5px;
+            margin-top: 70px;
+          }
+        }
+        .imgArea {
+          .opacityImag {
+            width: 1000px;
+            position: absolute;
+            left: 127px;
+            top: -295px;
+          }
+          .imgS {
+            width: 750px;
+            position: absolute;
+            right: -72px;
+            top: 26px;
+            z-index: 11;
+          }
+        }
+      }
+
+      .thirtArea {
+        text-align-last: center;
+        margin-top: 850px;
+
+        .textArea {
+          position: relative;
+          display: block;
+          text-align: -webkit-center;
+          p {
+            &:first-child {
+              color: #595c6b;
+              font-size: 194px;
+              text-align: center;
+              margin: 0px;
+              font-family: "BohemianSoul-Regular";
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              top: -96px;
+              z-index: -1;
+            }
+            &:nth-child(2) {
+              color: white;
+              font-size: 80px;
+              line-height: 106px;
+              margin: 0px;
+              margin-bottom: 50px;
+              font-family: "BohemianSoul-Regular";
+            }
+            &:nth-child(3) {
+              font-size: 18px;
+              color: #595c6b;
+              text-align: center;
+              margin: 0px;
+              text-align: start;
+              margin: 0px 100px;
+            }
+          }
+          button {
+            background-color: #f1036a;
+            color: white;
+            -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+            box-shadow: -1px 2px 0px 5px #a80068;
+            border: 0px;
+            font-size: 36px;
+            outline: 0px;
+            font-family: "BohemianSoul-Regular";
+            padding: 3px 50px;
+            border-radius: 5px;
+            margin-top: 70px;
+          }
+        }
+        .imgArea {
+          .opacityImag {
+            width: 400px;
+            position: absolute;
+            left: 130px;
+            top: -90px;
+          }
+          .imgS {
+            width: 350px;
+            position: absolute;
+            left: 300px;
+            top: 26px;
+            z-index: 11;
+          }
+        }
+      }
+
+      .fourthArea {
+        text-align-last: center;
+        margin-top: 400px;
+        .textArea {
+          display: block;
+          text-align: -webkit-center;
+          position: relative;
+          p {
+            &:first-child {
+              color: #595c6b;
+              font-size: 194px;
+              text-align: center;
+              margin: 0px;
+              font-family: "BohemianSoul-Regular";
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              top: -95px;
+              z-index: -1;
+            }
+            &:nth-child(2) {
+              color: white;
+              font-size: 44px;
+              line-height: 44px;
+              margin: 0px;
+              margin-bottom: 0px;
+              font-family: "BohemianSoul-Regular";
+            }
+            &:nth-child(3) {
+              color: white;
+              font-size: 80px;
+              line-height: 106px;
+              margin: 0px;
+              margin-bottom: 50px;
+              font-family: "BohemianSoul-Regular";
+            }
+            &:nth-child(4) {
+              font-size: 18px;
+              color: #595c6b;
+              text-align: center;
+              margin: 0px;
+              text-align: start;
+              margin: 0px 100px;
+            }
+          }
+          button {
+            background-color: #f1036a;
+            color: white;
+            -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+            box-shadow: -1px 2px 0px 5px #a80068;
+            border: 0px;
+            font-size: 36px;
+            outline: 0px;
+            font-family: "BohemianSoul-Regular";
+            padding: 3px 50px;
+            border-radius: 5px;
+            margin-top: 70px;
+          }
+        }
+        .imgArea {
+          position: relative;
+          .imgS {
+            width: 800px;
+            position: absolute;
+            top: 14px;
+            left: 67%;
+            z-index: 11;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+    .container {
+      .buttonArea {
+        text-align-last: center;
+        display: block;
+        button {
+          background-image: url("../img/icon/arrowR.png");
+          background-color: transparent;
+          background-size: 38px;
+          background-repeat: no-repeat;
+          background-position: right center;
+          padding: 20px 45px;
+          padding-left: 0px;
+          color: #11a692;
+          font-size: 24px;
+          border: 0px;
+          outline: 0px;
+          font-family: "Cornerstone";
+          z-index: 9999;
         }
       }
     }
   }
 
   .sliderOne {
+    position: relative;
     .owl-carousel {
       .owl-nav {
         .owl-prev {
-          width: 25px !important;
-          height: 25px !important;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 200px;
+          width: 25px;
+          height: 25px;
+          background-image: url("../img/icon/prev.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          font-size: 0px;
         }
 
         .owl-next {
-          width: 25px !important;
-          height: 25px !important;
+          right: 100px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 25px;
+          height: 25px;
+          background-image: url("../img/icon/next.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          font-size: 0px;
         }
       }
       .owl-dots {
+        gap: 20px;
+        display: flex;
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 10px;
+        width: 300px;
+        justify-content: center;
         button {
+          width: 10px;
+          height: 10px;
+          background-color: #a3a3a3;
+          border-radius: 10px;
+        }
+      }
+
+      .owl-item {
+        .textArea {
+          p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 46px;
+            color: white;
+            font-family: "Cornerstone";
+          }
         }
       }
     }
   }
 
-  .spAboutusHeader {
-    background-size: cover !important;
-    .headerArea {
+  .sliderRightLeft {
+    margin: 150px 0px;
+  }
+
+  .nftTExt {
+    margin: 100px 0px;
+    .row {
+      align-items: center;
+      .textAreaBtn {
+        text-align: center;
+        text-align: -webkit-center;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        .one {
+          font-family: "BohemianSoul-Regular";
+          color: grey;
+          font-size: 22px;
+        }
+        .two {
+          font-size: 18px;
+          width: 450px;
+          color: grey;
+          text-align: justify;
+        }
+        h6 {
+          margin: 10px 0px;
+          font-size: 46px;
+          color: white;
+          font-family: "BohemianSoul-Regular";
+        }
+        button {
+          background-color: #f1036a;
+          color: white;
+          box-shadow: -1px 2px 0px 5px #a80068;
+          border: 0px;
+          outline: 0px;
+          font-family: "BohemianSoul-Regular";
+          padding: 3px 50px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .owl-Two {
+    margin-bottom: 70px;
+  }
+
+  footer {
+    padding: 75px;
+    background-image: url("../img/bgFooter.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    justify-content: center;
+    .logorea {
       img {
-        width: 350px !important;
+        width: 400px;
+        height: 400px;
+      }
+    }
+    .socialArea {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+      .discort {
+        width: 50px !important;
+        height: 35px !important;
+      }
+      .twitter {
+        width: 35px !important;
+        height: 30px !important;
+      }
+    }
+    .textArea {
+      p {
+        font-size: 14px;
+        margin-top: 30px;
+        color: grey;
+      }
+    }
+  }
+
+  .theGame {
+    overflow-x: hidden;
+  }
+
+  .spAboutusHeader {
+    background-image: url("../img/Fusion3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+    .headerArea {
+      text-align: center;
+      display: block;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      img {
+        width: 550px;
+        height: auto;
       }
       p {
-        width: 600px !important;
+        margin-top: 20px;
+        color: grey;
+        text-align: start;
+        width: 800px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .Ourteam {
+    margin: 200px 0px;
+    .textAreaTeam {
+      h6 {
+        font-size: 46px;
+        text-align: center;
+        color: white;
+        font-family: "BohemianSoul-Regular";
+        margin-bottom: 50px;
+      }
+      p {
+        color: white;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .teamMate {
+    margin: 150px 0px;
+    .persons {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 20px;
+      .person {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50px;
+        }
+        .name {
+          color: #ccbf8b !important;
+          font-size: 18px;
+          font-weight: 700;
+          margin-top: 10px;
+          margin-bottom: 0px !important;
+        }
+        .position {
+          color: grey;
+          font-size: 14px;
+        }
       }
     }
   }
 
   .joinTheTeam {
-    background-size: cover !important;
-    background-position: right;
+    background-image: url("../img/Varlık9@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 100px 0px;
     .textArea {
       h6 {
+        font-size: 46px;
+        color: white;
+        font-family: "BohemianSoul-Regular";
       }
       p {
+        margin: 0px;
+        color: white;
       }
     }
   }
 
-  footer {
-    background-size: cover;
-    .logorea {
-      img {
-      }
-    }
-    .socialArea {
-      img {
-      }
-      .discort {
-      }
-      .twitter {
-      }
-    }
-    .textArea {
-      p {
-      }
-    }
-  }
-
-  .gameAreaThree {
-    .imgArea {
-      img {
-      }
-    }
-    .textArea {
-      margin-left: 0px !important;
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .itsyourturn {
-    h6 {
-      span {
-        left: 128px !important;
-      }
-    }
-    button {
-    }
-  }
-
-  .openSea {
-    padding-top: 200px !important;
-    .hoodBTn {
-      display: block !important;
-      text-align: center;
-      .hood {
-        h6 {
-          &:first-child {
-          }
-          &:last-child {
-          }
-        }
-      }
-      .btn {
-        button {
-        }
-      }
-    }
-  }
-
-  .roadMap {
-    margin-bottom: 350px;
-    .container-fluid {
-      height: 3800px !important;
-      .rHood {
-        h6 {
-        }
-        img {
-        }
-      }
-      .firstArea {
+  .faq {
+    margin-top: 167px;
+    .specialRow {
+      display: flex;
+      place-content: center;
+      .hoodArea {
         p {
-          &:first-child {
-          }
-          &:nth-child(2) {
-          }
-          &:nth-child(3) {
-          }
+          font-size: 46px;
+          color: #06eab3;
+          font-family: "Cornerstone";
+          margin-left: 70px;
         }
-        button {
-          font-size: 18px !important;
-        }
-        .imgArea {
-          img {
-          }
-        }
+      }
+      .accordion-container {
+        position: relative;
+        width: 100%;
+        outline: 0;
+        cursor: pointer;
+        margin-bottom: 100px !important;
       }
 
-      .secondArea {
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-            font-size: 18px !important;
-          }
-        }
-        .imgArea {
-          .opacityImag {
-          }
-          .imgS {
-          }
-        }
+      .accordion-container .article-title {
+        display: block;
+        position: relative;
+        margin: 30px 0px;
+        padding: 0.625em 0.625em 0.625em 4em;
+        font-size: 1.25em;
+        font-weight: normal;
+        color: white;
+        cursor: pointer;
       }
 
-      .thirtArea {
-        margin-top: 450px !important;
-        .textArea {
-          p {
-            &:first-child {
-            }
-            &:nth-child(2) {
-            }
-            &:nth-child(3) {
-            }
-          }
-          button {
-            font-size: 18px !important;
-          }
-        }
-        .imgArea {
-          .opacityImag {
-          }
-          .imgS {
-          }
-        }
+      .accordion-container .content-entry i {
+        top: 10px;
+        position: absolute;
+        left: 12px;
+        font-style: normal;
+        width: 30px;
+        height: 30px;
+        font-size: 1.625em;
+        position: absolute;
+        color: white;
+        left: 30px;
+        background-image: url("../img/icon/Varlık7@2x.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: white;
+        border-radius: 17px;
       }
 
-      .fourthArea {
-        .textArea {
-          p {
-            &:first-child {
-              font-size: 124px !important;
-            }
-            &:nth-child(2) {
-              font-size: 26px !important;
-            }
-            &:nth-child(3) {
-              font-size: 42px !important;
-              line-height: 46px !important;
-              margin: 0px 30px;
-            }
-            &:nth-child(4) {
-            }
-          }
-          button {
-            font-size: 18px !important;
-          }
-        }
-        .imgArea {
-          .imgS {
-          }
-        }
+      .accordion-container .content-entry i:before {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        background-image: url("../img/icon/plus.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        content: " ";
+        height: 20px;
       }
 
-      .phaseArea {
-        display: grid !important;
-        place-items: center;
-        img {
-          &:first-child {
-            margin-top: 100px;
-          }
-          margin-top: 25px;
-        }
+      .accordion-container .content-entry.open i:before {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        background-image: url("../img/icon/minus.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        content: " ";
+        height: 20px;
       }
-    }
-    .container {
-      .buttonArea {
-        button {
+
+      .accordion-content {
+        display: none;
+        color: white;
+        margin-left: 80px;
+      }
+
+      #content {
+        width: 100%;
+      }
+
+      .accordion-container,
+      #description {
+        width: 90%;
+        margin: 1.875em auto;
+      }
+
+      #description p {
+        line-height: 1.5;
+      }
+
+      #description h2 {
+        text-align: center;
+      }
+
+      @media all and (min-width: 860px) {
+        #content {
+          width: 70%;
+          margin: 0 auto;
         }
       }
     }
   }
-}
 
-@media only screen and (max-width: 768px) {
-  .gameAreaFour {
+  .theGameHeader {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/theGameBg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     .imgArea {
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
       img {
-      }
-    }
-    .textArea {
-      text-align: center !important;
-      h6 {
-        text-align: center !important;
-      }
-      p {
+        width: 500px;
+        height: auto;
       }
     }
   }
 
-  .gameAreaThree {
+  .gameArea {
+    height: 1000px;
+    background-image: url("../img/g1BG.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     .imgArea {
+      position: relative;
       img {
+        position: absolute;
+        left: -300px;
+        width: 1000px;
+        top: 0px;
+        height: auto;
       }
     }
     .textArea {
-      text-align: center !important;
+      margin: 350px 0px;
+      margin-right: 150px !important;
+      margin-left: 150px !important;
       h6 {
-        text-align: center !important;
+        font-size: 46px;
+        text-align: start;
+        color: white;
+        font-family: "BohemianSoul-Regular";
       }
       p {
+        font-size: 18px;
+        color: white;
       }
     }
   }
 
   .gameAreaTwo {
+    height: 1200px;
+    background-image: url("../img/g2bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     .imgArea {
+      position: relative;
       img {
+        position: absolute;
+        right: -12px;
+        width: 600px;
+        height: auto;
+        top: 200px;
       }
     }
     .textArea {
-      margin-left: 0px !important;
-      text-align: center !important;
+      margin: 500px 0px;
+      margin-left: 300px;
       h6 {
-        text-align: center !important;
+        font-size: 46px;
+        tex60align: start;
+        color: white;
+        font-family: "BohemianSoul-Regular";
       }
       p {
-      }
-    }
-  }
-  .gameArea {
-    .imgArea {
-      img {
-      }
-    }
-    .textArea {
-      margin-right: 0px !important;
-      text-align: center !important;
-      h6 {
-        text-align: center !important;
-      }
-      p {
+        font-size: 18px;
+        col35: white;
       }
     }
   }
 
-  .spAboutusHeader {
-    .headerArea {
-      width: 100% !important;
+  .gameAreaThree {
+    height: 1200px;
+    background-image: url("../img/g3BG.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .imgArea {
+      position: relative;
       img {
-        width: 350px !important;
+        position: absolute;
+        left: -564px;
+        width: 1200px;
+        top: 250px;
+        height: auto;
+      }
+    }
+    .textArea {
+      margin: 500px 0px;
+      margin-right: 300px;
+      h6 {
+        font-size: 46px;
+        text-align: start;
+        color: white;
+        font-family: "BohemianSoul-Regular";
       }
       p {
-        width: 100% !important;
-        padding: 20px 30px;
+        font-size: 18px;
+        color: white;
+      }
+    }
+  }
+
+  .gameAreaFour {
+    height: 1200px;
+    background-image: url("../img/g4BG.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .imgArea {
+      position: relative;
+      img {
+        position: absolute;
+        width: 400px;
+        height: auto;
+        right: 200px;
+        top: 350px;
+      }
+    }
+    .textArea {
+      margin: 500px 0px;
+      margin-left: 300px;
+      h6 {
+        font-size: 46px;
+        text-align: start;
+        color: white;
+        font-family: "BohemianSoul-Regular";
+      }
+      p {
+        font-size: 18px;
+        color: white;
+      }
+    }
+  }
+
+  .gameText {
+    .textArea {
+      text-align: center;
+      margin: 150px 0px;
+      h6 {
+        color: white;
+        font-size: 46px;
+        font-family: "Cornerstone";
+      }
+      p {
+        color: white;
+        font-size: 18px;
       }
     }
   }
 
   .setupClan {
+    background-image: url("../img/g5BG.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 250px 0px;
+    height: 1200px;
     .col-12 {
+      display: block;
+      justify-content: center;
+      text-align: -webkit-center;
       .textArea {
-        width: 100% !important
-        ;
+        width: 550px;
+        margin: 250px 0px;
+        h6 {
+          color: white;
+          font-size: 46px;
+          text-align: start;
+          font-family: "BohemianSoul-Regular";
+          margin-bottom: 20px;
+        }
+        p {
+          text-align: start;
+          font-size: 18px;
+          color: white;
+          margin: 20px 0px;
+        }
+      }
+    }
+    .slideText {
+      position: relative;
+      transform: rotate(355deg);
+      position: absolute;
+      width: 100%;
+      height: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      p {
+        font-size: 18px;
+        left: 0px;
+        position: absolute;
+        font-family: "Cornerstone";
+        color: #15ceaf;
+        opacity: 1;
+        animation: leftText 25s infinite linear;
+        width: 1920px;
+        text-align: start;
+        span {
+          img {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .gamemode {
+    margin: 150px 0px;
+    .textArea {
+      h6 {
+        text-align: center;
+        font-size: 46px;
+        color: white;
+        font-family: "BohemianSoul-Regular";
+      }
+      p {
+        font-size: 18px;
+        color: white;
+        margin-top: 30px;
+      }
+    }
+
+    .cardArea {
+      background-image: url("../img/bgGameModeCard.png");
+      margin-top: 75px;
+      text-align: center;
+      background-position-x: center;
+      background-position-y: 50px;
+      background-repeat: no-repeat;
+      background-size: 70% 70%;
+      .cardItems {
+        img {
+          width: 250px;
+          height: auto;
+        }
+        .textArea {
+          padding: 0px 130px;
+          h6 {
+            font-size: 26px;
+            color: #2ff3b5;
+            font-family: "Cornerstone";
+            margin-top: 50px;
+          }
+          p {
+            text-align: start;
+            color: white;
+            font-size: 18px;
+          }
+        }
+      }
+      .cardItemsTwo {
+        position: relative;
+        img {
+          width: 250px;
+          height: auto;
+        }
+        .imgBefore {
+          position: absolute;
+          top: -30px;
+          left: 25px;
+          width: 150px;
+        }
+        .textArea {
+          padding: 0px 1px;
+          h6 {
+            font-size: 26px;
+            color: #2ff3b5;
+            font-family: "Cornerstone";
+            margin-top: 50px;
+          }
+          p {
+            text-align: start;
+            color: white;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .itsyourturn {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    h6 {
+      color: white;
+      -webkit-text-stroke: 2px #513e1d;
+      font-size: 46px;
+      position: relative;
+      font-family: "BohemianSoul-Regular";
+
+      span {
+        width: 150px;
+        position: absolute;
+        color: #f1036a !important;
+        -webkit-text-stroke: 0px;
+        left: 338px;
+        transform: rotate(331deg);
+        -webkit-text-stroke: 2px #513e1d;
+      }
+    }
+    button {
+      background-color: #f1036a;
+      color: white;
+      box-shadow: -1px 2px 0px 5px #a80068;
+      border: 0px;
+      outline: 0px;
+      font-family: "BohemianSoul-Regular";
+      padding: 3px 50px;
+      border-radius: 5px;
+    }
+    margin-bottom: 150px;
+  }
+
+  .manifestoText {
+    .textArea {
+      margin-top: 200px;
+      margin-bottom: 150px;
+      h6 {
+        color: #333749;
+        font-size: 106px;
+        font-family: "Cornerstone";
+      }
+      p {
+        color: white;
+        margin: 0px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .owlFour {
+    margin: 150px 0px;
+  }
+
+  .openSea {
+    background-image: url("../img/openSeaArea.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    .hoodBTn {
+      align-items: center;
+      display: flex;
+      place-content: space-between;
+      .hood {
+        justify-content: center;
+        text-align: center;
+        h6 {
+          &:first-child {
+            font-family: "Cornerstone";
+            color: black;
+            font-size: 56px;
+          }
+          &:last-child {
+            font-family: "Cornerstone";
+            color: white;
+            font-size: 76px;
+          }
+        }
+      }
+      .btn a {
+        img {
+          width: 50px;
+          height: auto;
+          margin-top: 15px;
+        }
+      }
+       
+        button {
+          width: 100%;
+          border-radius: 25px;
+          background-image: url("../img/icon/btnbg.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          width: 400px;
+          height: 100px;
+          border: 0px;
+          outline: 0px;
+        }
+      }
+    }
+
+  @-webkit-keyframes leftText {
+    from {
+      left: -1920;
+    }
+    to {
+      left: 2000px;
+    }
+  }
+
+  @media only screen and (max-width: 1800px) {
+    .roadMap {
+      .container-fluid {
+        .rHood {
+          h6 {
+          }
+          img {
+          }
+        }
+        .firstArea {
+          p {
+            &:first-child {
+            }
+            &:nth-child(2) {
+            }
+            &:nth-child(3) {
+            }
+          }
+          button {
+          }
+          .imgArea {
+            img {
+            }
+          }
+        }
+
+        .secondArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .opacityImag {
+              left: 40px !important;
+            }
+            .imgS {
+            }
+          }
+        }
+
+        .thirtArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .opacityImag {
+            }
+            .imgS {
+            }
+          }
+        }
+
+        .fourthArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+              &:nth-child(4) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .imgS {
+            }
+          }
+        }
+      }
+      .container {
+        .buttonArea {
+          button {
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1700px) {
+    .mainHeader {
+      background-size: cover !important;
+      background-position-x: -400px;
+      nav {
+        .navbar-collapse {
+          .navbar-nav {
+            .nav-item {
+              .nav-link {
+              }
+            }
+          }
+          form {
+            .btnConnect {
+            }
+          }
+        }
+      }
+    }
+
+    .roadMap {
+      .container-fluid {
+        .rHood {
+          h6 {
+          }
+          img {
+          }
+        }
+        .firstArea {
+          p {
+            &:first-child {
+            }
+            &:nth-child(2) {
+            }
+            &:nth-child(3) {
+            }
+          }
+          button {
+          }
+          .imgArea {
+            img {
+              width: 800px !important;
+              top: -50px !important;
+            }
+          }
+        }
+
+        .secondArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .opacityImag {
+              left: -7px !important;
+            }
+            .imgS {
+            }
+          }
+        }
+
+        .thirtArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .opacityImag {
+            }
+            .imgS {
+            }
+          }
+        }
+
+        .fourthArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+              &:nth-child(4) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .imgS {
+            }
+          }
+        }
+      }
+      .container {
+        .buttonArea {
+          button {
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1600px) {
+    .gameArea {
+      .imgArea {
+        img {
+        }
+      }
+      .textArea {
+        margin-right: 150px !important;
+        margin-left: 150px !important;
         h6 {
         }
         p {
         }
       }
     }
-    .slideText {
-      p {
-        span {
+
+    .gameAreaThree {
+      .imgArea {
+        img {
+        }
+      }
+      .textArea {
+        margin-right: 150px !important;
+        margin-left: 150px !important;
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .roadMap {
+      .container-fluid {
+        .rHood {
+          h6 {
+          }
           img {
           }
+        }
+        .firstArea {
+          p {
+            &:first-child {
+            }
+            &:nth-child(2) {
+            }
+            &:nth-child(3) {
+            }
+          }
+          button {
+          }
+          .imgArea {
+            img {
+            }
+          }
+        }
+
+        .secondArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .opacityImag {
+              left: 32px !important;
+              width: 900px !important;
+            }
+            .imgS {
+            }
+          }
+        }
+
+        .thirtArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .opacityImag {
+            }
+            .imgS {
+            }
+          }
+        }
+
+        .fourthArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+              &:nth-child(4) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .imgS {
+              width: 700px !important;
+            }
+          }
+        }
+      }
+      .container {
+        .buttonArea {
+          button {
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1500px) {
+    .gameAreaTwo {
+      .imgArea {
+        img {
+        }
+      }
+      .textArea {
+        margin-left: 150px;
+        margin-right: unset !important;
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .gameAreaThree {
+      .imgArea {
+        img {
+        }
+      }
+      .textArea {
+        margin: 500px 0px;
+        margin-right: 150px !important;
+        margin-left: 50px !important;
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .gameAreaFour {
+      .imgArea {
+        img {
+          right: 100px !important;
+        }
+      }
+      .textArea {
+        margin-left: 150px;
+        margin-right: unset !important;
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .roadMap {
+      .container-fluid {
+        .rHood {
+          h6 {
+          }
+          img {
+          }
+        }
+        .firstArea {
+          p {
+            &:first-child {
+            }
+            &:nth-child(2) {
+            }
+            &:nth-child(3) {
+            }
+          }
+          button {
+          }
+          .imgArea {
+            img {
+            }
+          }
+        }
+
+        .secondArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .opacityImag {
+              left: 78px !important;
+              width: 800px !important;
+            }
+            .imgS {
+              width: 650px !important;
+            }
+          }
+        }
+
+        .thirtArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .opacityImag {
+            }
+            .imgS {
+            }
+          }
+        }
+
+        .fourthArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+              &:nth-child(4) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .imgS {
+            }
+          }
+        }
+      }
+      .container {
+        .buttonArea {
+          button {
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1400px) {
+    .gameArea {
+      .imgArea {
+        img {
+          width: 800px !important;
+        }
+      }
+      .textArea {
+        margin-left: unset !important;
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .itsyourturn {
+      h6 {
+        span {
+          left: 248px !important;
+        }
+      }
+      button {
+      }
+    }
+
+    .gameAreaTwo {
+      .imgArea {
+        img {
+          width: 400px;
+        }
+      }
+      .textArea {
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .gameAreaThree {
+      .imgArea {
+        img {
+          left: -364px;
+          width: 900px;
+        }
+      }
+      .textArea {
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .gamemode {
+      .textArea {
+        h6 {
+        }
+        p {
+        }
+      }
+
+      .cardArea {
+        .cardItems {
+          img {
+            width: 200px !important;
+          }
+          .textArea {
+            h6 {
+            }
+            p {
+              text-align: center !important;
+            }
+          }
+        }
+        .cardItemsTwo {
+          .imgBefore {
+            width: 130px !important;
+          }
+          img {
+            width: 200px !important;
+          }
+          .imgBefore {
+          }
+          .textArea {
+            h6 {
+            }
+            p {
+              text-align: center !important;
+            }
+          }
+        }
+      }
+    }
+
+    .roadMap {
+      .container-fluid {
+        .rHood {
+          h6 {
+          }
+          img {
+          }
+        }
+        .firstArea {
+          p {
+            &:first-child {
+            }
+            &:nth-child(2) {
+              font-size: 60px !important;
+            }
+            &:nth-child(3) {
+              font-size: 36px !important;
+            }
+          }
+          button {
+            font-size: 27px !important;
+            outline: 0px !important;
+          }
+          .imgArea {
+            img {
+              width: 800px !important;
+            }
+          }
+        }
+
+        .secondArea {
+          .textArea {
+            p {
+              &:first-child {
+                right: 162px;
+                top: 90px;
+              }
+              &:nth-child(2) {
+                font-size: 60px;
+                line-height: 82px;
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+              font-size: 27px;
+              outline: 0px;
+              font-family: "BohemianSoul-Regular";
+              padding: 3px 50px;
+            }
+          }
+          .imgArea {
+            .opacityImag {
+              left: 13px !important;
+              top: -219px !important;
+            }
+            .imgS {
+            }
+          }
+        }
+
+        .thirtArea {
+          .textArea {
+            p {
+              &:first-child {
+                top: -58px !important;
+                font-size: 144px !important;
+              }
+              &:nth-child(2) {
+                font-size: 60px;
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+              font-size: 27px !important;
+              padding: 3px 50px !important;
+            }
+          }
+          .imgArea {
+            .opacityImag {
+              width: 350px !important;
+            }
+            .imgS {
+              left: 194px !important;
+            }
+          }
+        }
+
+        .fourthArea {
+          margin-top: 500px !important;
+          .textArea {
+            p {
+              &:first-child {
+                font-size: 137px !important;
+              }
+              &:nth-child(2) {
+                font-size: 32px !important;
+              }
+              &:nth-child(3) {
+                font-size: 56px !important;
+                line-height: 65px !important;
+              }
+              &:nth-child(4) {
+              }
+            }
+            button {
+              font-size: 27px;
+              outline: 0px;
+              font-family: "BohemianSoul-Regular";
+              padding: 3px 50px;
+            }
+          }
+          .imgArea {
+            .imgS {
+              left: 63% !important;
+            }
+          }
+        }
+      }
+      .container {
+        .buttonArea {
+          button {
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .gamemode {
+      .textArea {
+        h6 {
+        }
+        p {
+        }
+      }
+
+      .cardArea {
+        .cardItems {
+          img {
+            width: 200px !important;
+          }
+          .textArea {
+            h6 {
+            }
+            p {
+              text-align: center !important;
+            }
+          }
+        }
+        .cardItemsTwo {
+          .imgBefore {
+            width: 130px !important;
+          }
+          img {
+            width: 200px !important;
+          }
+          .imgBefore {
+          }
+          .textArea {
+            h6 {
+            }
+            p {
+              text-align: center !important;
+            }
+          }
+        }
+      }
+    }
+
+    .roadMap {
+      .container-fluid {
+        .rHood {
+          h6 {
+          }
+          img {
+          }
+        }
+        .firstArea {
+          p {
+            &:first-child {
+              font-size: 26px;
+            }
+            &:nth-child(2) {
+              font-size: 56px !important;
+            }
+            &:nth-child(3) {
+              font-size: 36px !important;
+            }
+          }
+          button {
+            font-size: 27px !important;
+            padding: 3px 50px !important;
+          }
+          .imgArea {
+            img {
+              top: -10px !important;
+              left: -76px;
+              width: 600px !important;
+            }
+          }
+        }
+
+        .secondArea {
+          .textArea {
+            p {
+              &:first-child {
+                font-size: 86px;
+                right: 126px;
+                top: 56px;
+              }
+              &:nth-child(2) {
+                font-size: 56px !important;
+                line-height: 66px !important;
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+              font-size: 27px !important;
+              padding: 3px 50px !important;
+            }
+          }
+          .imgArea {
+            .opacityImag {
+              left: 37px !important;
+              width: 700px !important;
+              top: -200px !important;
+            }
+            .imgS {
+              width: 550px !important;
+            }
+          }
+        }
+
+        .thirtArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+              font-size: 27px !important;
+              padding: 3px 50px !important;
+            }
+          }
+          .imgArea {
+            .opacityImag {
+              width: 350px !important;
+            }
+            .imgS {
+              width: 300px;
+            }
+          }
+        }
+
+        .fourthArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+              &:nth-child(4) {
+              }
+            }
+            button {
+              font-size: 27px !important;
+              padding: 3px 50px !important;
+            }
+          }
+          .imgArea {
+            .imgS {
+              width: 600px !important;
+            }
+          }
+        }
+      }
+      .container {
+        .buttonArea {
+          button {
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .gamemode {
+      .textArea {
+        h6 {
+        }
+        p {
+        }
+      }
+
+      .cardArea {
+        background-size: 100% !important;
+        background-position: center !important;
+        .cardItems {
+          img {
+          }
+          .textArea {
+            h6 {
+            }
+            p {
+            }
+          }
+        }
+        .cardItemsTwo {
+          img {
+          }
+          .imgBefore {
+          }
+          .textArea {
+            h6 {
+            }
+            p {
+            }
+          }
+        }
+      }
+    }
+    .theGameHeader {
+      background-size: cover !important;
+      .imgArea {
+      }
+    }
+
+    .gameAreaTwo {
+      height: 800px;
+      background-size: cover !important;
+      background-position: start;
+      .imgArea {
+        img {
+        }
+      }
+      .textArea {
+        margin: 350px !important;
+        margin-left: 100px;
+        margin-right: unset !important;
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+    .gameArea {
+      .imgArea {
+        img {
+          width: 700px !important;
+          top: 60px;
+        }
+      }
+      .textArea {
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .gameAreaThree {
+      height: 800px;
+      background-size: cover !important;
+      background-position: center;
+      .imgArea {
+        img {
+          width: 800px !important;
+          top: 160px !important;
+        }
+      }
+      .textArea {
+        margin: 300px 0px !important;
+        margin-right: 0px !important;
+        margin-left: 50px !important;
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .gameAreaTwo {
+      background-size: cover !important;
+      background-position: left !important;
+      .imgArea {
+        img {
+          width: 400px;
+        }
+      }
+      .textArea {
+        margin-left: 100px !important;
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .gameAreaFour {
+      height: 800px !important;
+      background-size: cover !important;
+      background-position: center !important;
+      .imgArea {
+        img {
+          width: 300px;
+          right: 100px;
+          transform: translateY(-50%);
+          top: 300px;
+        }
+      }
+      .textArea {
+        margin: 250px 0px !important;
+        margin-left: 30px !important;
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .gameArea {
+      background-size: cover !important;
+      background-position: center !important;
+      .imgArea {
+        img {
+        }
+      }
+      .textArea {
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .setupClan {
+      background-size: cover;
+      height: 800px;
+      .col-12 {
+        .textArea {
+          margin: 0px 0px !important;
+          margin-bottom: 100px !important;
+          h6 {
+          }
+          p {
+          }
+        }
+      }
+      .slideText {
+        p {
+          span {
+            img {
+            }
+          }
+        }
+      }
+    }
+
+    nav {
+      .navbar-collapse {
+        .navbar-nav {
+          .nav-item {
+            .nav-link {
+              font-size: 14px !important;
+            }
+          }
+        }
+        form {
+          .socialArea {
+            a {
+              &:first-child {
+                img {
+                }
+              }
+              &:nth-child(2) {
+                img {
+                }
+              }
+              &:nth-child(3) {
+                img {
+                }
+              }
+              &:nth-child(4) {
+                img {
+                }
+              }
+            }
+          }
+          .btnConnect {
+            padding: 3px 20px !important;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .mainHeader {
+      .headerArea {
+        img {
+          width: 350px;
+          height: 350px;
+        }
+      }
+    }
+
+    footer {
+      .logorea {
+        img {
+          width: 250px !important;
+          height: 250px !important;
+        }
+      }
+      .socialArea {
+        img {
+        }
+        .discort {
+        }
+        .twitter {
+        }
+      }
+      .textArea {
+        p {
+        }
+      }
+    }
+
+    .itsyourturn {
+      h6 {
+        span {
+          left: 160px !important;
+        }
+      }
+      button {
+      }
+    }
+
+    .openSea {
+      .hoodBTn {
+        .hood {
+          h6 {
+            &:first-child {
+              font-size: 42px;
+            }
+            &:last-child {
+              font-size: 54px;
+            }
+          }
+        }
+        .btn {
+          button {
+          }
+        }
+      }
+    }
+
+    .roadMap {
+      .container-fluid {
+        .rHood {
+          h6 {
+          }
+          img {
+          }
+        }
+        .firstArea {
+          .phaseImg {
+            margin-bottom: 100px;
+          }
+          p {
+            &:first-child {
+              font-size: 26px !important;
+            }
+            &:nth-child(2) {
+              font-size: 56px !important;
+            }
+            &:nth-child(3) {
+              font-size: 36px !important;
+            }
+          }
+          button {
+          }
+          .imgArea {
+            img {
+              width: 600px !important;
+              left: -67px !important;
+              top: -20px !important;
+            }
+          }
+        }
+
+        .secondArea {
+          .phaseImg {
+            margin-bottom: 100px;
+          }
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .opacityImag {
+              left: 19px !important;
+            }
+            .imgS {
+            }
+          }
+        }
+
+        .thirtArea {
+          .phaseImg {
+            margin-bottom: 100px;
+          }
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .opacityImag {
+            }
+            .imgS {
+              left: 240px !important;
+            }
+          }
+        }
+
+        .fourthArea {
+          .phaseImg {
+            margin-bottom: 100px;
+          }
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+              &:nth-child(4) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .imgS {
+            }
+          }
+        }
+      }
+      .container {
+        .buttonArea {
+          button {
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .gameArea {
+      .imgArea {
+        img {
+        }
+      }
+      .textArea {
+        margin-right: 50px !important;
+        margin-left: 0px !important;
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .gamemode {
+      .textArea {
+        h6 {
+        }
+        p {
+        }
+      }
+
+      .cardArea {
+        .cardItems {
+          img {
+            width: 150px !important;
+          }
+          .textArea {
+            padding: 0px 30px !important;
+            h6 {
+            }
+            p {
+              text-align: center !important;
+            }
+          }
+        }
+        .cardItemsTwo {
+          .imgBefore {
+            width: 130px !important;
+          }
+          img {
+            width: 150px !important;
+          }
+          .imgBefore {
+          }
+          .textArea {
+            h6 {
+            }
+            p {
+              text-align: center !important;
+            }
+          }
+        }
+      }
+    }
+
+    .gameAreaTwo {
+      .imgArea {
+        img {
+        }
+      }
+      .textArea {
+        margin-left: 50px !important;
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .roadMap {
+      .container-fluid {
+        .rHood {
+          h6 {
+          }
+          img {
+          }
+        }
+        .firstArea {
+          p {
+            &:first-child {
+            }
+            &:nth-child(2) {
+            }
+            &:nth-child(3) {
+            }
+          }
+          button {
+          }
+          .imgArea {
+            img {
+            }
+          }
+        }
+
+        .secondArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .opacityImag {
+              width: 600px !important;
+              left: 63px !important;
+            }
+            .imgS {
+            }
+          }
+        }
+
+        .thirtArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .opacityImag {
+              width: 350px !important;
+            }
+            .imgS {
+              width: 300px;
+            }
+          }
+        }
+
+        .fourthArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+              &:nth-child(4) {
+              }
+            }
+            button {
+            }
+          }
+          .imgArea {
+            .imgS {
+            }
+          }
+        }
+      }
+      .container {
+        .buttonArea {
+          button {
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .gamemode {
+      .textArea {
+        text-align: center;
+        h6 {
+        }
+        p {
+        }
+      }
+
+      .cardArea {
+        .cardItems {
+          img {
+            width: 150px !important;
+          }
+          .textArea {
+            h6 {
+            }
+            p {
+            }
+          }
+        }
+        .cardItemsTwo {
+          img {
+          }
+          .imgBefore {
+          }
+          .textArea {
+            padding: 0px 20px;
+            h6 {
+            }
+            p {
+            }
+          }
+        }
+      }
+    }
+    .theGameHeader {
+      background-image: url("../img/theGameBg.png");
+      background-size: cover !important;
+      .imgArea {
+        position: absolute;
+        right: unset !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .setupClan {
+      .col-12 {
+        .textArea {
+          margin: 0px 0px !important;
+          margin-bottom: 100px !important;
+          h6 {
+            text-align: center;
+          }
+          p {
+            text-align: center;
+          }
+        }
+      }
+      .slideText {
+        p {
+          span {
+            img {
+            }
+          }
+        }
+      }
+    }
+
+    .menuActive {
+      color: #06eab3 !important;
+      &::after {
+        width: 10%;
+        height: 20px;
+        content: " ";
+        position: absolute;
+        bottom: -15px;
+        left: -2px;
+        background-image: url("../img/icon/navbottom.png");
+        background-repeat: no-repeat;
+        background-size: 100% 60%;
+        background-position: center;
+        position: absolute;
+        left: 49%;
+        transform: translateX(-50%);
+      }
+    }
+
+    nav {
+      position: relative;
+      .navbar-collapse {
+        height: 100vh;
+        .mobilArea {
+          display: block !important;
+          position: absolute;
+          left: 50%;
+          top: 40%;
+          transform: translate(-50%, -50%);
+          .navbar-nav {
+            .nav-item {
+              text-align: center !important;
+              &:first-child {
+                margin-top: 50px;
+              }
+              .nav-link {
+              }
+            }
+          }
+          form {
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            .btnConnect {
+            }
+          }
+        }
+      }
+    }
+
+    .nftTExt {
+      .row {
+        .textAreaBtn {
+          .one {
+          }
+          .two {
+            width: 300px !important;
+          }
+          h6 {
+          }
+          button {
+          }
+        }
+      }
+    }
+
+    .sliderOne {
+      .owl-carousel {
+        .owl-nav {
+          .owl-prev {
+            width: 25px !important;
+            height: 25px !important;
+          }
+
+          .owl-next {
+            width: 25px !important;
+            height: 25px !important;
+          }
+        }
+        .owl-dots {
+          button {
+          }
+        }
+      }
+    }
+
+    .spAboutusHeader {
+      background-size: cover !important;
+      .headerArea {
+        img {
+          width: 350px !important;
+        }
+        p {
+          width: 600px !important;
+        }
+      }
+    }
+
+    .joinTheTeam {
+      background-size: cover !important;
+      background-position: right;
+      .textArea {
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    footer {
+      background-size: cover;
+      .logorea {
+        img {
+        }
+      }
+      .socialArea {
+        img {
+        }
+        .discort {
+        }
+        .twitter {
+        }
+      }
+      .textArea {
+        p {
+        }
+      }
+    }
+
+    .gameAreaThree {
+      .imgArea {
+        img {
+        }
+      }
+      .textArea {
+        margin-left: 0px !important;
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .itsyourturn {
+      h6 {
+        span {
+          left: 128px !important;
+        }
+      }
+      button {
+      }
+    }
+
+    .openSea {
+      padding-top: 200px !important;
+      .hoodBTn {
+        display: block !important;
+        text-align: center;
+        .hood {
+          h6 {
+            &:first-child {
+            }
+            &:last-child {
+            }
+          }
+        }
+        .btn {
+          button {
+          }
+        }
+      }
+    }
+
+    .roadMap {
+      margin-bottom: 350px;
+      .container-fluid {
+        height: 3800px !important;
+        .rHood {
+          h6 {
+          }
+          img {
+          }
+        }
+        .firstArea {
+          p {
+            &:first-child {
+            }
+            &:nth-child(2) {
+            }
+            &:nth-child(3) {
+            }
+          }
+          button {
+            font-size: 18px !important;
+          }
+          .imgArea {
+            img {
+            }
+          }
+        }
+
+        .secondArea {
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+              font-size: 18px !important;
+            }
+          }
+          .imgArea {
+            .opacityImag {
+            }
+            .imgS {
+            }
+          }
+        }
+
+        .thirtArea {
+          margin-top: 450px !important;
+          .textArea {
+            p {
+              &:first-child {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+            }
+            button {
+              font-size: 18px !important;
+            }
+          }
+          .imgArea {
+            .opacityImag {
+            }
+            .imgS {
+            }
+          }
+        }
+
+        .fourthArea {
+          .textArea {
+            p {
+              &:first-child {
+                font-size: 124px !important;
+              }
+              &:nth-child(2) {
+                font-size: 26px !important;
+              }
+              &:nth-child(3) {
+                font-size: 42px !important;
+                line-height: 46px !important;
+                margin: 0px 30px;
+              }
+              &:nth-child(4) {
+              }
+            }
+            button {
+              font-size: 18px !important;
+            }
+          }
+          .imgArea {
+            .imgS {
+            }
+          }
+        }
+
+        .phaseArea {
+          display: grid !important;
+          place-items: center;
+          img {
+            &:first-child {
+              margin-top: 100px;
+            }
+            margin-top: 25px;
+          }
+        }
+      }
+      .container {
+        .buttonArea {
+          button {
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .gameAreaFour {
+      .imgArea {
+        img {
+        }
+      }
+      .textArea {
+        text-align: center !important;
+        h6 {
+          text-align: center !important;
+        }
+        p {
+        }
+      }
+    }
+
+    .gameAreaThree {
+      .imgArea {
+        img {
+        }
+      }
+      .textArea {
+        text-align: center !important;
+        h6 {
+          text-align: center !important;
+        }
+        p {
+        }
+      }
+    }
+
+    .gameAreaTwo {
+      .imgArea {
+        img {
+        }
+      }
+      .textArea {
+        margin-left: 0px !important;
+        text-align: center !important;
+        h6 {
+          text-align: center !important;
+        }
+        p {
+        }
+      }
+    }
+    .gameArea {
+      .imgArea {
+        img {
+        }
+      }
+      .textArea {
+        margin-right: 0px !important;
+        text-align: center !important;
+        h6 {
+          text-align: center !important;
+        }
+        p {
+        }
+      }
+    }
+
+    .spAboutusHeader {
+      .headerArea {
+        width: 100% !important;
+        img {
+          width: 350px !important;
+        }
+        p {
+          width: 100% !important;
+          padding: 20px 30px;
+        }
+      }
+    }
+
+    .setupClan {
+      .col-12 {
+        .textArea {
+          width: 100% !important
+        ;
+          h6 {
+          }
+          p {
+          }
+        }
+      }
+      .slideText {
+        p {
+          span {
+            img {
+            }
+          }
+        }
+      }
+    }
+
+    .teamMate {
+      .persons {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+        .person {
+          img {
+          }
+          .name {
+          }
+          .position {
+          }
+        }
+      }
+    }
+
+    .itsyourturn {
+      h6 {
+        line-height: 82px !important;
+        span {
+          left: 83px !important;
+        }
+      }
+      button {
+      }
+    }
+
+    .openSea {
+      padding-top: 200px !important;
+      .hoodBTn {
+        text-align-last: center;
+        display: block;
+        .hood {
+          h6 {
+            &:first-child {
+              text-align: center;
+              font-size: 36px !important;
+            }
+            &:last-child {
+              text-align: center;
+              font-size: 56px !important;
+            }
+          }
+        }
+
+        .btn {
+          button {
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .itsyourturn {
+      h6 {
+        span {
+        }
+      }
+      button {
+      }
+    }
+
+    .theGameHeader {
+      .imgArea {
+        img {
+          width: 350px;
+          height: auto;
+        }
+      }
+    }
+
+    .Ourteam {
+      text-align: center;
+      .textAreaTeam {
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+
+    .joinTheTeam {
+      text-align: center;
+      .textArea {
+        h6 {
+        }
+        p {
+        }
+      }
+    }
+    .spAboutusHeader {
+      .headerArea {
+        width: 100% !important;
+        img {
+          width: 250px !important;
+        }
+        p {
+          width: 100% !important;
+          text-align: center !important;
+          padding: 20px 30px;
+        }
+      }
+    }
+    .sliderOne {
+      .owl-carousel {
+        .owl-nav {
+          .owl-prev {
+            width: 15px !important;
+            height: 15px !important;
+            left: 30px !important;
+          }
+
+          .owl-next {
+            width: 15px !important;
+            height: 15px !important;
+            right: 30px !important;
+          }
+        }
+        .owl-dots {
+          bottom: 10px !important;
+          button {
+          }
+        }
+      }
+    }
+
+    .teamMate {
+      .persons {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        .person {
+          img {
+          }
+          .name {
+          }
+          .position {
+          }
+        }
+      }
+    }
+
+    .manifestoText {
+      .textArea {
+        h6 {
+          font-size: 56px;
+        }
+        p {
+        }
+      }
+    }
+
+    .openSea {
+      .hoodBTn {
+        .hood {
+          h6 {
+            &:first-child {
+            }
+            &:last-child {
+            }
+          }
+        }
+        .btn {
+          button {
+            width: 320px !important;
+          }
+        }
+      }
+    }
+
+    footer {
+      padding: 0px !important;
+      .logorea {
+        img {
+        }
+      }
+      .socialArea {
+        img {
+        }
+        .discort {
+        }
+        .twitter {
+        }
+      }
+      .textArea {
+        p {
+        }
+      }
+    }
+
+    .openSea {
+      .hoodBTn {
+        .hood {
+          h6 {
+            &:first-child {
+              font-size: 26px !important;
+            }
+            &:last-child {
+              font-size: 36px !important;
+            }
+          }
+        }
+        .btn {
+          button {
+            height: 70px !important;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 468px) {
+    .teamMate {
+      .persons {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr !important;
+        .person {
+          img {
+          }
+          .name {
+          }
+          .position {
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .itsyourturn {
+      h6 {
+        span {
+          left: 134px !important;
+        }
+      }
+    .owl-dots {
+        bottom: 10px !important;
+        button {
         }
       }
     }
@@ -3183,7 +3434,7 @@ footer {
     .persons {
       display: grid;
       grid-template-rows: 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr !important;
+      grid-template-columns: 1fr 1fr 1fr !important;
       .person {
         img {
         }
@@ -3195,104 +3446,42 @@ footer {
     }
   }
 
-  .itsyourturn {
-    h6 {
-      line-height: 82px !important;
-      span {
-        left: 83px !important;
+  footer {
+    padding: 0px !important;
+    .logorea {
+      img {
       }
     }
-    button {
-    }
-  }
-
-  .openSea {
-    padding-top: 200px !important;
-    .hoodBTn {
-      text-align-last: center;
-      display: block;
-      .hood {
-        h6 {
-          &:first-child {
-            text-align: center;
-            font-size: 36px !important;
-          }
-          &:last-child {
-            text-align: center;
-            font-size: 56px !important;
-          }
-        }
+    .socialArea {
+      img {
       }
-      .btn {
-        button {
-        }
+      .discort {
+      }
+      .twitter {
+      }
+    }
+    .textArea {
+      p {
       }
     }
   }
 }
 
-@media only screen and (max-width: 576px) {
-  .itsyourturn {
-    h6 {
-      span {
-      }
-    }
-    button {
-    }
-  }
-
-  .theGameHeader {
-    .imgArea {
-      img {
-        width: 350px;
-        height: auto;
-      }
-    }
-  }
-
-  .Ourteam {
-    text-align: center;
-    .textAreaTeam {
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-
-  .joinTheTeam {
-    text-align: center;
-    .textArea {
-      h6 {
-      }
-      p {
-      }
-    }
-  }
-  .spAboutusHeader {
-    .headerArea {
-      width: 100% !important;
-      img {
-        width: 250px !important;
-      }
-      p {
-        width: 100% !important;
-        text-align: center !important;
-        padding: 20px 30px;
-      }
-    }
-  }
-  .sliderOne {
-    .owl-carousel {
-      .owl-nav {
-        .owl-prev {
-          width: 15px !important;
-          height: 15px !important;
-          left: 30px !important;
+@media only screen and (max-width: 468px) {
+  .teamMate {
+    .persons {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr !important;
+      .person {
+        img {
         }
-
-        .owl-next {
-          width: 15px !important;
+        .name {
+        }
+        .position {
+        }
+      }
+dth: 15px !important;
           height: 15px !important;
           right: 30px !important;
         }
@@ -3321,29 +3510,65 @@ footer {
     }
   }
 
-  .manifestoText {
-    .textArea {
-      h6 {
-        font-size: 56px;
+  footer {
+    padding: 0px !important;
+    .logorea {
+      img {
       }
+    }
+    .socialArea {
+      img {
+      }
+      .discort {
+      }
+      .twitter {
+      }
+    }
+    .textArea {
       p {
       }
     }
   }
+}
 
-  .openSea {
-    .hoodBTn {
-      .hood {
-        h6 {
-          &:first-child {
-          }
-          &:last-child {
-          }
+@media only screen and (max-width: 468px) {
+  .teamMate {
+    .persons {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr !important;
+      .person {
+        img {
+        }
+        .name {
+        }
+        .position {
         }
       }
-      .btn {
+width: 15px !important;
+          height: 15px !important;
+          right: 30px !important;
+        }
+      }
+      .owl-dots {
+        bottom: 10px !important;
         button {
-          width: 320px !important;
+        }
+      }
+    }
+  }
+
+  .teamMate {
+    .persons {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr !important;
+      .person {
+        img {
+        }
+        .name {
+        }
+        .position {
         }
       }
     }
@@ -3368,26 +3593,6 @@ footer {
       }
     }
   }
-
-  .openSea {
-    .hoodBTn {
-      .hood {
-        h6 {
-          &:first-child {
-            font-size: 26px !important;
-          }
-          &:last-child {
-            font-size: 36px !important;
-          }
-        }
-      }
-      .btn {
-        button {
-          height: 70px !important;
-        }
-      }
-    }
-  }
 }
 
 @media only screen and (max-width: 468px) {
@@ -3404,18 +3609,6 @@ footer {
         .position {
         }
       }
-    }
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .itsyourturn {
-    h6 {
-      span {
-        left: 134px !important;
-      }
-    }
-    button {
     }
   }
 }

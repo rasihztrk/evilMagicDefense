@@ -1071,14 +1071,14 @@ footer .textArea p {
 }
 
 .gameAreaTwo .textArea h6 {
-  font-size: 46px;
+  font-size: 60px;
   text-align: start;
   color: white;
   font-family: "BohemianSoul-Regular";
 }
 
 .gameAreaTwo .textArea p {
-  font-size: 18px;
+  font-size: 35px;
   color: white;
 }
 
@@ -1382,7 +1382,7 @@ footer .textArea p {
   background-image: url("../img/openSeaArea.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding-top: 150px;
+  padding-top: 200px;
   padding-bottom: 100px;
 }
 
@@ -1394,6 +1394,10 @@ footer .textArea p {
   display: -ms-flexbox;
   display: flex;
   place-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 .openSea .hoodBTn .hood h6:first-child {
@@ -1402,10 +1406,16 @@ footer .textArea p {
   font-size: 56px;
 }
 
-.openSea .hoodBTn .hood h6:last-child {
+.openSea .hoodBTn .hood h6:nth-child(2) {
   font-family: "Cornerstone";
   color: white;
   font-size: 76px;
+}
+
+.openSea .hoodBTn .hood a img {
+  width: 50px;
+  height: auto;
+  margin-top: 15px;
 }
 
 .openSea .hoodBTn .btn button {
