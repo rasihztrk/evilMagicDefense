@@ -31,11 +31,12 @@
     <div class="container">
       <div class="col-12">
         <div class="textMntdate">
-          <p>MINT DATE</p>
+          <p>"If <span style="color: #15ceaf;">Heartstone</span> and <span style="color: #15ceaf;">Team Fight Tactics</span> had a child, </p>
+          <p class="textMntdate2">it would look like this."</p>
         </div>
       </div>
     </div>
-    <div class="container">
+    <!--<div class="container">
       <div class="row">
         <div class="col-12 col-lg-6">
           <div class="hood">
@@ -97,7 +98,7 @@
             </div>
           </div>
           <div class="col-6"></div>
-        </div>
+        </div>-->
       </div>
   </section>
   <section class="video">
@@ -135,7 +136,7 @@
       </div>
       <div class="row secondArea">
         <div class="col-12 col-lg-6 position-relative">
-          <div class="imgArea d-none d-lg-block" data-aos="fade-up">
+          <div class="imgArea d-none d-lg-block">
             <img class="opacityImag" src="./assets/img/icon/paladin.png" alt="">
             <img class="imgS" src="./assets/img/icon/monk.png" alt="">
           </div>
@@ -171,7 +172,7 @@
               dolore magna aliquam erat volutpat. Ut wisi enim ad
               minim veniam, quis nostrud exerci tation ullamcorper
               suscipit lobortis nisl ut aliquip ex</p>
-            <button>The Team</button>
+            <button>Tokenomics</button>
           </div>
         </div>
         <div class="col-12 col-lg-6 position-relative">
@@ -184,30 +185,31 @@
       <div class="row fourthArea">
         <div class="col-12 col-lg-6 position-relative">
           <div class="imgArea d-none d-lg-block" data-aos="fade-up">
-            <img class="imgS" src="./assets/img/icon/Artifactweapons.png" alt="">
+            <img class="imgS" src="./assets/img/icon/logo-min.png" alt="">
           </div>
         </div>
         <div class="col-12 col-lg-6">
           <div class="phaseArea" data-aos="fade-up">
+          <img class="phaseImg d-block d-lg-none logo" src="./assets/img/icon/logo-min.png" alt="">
             <img class="phaseImg d-block d-lg-none phaseFour" src="./assets/img/icon/p4.png" alt="">
           </div>
           <div class="textArea" data-aos="fade-up">
-            <p>NFT</p>
-            <p>First set of</p>
-            <p>Ancient Items <br> release</p>
+            <p> </p>
+            <p>Beta Test</p>
+            <p>EMD</p>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
               sed diam nonummy nibh euismod tincidunt ut laoreet
               dolore magna aliquam erat volutpat. Ut wisi enim ad
               minim veniam, quis nostrud exerci tation ullamcorper
               suscipit lobortis nisl ut aliquip ex</p>
-            <button>The Team</button>
+            <button><a style="text-decoration: none; color: #ffff;" href="./theGame.php">The Game</a></button>
           </div>
         </div>
       </div>
       <div class="row fiveArea d-none">
         <div class="col-12 col-lg-6">
           <div class="phaseArea" data-aos="fade-up">
-            <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p4.png" alt="">
+            <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p5.png" alt="">
           </div>
           <div class="textArea" data-aos="fade-up">
             <p>First set of</p>
@@ -217,7 +219,6 @@
               dolore magna aliquam erat volutpat. Ut wisi enim ad
               minim veniam, quis nostrud exerci tation ullamcorper
               suscipit lobortis nisl ut aliquip ex</p>
-            <button>The Team</button>
           </div>
         </div>
         <div class="col-12 col-lg-6 position-relative">
@@ -228,34 +229,32 @@
         </div>
         <div class="col-12 col-lg-6">
           <div class="phaseArea" data-aos="fade-up">
-            <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p4.png" alt="">
+            <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p6.png" alt="">
           </div>
           <div class="textArea" data-aos="fade-up">
-            <p>First set of</p>
-            <p>Ancient Items <br> release</p>
+            <p>NFT</p>
+            <p>Cave Sales<br> Limited</p>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
               sed diam nonummy nibh euismod tincidunt ut laoreet
               dolore magna aliquam erat volutpat. Ut wisi enim ad
               minim veniam, quis nostrud exerci tation ullamcorper
               suscipit lobortis nisl ut aliquip ex</p>
-            <button>The Team</button>
           </div>
         </div>
       </div>
       <div class="row sevenArea d-none">
         <div class="col-12 col-lg-6">
           <div class="phaseArea" data-aos="fade-up">
-            <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p4.png" alt="">
+            <img class="phaseImg d-block d-lg-none" src="./assets/img/icon/p7.png" alt="">
           </div>
           <div class="textArea" data-aos="fade-up">
-            <p>First set of</p>
-            <p>Ancient Items <br> release</p>
+            <p>EMD</p>
+            <p>Softlaunch</p>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
               sed diam nonummy nibh euismod tincidunt ut laoreet
               dolore magna aliquam erat volutpat. Ut wisi enim ad
               minim veniam, quis nostrud exerci tation ullamcorper
               suscipit lobortis nisl ut aliquip ex</p>
-            <button>The Team</button>
           </div>
         </div>
         <div class="col-12 col-lg-6 position-relative">
@@ -288,7 +287,7 @@
         <div class="row">
           <div class="col-12 col-md-6">
             <div class="imgArea">
-              <img class="img-fluid" src="./assets/img/icon/Varlık142x.png" alt="">
+              <img class="img-fluid" data-aos="flip-left" src="./assets/img/icon/Varlık142x.png" alt="">
             </div>
           </div>
           <div class="col-12 col-md-6">

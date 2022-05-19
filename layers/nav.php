@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="./">
-            <img class="img-fluid" src="./assets/img/icon/logo.png" alt="">
+            <img class="ms-3 img-fluid" src="./assets/img/icon/logo.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,10 +28,10 @@
                         <a class="nav-link eyes" href="#">GALLERY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">DOCS</a>
+                        <a class="nav-link" href="EMD_Pitch Deck.pdf" target="_blank">DOCS</a>
                     </li>
                 </ul>
-                <form class="d-flex">
+                <form class="d-flex align-items-center">
                     <div class="socialArea">
                         <a href="">
                             <img class="twitterNav" src="./assets/img/icon/twitter.png" alt="">

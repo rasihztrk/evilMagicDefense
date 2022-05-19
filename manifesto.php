@@ -86,7 +86,7 @@
                             <h6>BECOME AN EVIL WIZARD &</h6>
                             <h6>JOIN THE DEFENSE</h6>
                             <a href="">
-                                <img src="./assets/img/icon/discort.svg" alt="">
+                                <img src="./assets/img/icon/discord.png" alt="">
                             </a>
                         </div>
                         <div class="btn d-none">

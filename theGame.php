@@ -31,9 +31,9 @@
             <div class="row">
                 <div class="col-12">
                     <div class="textArea">
-                        <h6>A unique and fresh P2E-Autochess experience</h6>
-                        <p>Evil sorcerer took the internet from the world and people got mad! Heroes and armies marched
-                            towards the castle to defeat the evil sorcerer. Yet, none of them are aware that they are only a
+                        <h6>A unique and fresh <br>P2E-Autochess experience</h6>
+                        <p>Evil sorcerer took the internet from the world and people got mad!<br> Heroes and armies marched
+                            towards the castle to defeat the evil sorcerer.<br> Yet, none of them are aware that they are only a
                             pawn in the evil sorcerer's plans!</p>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
     <section class="gameAreaTwo">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-6 position-relative">
+                <div class="col-12 col-md-6">
                     <div class="textArea">
                         <h6>Battle your rivals</h6>
                         <p>When you are ready, battle through PVP game
@@ -84,7 +84,7 @@
             <div class="row">
                 <div class="col-12 col-md-6  d-none d-md-block">
                     <div class="imgArea">
-                        <img src="./assets/img/icon/Artifactweapons.png" alt="">
+                        <img src="./assets/img/icon/Artifactweapons1.png" alt="">
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -104,7 +104,7 @@
     <section class="gameAreaFour">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-6 position-relative">
+                <div class="col-12 col-md-6">
                     <div class="textArea">
                         <h6>Earn real money</h6>
                         <p>You can get EMD token as you participate
@@ -246,7 +246,7 @@
             <div class="row">
                 <div class="col-12">
                     <h6>It's &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span>YOUR</span> turn to rule the World!</h6>
-                    <button>Whitepaper</button>
+                    <button><a class="nav-link" href="EMD_Pitch Deck.pdf" target="_blank" style="text-decoration: none; color: #ffff;">Whitepaper </a></button>
                 </div>
             </div>
         </div>

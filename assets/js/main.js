@@ -1,287 +1,286 @@
-$(document).ready(function () {
-  function getTimeRemaining(endtime) {
-    var p = Date.parse(endtime) - Date.parse(new Date());
-    var secondsTwo = Math.floor((p / 1000) % 60);
-    var minutesTwo = Math.floor((p / 1000 / 60) % 60);
-    var hoursTwo = Math.floor((p / (1000 * 60 * 60)) % 24);
-    var daysTwo = Math.floor(p / (1000 * 60 * 60 * 24));
-    return {
-      totalTwo: p,
-      daysTwo: daysTwo,
-      hoursTwo: hoursTwo,
-      minutesTwo: minutesTwo,
-      secondsTwo: secondsTwo,
-    };
-  }
-
-  function initializeClockTwo(id, endtime) {
-    var clockTwo = document.getElementById(id);
-    var daysSpanTwo = clockTwo.querySelector(".daysTwo");
-    var hoursSpanTwo = clockTwo.querySelector(".hoursTwo");
-    var minutesSpanTwo = clockTwo.querySelector(".minutesTwo");
-    var secondsSpanTwo = clockTwo.querySelector(".secondsTwo");
-
-    function updateClockTwo() {
-      var p = getTimeRemaining(endtime);
-      daysSpanTwo.innerHTML = p.daysTwo;
-      hoursSpanTwo.innerHTML = ("0" + p.hoursTwo).slice(-2);
-      minutesSpanTwo.innerHTML = ("0" + p.minutesTwo).slice(-2);
-      secondsSpanTwo.innerHTML = ("0" + p.secondsTwo).slice(-2);
-
-      if (p.total <= 0) {
-        clearInterval(timeintervalTwo);
-      }
+$(document).ready(function() {
+    function getTimeRemaining(endtime) {
+        var p = Date.parse(endtime) - Date.parse(new Date());
+        var secondsTwo = Math.floor((p / 1000) % 60);
+        var minutesTwo = Math.floor((p / 1000 / 60) % 60);
+        var hoursTwo = Math.floor((p / (1000 * 60 * 60)) % 24);
+        var daysTwo = Math.floor(p / (1000 * 60 * 60 * 24));
+        return {
+            totalTwo: p,
+            daysTwo: daysTwo,
+            hoursTwo: hoursTwo,
+            minutesTwo: minutesTwo,
+            secondsTwo: secondsTwo,
+        };
     }
 
-    updateClockTwo();
-    var timeintervalTwo = setInterval(updateClockTwo, 1000);
-  }
+    function initializeClockTwo(id, endtime) {
+        var clockTwo = document.getElementById(id);
+        var daysSpanTwo = clockTwo.querySelector(".daysTwo");
+        var hoursSpanTwo = clockTwo.querySelector(".hoursTwo");
+        var minutesSpanTwo = clockTwo.querySelector(".minutesTwo");
+        var secondsSpanTwo = clockTwo.querySelector(".secondsTwo");
 
-  var deadlineTwo = "June 27 2022 19:00:00 UTC";
-  initializeClockTwo("countdownTwo", deadlineTwo);
+        function updateClockTwo() {
+            var p = getTimeRemaining(endtime);
+            daysSpanTwo.innerHTML = p.daysTwo;
+            hoursSpanTwo.innerHTML = ("0" + p.hoursTwo).slice(-2);
+            minutesSpanTwo.innerHTML = ("0" + p.minutesTwo).slice(-2);
+            secondsSpanTwo.innerHTML = ("0" + p.secondsTwo).slice(-2);
+
+            if (p.total <= 0) {
+                clearInterval(timeintervalTwo);
+            }
+        }
+
+        updateClockTwo();
+        var timeintervalTwo = setInterval(updateClockTwo, 1000);
+    }
+
+    var deadlineTwo = "June 27 2022 19:00:00 UTC";
+    initializeClockTwo("countdownTwo", deadlineTwo);
 });
 
-$(document).ready(function () {
-  function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor((t / 1000) % 60);
-    var minutes = Math.floor((t / 1000 / 60) % 60);
-    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    return {
-      total: t,
-      days: days,
-      hours: hours,
-      minutes: minutes,
-      seconds: seconds,
-    };
-  }
-
-  function initializeClock(id, endtime) {
-    var clock = document.getElementById(id);
-    var daysSpan = clock.querySelector(".days");
-    var hoursSpan = clock.querySelector(".hours");
-    var minutesSpan = clock.querySelector(".minutes");
-    var secondsSpan = clock.querySelector(".seconds");
-
-    function updateClock() {
-      var t = getTimeRemaining(endtime);
-      daysSpan.innerHTML = t.days;
-      hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
-      minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
-      secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
-
-      if (t.total <= 0) {
-        clearInterval(timeinterval);
-      }
+$(document).ready(function() {
+    function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            total: t,
+            days: days,
+            hours: hours,
+            minutes: minutes,
+            seconds: seconds,
+        };
     }
 
-    updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
-  }
+    function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector(".days");
+        var hoursSpan = clock.querySelector(".hours");
+        var minutesSpan = clock.querySelector(".minutes");
+        var secondsSpan = clock.querySelector(".seconds");
 
-  var deadline = "june 27 2022 19:30:00 UTC";
-  initializeClock("countdown", deadline);
+        function updateClock() {
+            var t = getTimeRemaining(endtime);
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
+            minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
+
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+            }
+        }
+
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = "june 27 2022 19:30:00 UTC";
+    initializeClock("countdown", deadline);
 });
 
-$(document).ready(function () {
-  $(".owl-Two").owlCarousel({
-    loop: true,
-    margin: 10,
-    autoplay: true,
-    center: true,
-    slideTransition: "linear",
-    autoplaySpeed: 6000,
-    smartSpeed: 6000,
-    rtl: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 3,
-      },
-      1200: {
-        items: 8,
-        1300: {
-          items: 9,
+$(document).ready(function() {
+    $(".owl-Two").owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        center: true,
+        slideTransition: "linear",
+        autoplaySpeed: 6000,
+        smartSpeed: 6000,
+        rtl: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 3,
+            },
+            1200: {
+                items: 8,
+                1300: {
+                    items: 9,
+                },
+            },
         },
-      },
-    },
-  });
+    });
 
-  $(".owl-Three").owlCarousel({
-    loop: true,
-    margin: 10,
-    autoplay: true,
-    center: true,
-    slideTransition: "linear",
-    autoplaySpeed: 6000,
-    smartSpeed: 6000,
-    rtl: false,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 3,
-      },
-      1200: {
-        items: 8,
-        1300: {
-          items: 9,
+    $(".owl-Three").owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        center: true,
+        slideTransition: "linear",
+        autoplaySpeed: 6000,
+        smartSpeed: 6000,
+        rtl: false,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 3,
+            },
+            1200: {
+                items: 8,
+                1300: {
+                    items: 9,
+                },
+            },
         },
-      },
-    },
-  });
+    });
 
-  $(".owl-Four").owlCarousel({
-    loop: true,
-    margin: 10,
-    autoplay: true,
-    center: true,
-    slideTransition: "linear",
-    autoplaySpeed: 6000,
-    smartSpeed: 6000,
-    rtl: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 3,
-      },
-      1200: {
-        items: 8,
-        1300: {
-          items: 9,
+    $(".owl-Four").owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        center: true,
+        slideTransition: "linear",
+        autoplaySpeed: 6000,
+        smartSpeed: 6000,
+        rtl: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 3,
+            },
+            1200: {
+                items: 8,
+                1300: {
+                    items: 9,
+                },
+            },
         },
-      },
-    },
-  });
+    });
 });
 
-$(document).ready(function () {
-  $(window).scroll(function (event) {
-    var scroll = $(window).scrollTop();
-    if (scroll >= "200") {
-      $("nav").css({ "background-color": "rgb(0 0 0 / 56%)" });
-    } else if (scroll <= "200") {
-      $("nav").css({ "background-color": "transparent" });
+$(document).ready(function() {
+    $(window).scroll(function(event) {
+        var scroll = $(window).scrollTop();
+        if (scroll >= "200") {
+            $("nav").css({ "background-color": "rgb(0 0 0 / 56%)" });
+        } else if (scroll <= "200") {
+            $("nav").css({ "background-color": "transparent" });
+        }
+    });
+
+    var clickNav = true;
+
+    $(".navbar-toggler").click(function() {
+        if (clickNav) {
+            clickNav = false;
+            var scroll = $(window).scrollTop();
+            if (scroll <= "200") {
+                $("nav").css({ "background-color": "black" });
+            }
+            if (scroll >= "200") {
+                $("nav").css({ "background-color": "black" });
+            }
+        } else if (!clickNav) {
+            clickNav = true;
+            var scroll = $(window).scrollTop();
+            if (scroll <= "200") {
+                $("nav").css({ "background-color": "transparent" });
+            }
+            if (scroll >= "200") {
+                $("nav").css({ "background-color": "rgb(0 0 0 / 56%)" });
+            }
+        }
+    });
+
+    const currentLocation = location.href;
+    const menuItem = document.querySelectorAll(".nav-link");
+    const menuLength = menuItem.length;
+    for (let i = 0; i < menuLength; i++) {
+        if (menuItem[i].href === currentLocation) {
+            menuItem[i].className = "nav-link menuActive";
+        }
     }
-  });
 
-  var clickNav = true;
+    $(function() {
+        var Accordion = function(el, multiple) {
+            this.el = el || {};
+            this.multiple = multiple || false;
 
-  $(".navbar-toggler").click(function () {
-    if (clickNav) {
-      clickNav = false;
-      var scroll = $(window).scrollTop();
-      if (scroll <= "200") {
-        $("nav").css({ "background-color": "black" });
-      }
-      if (scroll >= "200") {
-        $("nav").css({ "background-color": "black" });
-      }
-    } else if (!clickNav) {
-      clickNav = true;
-      var scroll = $(window).scrollTop();
-      if (scroll <= "200") {
-        $("nav").css({ "background-color": "transparent" });
-      }
-      if (scroll >= "200") {
-        $("nav").css({ "background-color": "rgb(0 0 0 / 56%)" });
-      }
+            var links = this.el.find(".article-title");
+            links.on(
+                "click", {
+                    el: this.el,
+                    multiple: this.multiple,
+                },
+                this.dropdown
+            );
+        };
+
+        Accordion.prototype.dropdown = function(e) {
+            var $el = e.data.el;
+            ($this = $(this)), ($next = $this.next());
+
+            $next.slideToggle();
+            $this.parent().toggleClass("open");
+
+            if (!e.data.multiple) {
+                $el
+                    .find(".accordion-content")
+                    .not($next)
+                    .slideUp()
+                    .parent()
+                    .removeClass("open");
+            }
+        };
+        var accordion = new Accordion($(".accordion-container"), false);
+    });
+
+    AOS.init({
+        duration: 1200,
+    });
+
+    if (window.innerWidth >= 992) {
+        $("#longRoadMap").click(function() {
+            $("#roadMapLine").attr("src", "./assets/img/icon/roadMapLineTwo.png");
+            $(".fiveArea").removeClass("d-none");
+            $(".sixArea").removeClass("d-none");
+            $("#longRoadMap").addClass("d-none");
+            $("#CloseRoadMap").removeClass("d-none");
+            $(".sevenArea").removeClass("d-none");
+            $(".heightRoadMap").animate({ height: "5820px" }, 1000);
+        });
+
+        $("#CloseRoadMap").click(function() {
+            $("#roadMapLine").attr("src", "./assets/img/icon/roadMapLine.png");
+            $(".fiveArea").addClass("d-none");
+            $(".sixArea").addClass("d-none");
+            $(".sevenArea").addClass("d-none");
+            $("#longRoadMap").removeClass("d-none");
+            $("#CloseRoadMap").addClass("d-none");
+            $(".heightRoadMap").animate({ height: "4000px" }, 1000);
+        });
+    } else if (window.innerWidth <= 992) {
+        $("#longRoadMap").click(function() {
+            $("#roadMapLine").attr("src", "./assets/img/icon/roadMapLineTwo.png");
+            $(".fiveArea").removeClass("d-none");
+            $(".sixArea").removeClass("d-none");
+            $("#longRoadMap").addClass("d-none");
+            $("#CloseRoadMap").removeClass("d-none");
+            $(".sevenArea").removeClass("d-none");
+            $(".heightRoadMap").animate({ height: "100%" }, 1000);
+        });
+
+        $("#CloseRoadMap").click(function() {
+            $("#roadMapLine").attr("src", "./assets/img/icon/roadMapLine.png");
+            $(".fiveArea").addClass("d-none");
+            $(".sixArea").addClass("d-none");
+            $(".sevenArea").addClass("d-none");
+            $("#longRoadMap").removeClass("d-none");
+            $("#CloseRoadMap").addClass("d-none");
+            $(".heightRoadMap").animate({ height: "100%" }, 1000);
+        });
     }
-  });
-
-  const currentLocation = location.href;
-  const menuItem = document.querySelectorAll(".nav-link");
-  const menuLength = menuItem.length;
-  for (let i = 0; i < menuLength; i++) {
-    if (menuItem[i].href === currentLocation) {
-      menuItem[i].className = "nav-link menuActive";
-    }
-  }
-
-  $(function () {
-    var Accordion = function (el, multiple) {
-      this.el = el || {};
-      this.multiple = multiple || false;
-
-      var links = this.el.find(".article-title");
-      links.on(
-        "click",
-        {
-          el: this.el,
-          multiple: this.multiple,
-        },
-        this.dropdown
-      );
-    };
-
-    Accordion.prototype.dropdown = function (e) {
-      var $el = e.data.el;
-      ($this = $(this)), ($next = $this.next());
-
-      $next.slideToggle();
-      $this.parent().toggleClass("open");
-
-      if (!e.data.multiple) {
-        $el
-          .find(".accordion-content")
-          .not($next)
-          .slideUp()
-          .parent()
-          .removeClass("open");
-      }
-    };
-    var accordion = new Accordion($(".accordion-container"), false);
-  });
-
-  AOS.init({
-    duration: 1200,
-  });
-
-  if (window.innerWidth >= 992) {
-    $("#longRoadMap").click(function () {
-      $("#roadMapLine").attr("src", "./assets/img/icon/roadMapLineTwo.png");
-      $(".fiveArea").removeClass("d-none");
-      $(".sixArea").removeClass("d-none");
-      $("#longRoadMap").addClass("d-none");
-      $("#CloseRoadMap").removeClass("d-none");
-      $(".sevenArea").removeClass("d-none");
-      $(".heightRoadMap").animate({ height: "5900px" }, 1000);
-    });
-
-    $("#CloseRoadMap").click(function () {
-      $("#roadMapLine").attr("src", "./assets/img/icon/roadMapLine.png");
-      $(".fiveArea").addClass("d-none");
-      $(".sixArea").addClass("d-none");
-      $(".sevenArea").addClass("d-none");
-      $("#longRoadMap").removeClass("d-none");
-      $("#CloseRoadMap").addClass("d-none");
-      $(".heightRoadMap").animate({ height: "4000px" }, 1000);
-    });
-  } else if (window.innerWidth <= 992) {
-    $("#longRoadMap").click(function () {
-      $("#roadMapLine").attr("src", "./assets/img/icon/roadMapLineTwo.png");
-      $(".fiveArea").removeClass("d-none");
-      $(".sixArea").removeClass("d-none");
-      $("#longRoadMap").addClass("d-none");
-      $("#CloseRoadMap").removeClass("d-none");
-      $(".sevenArea").removeClass("d-none");
-      $(".heightRoadMap").animate({ height: "100%" }, 1000);
-    });
-
-    $("#CloseRoadMap").click(function () {
-      $("#roadMapLine").attr("src", "./assets/img/icon/roadMapLine.png");
-      $(".fiveArea").addClass("d-none");
-      $(".sixArea").addClass("d-none");
-      $(".sevenArea").addClass("d-none");
-      $("#longRoadMap").removeClass("d-none");
-      $("#CloseRoadMap").addClass("d-none");
-      $(".heightRoadMap").animate({ height: "100%" }, 1000);
-    });
-  }
 });
