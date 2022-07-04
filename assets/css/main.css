@@ -1,1970 +1,586 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "BohemianSoul-Regular";
-  src: url("../font-family/BohemianSoul-Regular.woff2") format("opentype");
+    font-family: "BohemianSoul-Regular";
+    src: url("../font-family/BohemianSoul-Regular.woff2") format("opentype");
 }
 
 @font-face {
-  font-family: "Cornerstone";
-  src: url("../font-family/Cornerstone.woff2") format("opentype");
+    font-family: "Cornerstone";
+    src: url("../font-family/Cornerstone.woff2") format("opentype");
+}
+
+.textAreaSpecialArea span {
+    color: #f1036a;
+    font-family: "BohemianSoul-Regular";
+}
+
+.speciaGameP {
+    font-family: sans-serif;
+    font-size: 24px;
+    margin: 2% 10%;
+}
+
+.textAreaSpecialArea {
+    font-size: 18px;
+    margin: 30px 0px;
+}
+
+.centerText {
+    display: block;
+    text-align: -webkit-center;
+}
+
+.headerChange {
+    background-image: url("../img/manBGTwo.png") !important;
+    height: 100vh;
+    width: 100%;
+    background-position: center top;
+    background-size: 110% 110%;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.7s ease-in;
+    -moz-transition: all 0.7s ease-in;
+    -o-transition: all 0.7s ease-in;
+    -ms-transition: all 0.7s ease-in;
+    transition: all 0.7s ease-in;
+    z-index: 1;
+}
+
+.changeBgB {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.buttonOff {
+    background-image: url("../img/icon/on.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 100px;
+    top: 150px;
+    cursor: pointer;
+}
+
+.buttonOn {
+    background-image: url("../img/icon/off.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 100px;
+    top: 150px;
+    cursor: pointer;
+}
+
+.imgLastG {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.sText {
+    transform: translateY(3%) !important;
+}
+
+.wickedT {
+    font-size: 24px;
+    color: white;
+    margin-top: -63px;
+    width: 1200px;
+    text-align: justify;
+    margin-bottom: 150px;
+    opacity: 0.7;
+}
+
+.aımgS {
+    width: 80%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.zUp {
+    z-index: 20;
+    position: relative;
+}
+
+.topImg {
+    background-image: url("../img/top.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 3;
+    top: -2px;
+}
+
+.bottomImg {
+    background-image: url("../img/bottom.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 3;
+    bottom: -1px;
+}
+
+.bottomImgT {
+    background-image: url("../img/bottom.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 1004;
+    bottom: -1px;
+}
+
+.wicked {
+    width: 45%;
+    padding-top: 100px;
 }
 
 .eyes {
-  cursor: url("../img/icon/cursourEye.png") 0 0, default !important;
+    cursor: url("../img/icon/cursourEye.png") 0 0, default !important;
+}
+
+.sectionImg {
+    height: 100%;
+    width: 100%;
+    background-color: #00051c !important;
+    position: relative;
+    z-index: 999;
+}
+
+.theGameFirstImg {
+    margin-bottom: 0px;
 }
 
 body {
-  background-color: #00051c !important;
+    background-color: #00051c !important;
+}
+
+.navbar-brand {
+    z-index: 9999;
+}
+
+.navbar-toggler {
+    z-index: 9999;
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+    background: #00051c;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #06eab3;
-  border-radius: 15px;
+    background: #122165;
+    border-radius: 15px;
 }
 
 .mb-60 {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .mt-50 {
-  margin-top: 50px !important;
+    margin-top: 50px !important;
 }
 
 .menuActive {
-  color: #06eab3 !important;
+    color: #06eab3 !important;
 }
 
 .menuActive::after {
-  width: 100%;
-  height: 20px;
-  content: " ";
-  position: absolute;
-  bottom: -15px;
-  left: -2px;
-  background-image: url("../img/icon/navbottom.png");
-  background-repeat: no-repeat;
-  background-size: 100% 60%;
-  background-position: center;
+    width: 100%;
+    height: 20px;
+    content: " ";
+    position: absolute;
+    bottom: -15px;
+    left: -2px;
+    background-image: url("../img/icon/navbottom.png");
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    background-position: center;
+}
+
+.joinDefense .imgArea img {
+    align: center;
+}
+
+.zindex {
+    z-index: 9999 !important;
+}
+
+.natoshireset {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.dropdown-menu {
+    background-color: transparent !important;
+    border: 0px !important;
+    padding-left: 0px !important;
+}
+
+.dropdown-item {
+    background-color: transparent !important;
+}
+
+.dropdown-item:hover {
+    background-color: transparent !important;
+}
+
+.dropdown-item:focus {
+    background-color: transparent !important;
+}
+
+.dropdown-menu li a {
+    color: white !important;
+    font-family: "Cornerstone";
+    font-size: 20px !important;
+    word-spacing: -8px;
+    letter-spacing: -1px;
+    padding-left: 0px !important;
+    opacity: 0.5;
+}
+
+.dropdown-menu li a:hover {
+    opacity: 1 !important;
+}
+
+.video {
+    position: relative;
+}
+
+.video h6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-family: "Cornerstone";
+    color: #06eab3;
 }
 
 nav {
-  position: fixed !important;
-  width: 100% !important;
-  z-index: 999999;
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 10005;
+    top: 0px !important;
 }
 
 nav .navbar-collapse {
-  display: block;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+    display: block;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
 }
 
 nav .navbar-collapse .mobilArea {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-nav .navbar-collapse .mobilArea .navbar-nav {
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  gap: 20px;
-  width: 100%;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  margin-right: 20px !important;
-}
-
-nav .navbar-collapse .mobilArea .navbar-nav .nav-item .nav-link {
-  position: relative;
-  font-family: "Cornerstone";
-  color: white;
-  padding: 0px;
-  height: 100%;
-  font-size: 32px;
-}
-
-nav .navbar-collapse .mobilArea form .socialArea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-  margin-right: 28px;
-}
-
-nav .navbar-collapse .mobilArea form .socialArea .twitterNav {
-  width: 42px;
-  height: 36px;
-}
-
-nav .navbar-collapse .mobilArea form .socialArea .instagramNav {
-  width: 36px;
-  height: 36px;
-}
-
-nav .navbar-collapse .mobilArea form .socialArea .discodNav {
-  width: 40px;
-  height: 36px;
-}
-
-nav .navbar-collapse .mobilArea form .socialArea .mediumNav {
-  width: 40px;
-  height: 34px;
-}
-
-nav .navbar-collapse .mobilArea form .btnConnect {
-  background-color: #f1036a;
-  color: white;
-  -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-          box-shadow: -1px 2px 0px 5px #a80068;
-  border: 0px;
-  outline: 0px;
-  font-family: "BohemianSoul-Regular";
-  padding: 3px 50px;
-  border-radius: 5px;
-  font-size: 36px;
-  margin-right: 15px;
-}
-
-.mainHeader {
-  position: relative;
-  height: 100vh;
-  background-image: url("../img/headerBg.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.mainHeader .headerArea {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-animation: mymove 6s;
-          animation: mymove 6s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes mymove {
-  0% {
-    top: 50%;
-  }
-  25% {
-    top: 45%;
-  }
-  50% {
-    top: 50%;
-  }
-  75% {
-    top: 45%;
-  }
-  100% {
-    top: 50%;
-  }
-}
-
-@keyframes mymove {
-  0% {
-    top: 50%;
-  }
-  25% {
-    top: 45%;
-  }
-  50% {
-    top: 50%;
-  }
-  75% {
-    top: 45%;
-  }
-  100% {
-    top: 50%;
-  }
-}
-
-.mainHeader .headerArea img {
-  width: 700px;
-  height: 700px;
-}
-
-.timeArea {
-  background-color: #00051c;
-  padding: 150px 0px;
-}
-
-.timeArea .textMntdate {
-  text-align: center;
-  font-size: 56px;
-  color: #15ceaf;
-  font-family: "Cornerstone";
-}
-
-.timeArea .hood h3 {
-  text-align: center;
-  color: #06eab3;
-  font-size: 2rem;
-  font-family: "Cornerstone";
-}
-
-.timeArea .date {
-  gap: 20px;
-  margin: 30px 0px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 2.75rem;
-}
-
-.timeArea .date h3 {
-  color: #06eab3;
-  font-family: "Cornerstone";
-  text-align: center;
-  font-size: 2.75rem;
-}
-
-.timeArea #countdownTwo,
-.timeArea #countdown {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-}
-
-.timeArea #countdownTwo span,
-.timeArea #countdown span {
-  font-size: 2.75rem;
-  font-family: "Cornerstone";
-  font-size: 26px;
-  color: #06eab3;
-}
-
-.timeArea #countdownTwo .timeName,
-.timeArea #countdown .timeName {
-  font-size: 2rem;
-  font-family: "Cornerstone";
-  color: #06eab3;
-  margin-top: 10px;
-}
-
-.timeArea .countdown-sectionTwo span {
-  color: #06eab3;
-  font-family: "Cornerstone";
-  text-align: center;
-  font-size: 2rem !important;
-}
-
-.roadMap {
-  margin-bottom: 150px;
-  margin-top: 150px;
-  position: relative;
-}
-
-.roadMap .heightRoadMap {
-  height: 4000px;
-}
-
-.roadMap .heightRoadMap .rHood {
-  text-align: center;
-}
-
-.roadMap .heightRoadMap .rHood h6 {
-  font-size: 56px;
-  color: #15ceaf;
-  font-family: "Cornerstone";
-}
-
-.roadMap .heightRoadMap .rHood img {
-  position: absolute;
-  left: 46%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  margin-top: 100px;
-  z-index: 10;
-}
-
-.roadMap .heightRoadMap .firstArea {
-  text-align-last: center;
-  margin-top: 350px;
-}
-
-.roadMap .heightRoadMap .firstArea p:first-child {
-  color: #3b3f51;
-  font-size: 36px;
-  text-align: center;
-  margin: 0px;
-  font-family: "BohemianSoul-Regular";
-}
-
-.roadMap .heightRoadMap .firstArea p:nth-child(2) {
-  color: white;
-  font-size: 80px;
-  text-align: center;
-  margin: 0px;
-  font-family: "BohemianSoul-Regular";
-}
-
-.roadMap .heightRoadMap .firstArea p:nth-child(3) {
-  font-size: 56px;
-  color: white;
-  text-align: center;
-  margin: 0px;
-  font-family: "BohemianSoul-Regular";
-}
-
-.roadMap .heightRoadMap .firstArea button {
-  background-color: #f1036a;
-  color: white;
-  -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-  box-shadow: -1px 2px 0px 5px #a80068;
-  border: 0px;
-  outline: 0px;
-  font-family: "BohemianSoul-Regular";
-  padding: 3px 50px;
-  border-radius: 5px;
-  margin-top: 70px;
-  font-size: 36px;
-}
-
-.roadMap .heightRoadMap .firstArea .imgArea img {
-  width: 1000px;
-  position: absolute;
-  left: -140px;
-  top: -148px;
-  z-index: 11;
-}
-
-.roadMap .heightRoadMap .secondArea {
-  text-align-last: center;
-  margin-top: 350px;
-  position: relative;
-}
-
-.roadMap .heightRoadMap .secondArea .textArea {
-  display: block;
-  text-align: -webkit-center;
-}
-
-.roadMap .heightRoadMap .secondArea .textArea p:first-child {
-  color: #595c6b;
-  font-size: 124px;
-  text-align: center;
-  margin: 0px;
-  font-family: "BohemianSoul-Regular";
-  position: absolute;
-  right: 212px;
-  top: 108px;
-  -webkit-transform: rotate(22deg);
-  transform: rotate(22deg);
-  z-index: -1;
-}
-
-.roadMap .heightRoadMap .secondArea .textArea p:nth-child(2) {
-  color: white;
-  font-size: 80px;
-  line-height: 106px;
-  margin: 0px;
-  margin-bottom: 20px;
-  font-family: "BohemianSoul-Regular";
-}
-
-.roadMap .heightRoadMap .secondArea .textArea p:nth-child(3) {
-  font-size: 18px;
-  color: #595c6b;
-  text-align: center;
-  margin: 0px;
-  margin: 0px 100px;
-}
-
-.roadMap .heightRoadMap .secondArea .textArea button {
-  background-color: #f1036a;
-  color: white;
-  -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-  box-shadow: -1px 2px 0px 5px #a80068;
-  border: 0px;
-  font-size: 36px;
-  outline: 0px;
-  font-family: "BohemianSoul-Regular";
-  padding: 3px 50px;
-  border-radius: 5px;
-  margin-top: 70px;
-}
-
-.roadMap .heightRoadMap .secondArea .imgArea .opacityImag {
-  width: 1000px;
-  position: absolute;
-  left: 193px;
-  top: -295px;
-}
-
-.roadMap .heightRoadMap .secondArea .imgArea .imgS {
-  width: 750px;
-  position: absolute;
-  right: -72px;
-  top: 26px;
-  z-index: 11;
-}
-
-.roadMap .heightRoadMap .thirtArea {
-  text-align-last: center;
-  margin-top: 850px;
-}
-
-.roadMap .heightRoadMap .thirtArea .textArea {
-  position: relative;
-  display: block;
-  text-align: -webkit-center;
-}
-
-.roadMap .heightRoadMap .thirtArea .textArea p:first-child {
-  color: #595c6b;
-  font-size: 194px;
-  text-align: center;
-  margin: 0px;
-  font-family: "BohemianSoul-Regular";
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: -96px;
-  z-index: -1;
-}
-
-.roadMap .heightRoadMap .thirtArea .textArea p:nth-child(2) {
-  color: white;
-  font-size: 80px;
-  line-height: 106px;
-  margin: 0px;
-  margin-bottom: 50px;
-  font-family: "BohemianSoul-Regular";
-}
-
-.roadMap .heightRoadMap .thirtArea .textArea p:nth-child(3) {
-  font-size: 18px;
-  color: #595c6b;
-  text-align: center;
-  margin: 0px;
-  margin: 0px 100px;
-}
-
-.roadMap .heightRoadMap .thirtArea .textArea button {
-  background-color: #f1036a;
-  color: white;
-  -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-  box-shadow: -1px 2px 0px 5px #a80068;
-  border: 0px;
-  font-size: 36px;
-  outline: 0px;
-  font-family: "BohemianSoul-Regular";
-  padding: 3px 50px;
-  border-radius: 5px;
-  margin-top: 70px;
-}
-
-.roadMap .heightRoadMap .thirtArea .imgArea .opacityImag {
-  width: 400px;
-  position: absolute;
-  left: 130px;
-  top: -90px;
-}
-
-.roadMap .heightRoadMap .thirtArea .imgArea .imgS {
-  width: 350px;
-  position: absolute;
-  left: 300px;
-  top: 26px;
-  z-index: 11;
-}
-
-.roadMap .heightRoadMap .fourthArea {
-  text-align-last: center;
-  margin-top: 400px;
-}
-
-.roadMap .heightRoadMap .fourthArea .textArea {
-  display: block;
-  text-align: -webkit-center;
-  position: relative;
-}
-
-.roadMap .heightRoadMap .fourthArea .textArea p:first-child {
-  color: #595c6b;
-  font-size: 194px;
-  text-align: center;
-  margin: 0px;
-  font-family: "BohemianSoul-Regular";
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: -95px;
-  z-index: -1;
-}
-
-.roadMap .heightRoadMap .fourthArea .textArea p:nth-child(2) {
-  color: white;
-  font-size: 44px;
-  line-height: 44px;
-  margin: 0px;
-  margin-bottom: 0px;
-  font-family: "BohemianSoul-Regular";
-}
-
-.roadMap .heightRoadMap .fourthArea .textArea p:nth-child(3) {
-  color: white;
-  font-size: 80px;
-  line-height: 106px;
-  margin: 0px;
-  margin-bottom: 50px;
-  font-family: "BohemianSoul-Regular";
-}
-
-.roadMap .heightRoadMap .fourthArea .textArea p:nth-child(4) {
-  font-size: 18px;
-  color: #595c6b;
-  text-align: center;
-  margin: 0px;
-  margin: 0px 100px;
-}
-
-.roadMap .heightRoadMap .fourthArea .textArea button {
-  background-color: #f1036a;
-  color: white;
-  -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-  box-shadow: -1px 2px 0px 5px #a80068;
-  border: 0px;
-  font-size: 36px;
-  outline: 0px;
-  font-family: "BohemianSoul-Regular";
-  padding: 3px 50px;
-  border-radius: 5px;
-  margin-top: 70px;
-}
-
-.roadMap .heightRoadMap .fourthArea .imgArea {
-  position: relative;
-}
-
-.roadMap .heightRoadMap .fourthArea .imgArea .imgS {
-  width: 800px;
-  position: absolute;
-  top: -100px;
-  left: 58%;
-  z-index: 11;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.roadMap .heightRoadMap .fiveArea {
-  text-align-last: center;
-  margin-top: 400px;
-}
-
-.roadMap .heightRoadMap .fiveArea .textArea {
-  display: block;
-  text-align: -webkit-center;
-  position: relative;
-}
-
-.roadMap .heightRoadMap .fiveArea .textArea p:first-child {
-  color: white;
-  font-size: 28px;
-  line-height: 44px;
-  margin: 0px;
-  margin-bottom: 0px;
-  font-family: "BohemianSoul-Regular";
-}
-
-.roadMap .heightRoadMap .fiveArea .textArea p:nth-child(2) {
-  color: white;
-  font-size: 60px;
-  line-height: 72px;
-  margin: 0px;
-  margin-bottom: 20px;
-  font-family: "BohemianSoul-Regular";
-}
-
-.roadMap .heightRoadMap .fiveArea .textArea p:nth-child(3) {
-  font-size: 18px;
-  color: #595c6b;
-  text-align: center;
-  margin: 0px;
-  margin: 0px 100px;
-}
-
-.roadMap .heightRoadMap .fiveArea .textArea button {
-  background-color: #f1036a;
-  color: white;
-  -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-  box-shadow: -1px 2px 0px 5px #a80068;
-  border: 0px;
-  font-size: 36px;
-  outline: 0px;
-  font-family: "BohemianSoul-Regular";
-  padding: 3px 50px;
-  border-radius: 5px;
-  margin-top: 30px;
-}
-
-.roadMap .heightRoadMap .fiveArea .imgArea {
-  position: relative;
-}
-
-.roadMap .heightRoadMap .fiveArea .imgArea .imgS {
-  width: 800px;
-  position: absolute;
-  top: 14px;
-  left: 67%;
-  z-index: 11;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.roadMap .heightRoadMap .sixArea {
-  text-align-last: center;
-  margin-top: 350px;
-}
-
-.roadMap .heightRoadMap .sixArea .textArea {
-  display: block;
-  text-align: -webkit-center;
-  position: relative;
-}
-
-.roadMap .heightRoadMap .sixArea .textArea p:first-child {
-  color: white;
-  font-size: 28px;
-  line-height: 44px;
-  margin: 0px;
-  margin-bottom: 0px;
-  font-family: "BohemianSoul-Regular";
-}
-
-.roadMap .heightRoadMap .sixArea .textArea p:nth-child(2) {
-  color: white;
-  font-size: 60px;
-  line-height: 72px;
-  margin: 0px;
-  margin-bottom: 20px;
-  font-family: "BohemianSoul-Regular";
-}
-
-.roadMap .heightRoadMap .sixArea .textArea p:nth-child(3) {
-  font-size: 18px;
-  color: #595c6b;
-  text-align: center;
-  margin: 0px;
-  margin: 0px 100px;
-}
-
-.roadMap .heightRoadMap .sixArea .textArea button {
-  background-color: #f1036a;
-  color: white;
-  -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-  box-shadow: -1px 2px 0px 5px #a80068;
-  border: 0px;
-  font-size: 36px;
-  outline: 0px;
-  font-family: "BohemianSoul-Regular";
-  padding: 3px 50px;
-  border-radius: 5px;
-  margin-top: 70px;
-}
-
-.roadMap .heightRoadMap .sixArea .imgArea {
-  position: relative;
-}
-
-.roadMap .heightRoadMap .sixArea .imgArea .imgS {
-  width: 800px;
-  position: absolute;
-  top: 14px;
-  left: 67%;
-  z-index: 11;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.roadMap .heightRoadMap .sevenArea {
-  text-align-last: center;
-  margin-top: 350px;
-}
-
-.roadMap .heightRoadMap .sevenArea .textArea {
-  display: block;
-  text-align: -webkit-center;
-  position: relative;
-}
-
-.roadMap .heightRoadMap .sevenArea .textArea p:first-child {
-  color: white;
-  font-size: 28px;
-  line-height: 44px;
-  margin: 0px;
-  margin-bottom: 0px;
-  font-family: "BohemianSoul-Regular";
-}
-
-.roadMap .heightRoadMap .sevenArea .textArea p:nth-child(2) {
-  color: white;
-  font-size: 60px;
-  line-height: 72px;
-  margin: 0px;
-  margin-bottom: 50px;
-  font-family: "BohemianSoul-Regular";
-}
-
-.roadMap .heightRoadMap .sevenArea .textArea p:nth-child(3) {
-  font-size: 18px;
-  color: #595c6b;
-  text-align: center;
-  margin: 0px;
-  margin: 0px 100px;
-}
-
-.roadMap .heightRoadMap .sevenArea .textArea button {
-  background-color: #f1036a;
-  color: white;
-  -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-  box-shadow: -1px 2px 0px 5px #a80068;
-  border: 0px;
-  font-size: 36px;
-  outline: 0px;
-  font-family: "BohemianSoul-Regular";
-  padding: 3px 50px;
-  border-radius: 5px;
-  margin-top: 70px;
-}
-
-.roadMap .heightRoadMap .sevenArea .imgArea {
-  position: relative;
-}
-
-.roadMap .heightRoadMap .sevenArea .imgArea .imgS {
-  width: 800px;
-  position: absolute;
-  top: 14px;
-  left: 67%;
-  z-index: 11;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.roadMap .container .buttonArea {
-  text-align-last: center;
-  display: block;
-}
-
-.roadMap .container .buttonArea button:first-child {
-  background-image: url("../img/icon/arrowB.png");
-  background-color: transparent;
-  background-size: 38px;
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding: 20px 45px;
-  padding-left: 0px;
-  color: #11a692;
-  font-size: 30px;
-  border: 0px;
-  outline: 0px;
-  font-family: "Cornerstone";
-  z-index: 9999;
-  margin-right: 66px;
-}
-
-.roadMap .container .buttonArea button:nth-child(2) {
-  background-color: transparent;
-  padding: 20px 45px;
-  padding-left: 0px;
-  color: #11a692;
-  font-size: 46px;
-  border: 0px;
-  outline: 0px;
-  font-family: "Cornerstone";
-  z-index: 9999;
-  margin-right: -70px;
-}
-
-.sliderOne {
-  position: relative;
-}
-
-.sliderOne .owl-carousel .owl-nav .owl-prev {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 200px;
-  width: 25px;
-  height: 25px;
-  background-image: url("../img/icon/prev.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-size: 0px;
-}
-
-.sliderOne .owl-carousel .owl-nav .owl-next {
-  right: 100px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 25px;
-  height: 25px;
-  background-image: url("../img/icon/next.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-size: 0px;
-}
-
-.sliderOne .owl-carousel .owl-dots {
-  gap: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 10px;
-  width: 300px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.sliderOne .owl-carousel .owl-dots button {
-  width: 10px;
-  height: 10px;
-  background-color: #a3a3a3;
-  border-radius: 10px;
-}
-
-.sliderOne .owl-carousel .owl-item .textArea p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 46px;
-  color: white;
-  font-family: "Cornerstone";
-}
-
-.sliderRightLeft {
-  margin: 150px 0px;
-}
-
-.nftTExt {
-  margin: 100px 0px;
-}
-
-.nftTExt .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nftTExt .row .imgArea {
-  text-align: center;
-}
-
-.nftTExt .row .imgArea img {
-  width: 350px;
-  height: auto;
-}
-
-.nftTExt .row .textAreaBtn {
-  text-align: center;
-  text-align: -webkit-center;
-  display: block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.nftTExt .row .textAreaBtn .one {
-  font-family: "BohemianSoul-Regular";
-  color: grey;
-  font-size: 22px;
-}
-
-.nftTExt .row .textAreaBtn .two {
-  font-size: 24px;
-  line-height: 30px;
-  width: 450px;
-  color: grey;
-  text-align: justify;
-}
-
-.nftTExt .row .textAreaBtn h6 {
-  margin: 10px 0px;
-  font-size: 46px;
-  color: white;
-  font-family: "BohemianSoul-Regular";
-}
-
-.nftTExt .row .textAreaBtn button {
-  background-color: #f1036a;
-  color: white;
-  -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-          box-shadow: -1px 2px 0px 5px #a80068;
-  border: 0px;
-  outline: 0px;
-  font-family: "BohemianSoul-Regular";
-  padding: 3px 50px;
-  border-radius: 5px;
-  font-size: 24px;
-  cursor: url("../img/icon/cursourEye.png") 0 0, default !important;
-}
-
-.owl-Two {
-  margin-bottom: 70px;
-}
-
-footer {
-  padding: 75px;
-  background-image: url("../img/bgFooter.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-footer .logorea img {
-  width: 400px;
-  height: 400px;
-}
-
-footer .socialArea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 40px;
-}
-
-footer .socialArea img {
-  width: 35px;
-  height: 35px;
-}
-
-footer .socialArea .discort {
-  width: 50px !important;
-  height: 35px !important;
-}
-
-footer .socialArea .twitter {
-  width: 35px !important;
-  height: 30px !important;
-}
-
-footer .textArea p {
-  font-size: 20px;
-  margin-top: 30px;
-  color: grey;
-}
-
-.theGame {
-  overflow-x: hidden;
-}
-
-.spAboutusHeader {
-  background-image: url("../img/Fusion3.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 100vh;
-  position: relative;
-}
-
-.spAboutusHeader .headerArea {
-  text-align: center;
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.spAboutusHeader .headerArea img {
-  width: 550px;
-  height: auto;
-}
-
-.spAboutusHeader .headerArea p {
-  margin-top: 20px;
-  color: grey;
-  text-align: start;
-  width: 800px;
-  font-weight: 600;
-  font-size: 24px;
-}
-
-.Ourteam {
-  margin: 200px 0px;
-}
-
-.Ourteam .textAreaTeam h6 {
-  font-size: 60px;
-  text-align: center;
-  color: white;
-  font-family: "BohemianSoul-Regular";
-  margin-bottom: 50px;
-}
-
-.Ourteam .textAreaTeam p {
-  color: white;
-  font-size: 24px;
-}
-
-.teamMate {
-  margin: 150px 0px;
-}
-
-.teamMate .persons {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 20px;
-}
-
-.teamMate .persons .person {
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
-.teamMate .persons .person img {
-  width: 150px;
-  height: 150px;
-  border-radius: 76px;
-}
-
-.teamMate .persons .person .name {
-  color: #ccbf8b !important;
-  font-size: 24px;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 0px !important;
-}
-
-.teamMate .persons .person .position {
-  color: grey;
-  font-size: 18px;
-}
-
-.joinTheTeam {
-  background-image: url("../img/Varlık9@2x.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 100px 0px;
-  padding-top: 140px;
-}
-
-.joinTheTeam .textArea h6 {
-  font-size: 60px;
-  color: white;
-  font-family: "BohemianSoul-Regular";
-}
-
-.joinTheTeam .textArea p {
-  margin: 0px;
-  color: white;
-  font-size: 24px;
-}
-
-.faq {
-  margin-top: 167px;
-}
-
-.faq .specialRow {
-  height: 900px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: center;
-}
-
-.faq .specialRow .hoodArea p {
-  font-size: 46px;
-  color: #06eab3;
-  font-family: "Cornerstone";
-  margin-left: 70px;
-}
-
-.faq .specialRow .accordion-container {
-  position: relative;
-  width: 100%;
-  outline: 0;
-  cursor: pointer;
-  margin-bottom: 100px !important;
-}
-
-.faq .specialRow .accordion-container .article-title {
-  display: block;
-  position: relative;
-  margin: 30px 0px;
-  padding: 0.625em 0.625em 0.625em 4em;
-  font-size: 2em;
-  font-weight: normal;
-  color: white;
-  cursor: pointer;
-}
-
-.faq .specialRow .accordion-container .content-entry i {
-  top: 10px;
-  position: absolute;
-  left: 12px;
-  font-style: normal;
-  width: 30px;
-  height: 30px;
-  font-size: 1.625em;
-  position: absolute;
-  color: white;
-  left: 30px;
-  background-image: url("../img/icon/Varlık7@2x.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  color: white;
-  border-radius: 17px;
-}
-
-.faq .specialRow .accordion-container .content-entry i:before {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 20px;
-  background-image: url("../img/icon/plus.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  content: " ";
-  height: 20px;
-}
-
-.faq .specialRow .accordion-container .content-entry.open i:before {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 20px;
-  background-image: url("../img/icon/minus.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  content: " ";
-  height: 20px;
-}
-
-.faq .specialRow .accordion-content {
-  display: none;
-  color: white;
-  margin-left: 80px;
-}
-
-.faq .specialRow .accordion-content p {
-  font-size: 24px;
-}
-
-.faq .specialRow #content {
-  width: 100%;
-}
-
-.faq .specialRow .accordion-container,
-.faq .specialRow #description {
-  width: 90%;
-  margin: 1.875em auto;
-}
-
-.faq .specialRow #description p {
-  line-height: 1.5;
-}
-
-.faq .specialRow #description h2 {
-  text-align: center;
-}
-
-@media all and (min-width: 860px) {
-  .faq .specialRow #content {
-    width: 70%;
-    margin: 0 auto;
-  }
-}
-
-.theGameHeader {
-  position: relative;
-  height: 100vh;
-  background-image: url("../img/theGameBg.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.theGameHeader .imgArea {
-  position: absolute;
-  right: 10%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.theGameHeader .imgArea img {
-  width: 500px;
-  height: auto;
-}
-
-.gameArea {
-  height: 1000px;
-  background-image: url("../img/g1BG.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.gameArea .imgArea img {
-  position: absolute;
-  left: -300px;
-  width: 1000px;
-  top: 0px;
-  height: auto;
-}
-
-.gameArea .textArea {
-  width: 900px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.gameArea .textArea h6 {
-  font-size: 60px;
-  text-align: start;
-  color: white;
-  font-family: "BohemianSoul-Regular";
-}
-
-.gameArea .textArea p {
-  font-size: 35px;
-  color: white;
-}
-
-.gameAreaTwo {
-  height: 1200px;
-  background-image: url("../img/g2bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.gameAreaTwo .imgArea img {
-  position: absolute;
-  right: 0px;
-  width: 900px;
-  height: auto;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.gameAreaTwo .textArea {
-  position: absolute;
-  top: 50%;
-  width: 900px;
-  left: 10%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.gameAreaTwo .textArea h6 {
-  font-size: 60px;
-  text-align: start;
-  color: white;
-  font-family: "BohemianSoul-Regular";
-}
-
-.gameAreaTwo .textArea p {
-  font-size: 35px;
-  color: white;
-}
-
-.gameAreaThree {
-  height: 1200px;
-  background-image: url("../img/g3BG.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.gameAreaThree .imgArea img {
-  position: absolute;
-  left: -564px;
-  width: 1200px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  height: auto;
-}
-
-.gameAreaThree .textArea {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 800px;
-}
-
-.gameAreaThree .textArea h6 {
-  font-size: 60px;
-  text-align: start;
-  color: white;
-  font-family: "BohemianSoul-Regular";
-}
-
-.gameAreaThree .textArea p {
-  font-size: 35px;
-  color: white;
-}
-
-.gameAreaFour {
-  height: 1200px;
-  background-image: url("../img/g4BG.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.gameAreaFour .imgArea img {
-  position: absolute;
-  width: 400px;
-  height: auto;
-  right: 200px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.gameAreaFour .textArea {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 900px;
-  left: 10%;
-}
-
-.gameAreaFour .textArea h6 {
-  font-size: 60px;
-  text-align: start;
-  color: white;
-  font-family: "BohemianSoul-Regular";
-}
-
-.gameAreaFour .textArea p {
-  font-size: 35px;
-  color: white;
-}
-
-.gameText .textArea {
-  text-align: center;
-  margin: 150px 0px;
-}
-
-.gameText .textArea h6 {
-  color: white;
-  font-size: 60px;
-  font-family: "Cornerstone";
-}
-
-.gameText .textArea p {
-  color: white;
-  font-size: 35px;
-}
-
-.setupClan {
-  background-image: url("../img/g5BG.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  padding: 250px 0px;
-  height: 1200px;
-  /* marquee div container */
-  /* nested div inside the container */
-  /* span with text */
-  /* keyframe */
-}
-
-.setupClan .col-12 {
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: -webkit-center;
-}
-
-.setupClan .col-12 .textArea {
-  width: 550px;
-  margin: 150px 0px;
-}
-
-.setupClan .col-12 .textArea h6 {
-  color: white;
-  font-size: 50px;
-  text-align: start;
-  font-family: "BohemianSoul-Regular";
-  margin-bottom: 20px;
-}
-
-.setupClan .col-12 .textArea p {
-  text-align: start;
-  font-size: 25px;
-  color: white;
-  margin: 20px 0px;
-}
-
-.setupClan .marquee {
-  font-size: 2vw;
-  color: #06eab3;
-  font-family: "Cornerstone";
-  height: 2.5vw;
-  overflow: hidden;
-  background-color: transparent;
-  position: relative;
-  -webkit-transform: rotate(350deg);
-          transform: rotate(350deg);
-}
-
-.setupClan .marquee div {
-  display: block;
-  width: 200%;
-  position: absolute;
-  overflow: hidden;
-  -webkit-animation: marquee 12s linear infinite;
-          animation: marquee 12s linear infinite;
-}
-
-.setupClan .marquee span {
-  float: left;
-  width: 50%;
-}
-
-.setupClan .clock {
-  width: 35px;
-  height: auto;
-}
-
-@-webkit-keyframes marquee {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -100%;
-  }
-}
-
-@keyframes marquee {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -100%;
-  }
-}
-
-.gamemode {
-  margin: 150px 0px;
-}
-
-.gamemode .textArea h6 {
-  text-align: center;
-  font-size: 60px;
-  color: white;
-  font-family: "BohemianSoul-Regular";
-}
-
-.gamemode .textArea p {
-  font-size: 24px;
-  color: white;
-  margin-top: 30px;
-}
-
-.gamemode .cardArea {
-  background-image: url("../img/bgGameModeCard.png");
-  margin-top: 75px;
-  text-align: center;
-  background-position-x: center;
-  background-position-y: 50px;
-  background-repeat: no-repeat;
-  background-size: 70% 70%;
-}
-
-.gamemode .cardArea .cardItems img {
-  width: 250px;
-  height: auto;
-}
-
-.gamemode .cardArea .cardItems .textArea {
-  padding: 0px 80px;
-}
-
-.gamemode .cardArea .cardItems .textArea h6 {
-  font-size: 42px;
-  color: #2ff3b5;
-  font-family: "Cornerstone";
-  margin-top: 50px;
-}
-
-.gamemode .cardArea .cardItems .textArea p {
-  text-align: start;
-  color: white;
-  font-size: 24px;
-}
-
-.gamemode .cardArea .cardItemsTwo {
-  position: relative;
-}
-
-.gamemode .cardArea .cardItemsTwo img {
-  width: 250px;
-  height: auto;
-}
-
-.gamemode .cardArea .cardItemsTwo .imgBefore {
-  position: absolute;
-  top: -30px;
-  left: 25px;
-  width: 150px;
-}
-
-.gamemode .cardArea .cardItemsTwo .textArea {
-  padding: 0px 1px;
-}
-
-.gamemode .cardArea .cardItemsTwo .textArea h6 {
-  font-size: 42px;
-  color: #2ff3b5;
-  font-family: "Cornerstone";
-  margin-top: 50px;
-}
-
-.gamemode .cardArea .cardItemsTwo .textArea p {
-  text-align: start;
-  color: white;
-  font-size: 24px;
-}
-
-.itsyourturn {
-  text-align: center;
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 150px;
-}
-
-.itsyourturn h6 {
-  color: white;
-  -webkit-text-stroke: 2px #513e1d;
-  font-size: 46px;
-  position: relative;
-  font-family: "BohemianSoul-Regular";
-}
-
-.itsyourturn h6 span {
-  width: 150px;
-  position: absolute;
-  color: #f1036a !important;
-  -webkit-text-stroke: 0px;
-  left: 338px;
-  -webkit-transform: rotate(331deg);
-          transform: rotate(331deg);
-  -webkit-text-stroke: 2px #513e1d;
-}
-
-.itsyourturn button {
-  background-color: #f1036a;
-  color: white;
-  -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-          box-shadow: -1px 2px 0px 5px #a80068;
-  border: 0px;
-  outline: 0px;
-  font-family: "BohemianSoul-Regular";
-  padding: 3px 50px;
-  border-radius: 5px;
-}
-
-.manifestoText .textArea {
-  margin-top: 200px;
-  margin-bottom: 150px;
-}
-
-.manifestoText .textArea h6 {
-  color: #333749;
-  font-size: 106px;
-  font-family: "Cornerstone";
-}
-
-.manifestoText .textArea p {
-  color: white;
-  margin: 0px;
-  font-size: 24px;
-}
-
-.owlFour {
-  margin: 150px 0px;
-}
-
-.openSea {
-  background-image: url("../img/openSeaArea.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  padding-top: 200px;
-  padding-bottom: 100px;
-}
-
-.openSea .hoodBTn {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: space-between;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.openSea .hoodBTn .hood {
-  text-align: center;
-}
-
-.openSea .hoodBTn .hood h6:first-child {
-  font-family: "Cornerstone";
-  color: black;
-  font-size: 56px;
-}
-
-.openSea .hoodBTn .hood h6:nth-child(2) {
-  font-family: "Cornerstone";
-  color: white;
-  font-size: 76px;
-}
-
-.openSea .hoodBTn .hood a img {
-  width: 70px;
-  height: auto;
-  margin-top: 25px;
-}
-
-.openSea .hoodBTn .btn button {
-  width: 100%;
-  border-radius: 25px;
-  background-image: url("../img/icon/btnbg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 100px;
-  border: 0px;
-  outline: 0px;
-}
-
-@-webkit-keyframes leftText {
-  from {
-    left: -1920;
-  }
-  to {
-    left: 2000px;
-  }
-}
-
-@media only screen and (max-width: 1920px) {
-  nav {
-    position: fixed !important;
-    width: 100% !important;
-    z-index: 999999;
-  }
-  nav .navbar-collapse {
-    display: block;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
-  nav .navbar-collapse .mobilArea {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  nav .navbar-collapse .mobilArea .navbar-nav {
+}
+
+nav .navbar-collapse .mobilArea .navbar-nav {
     -ms-flex-line-pack: justify;
-        align-content: space-between;
-    gap: 20px;
+    align-content: space-between;
+    gap: 30px;
     width: 100%;
     -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
+    -ms-flex-pack: right;
+    justify-content: right;
     margin-right: 20px !important;
-  }
-  nav .navbar-collapse .mobilArea .navbar-nav .nav-item .nav-link {
+}
+
+nav .navbar-collapse .mobilArea .navbar-nav .nav-item .nav-link {
     position: relative;
     font-family: "Cornerstone";
     color: white;
     padding: 0px;
     height: 100%;
     font-size: 24px;
-  }
-  nav .navbar-collapse .mobilArea form .socialArea {
+}
+
+nav .navbar-collapse .mobilArea form .socialArea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 20px;
     margin-right: 28px;
-  }
-  nav .navbar-collapse .mobilArea form .socialArea .twitterNav {
+}
+
+nav .navbar-collapse .mobilArea form .socialArea .twitterNav {
+    width: 30px;
+    height: 26px;
+}
+
+nav .navbar-collapse .mobilArea form .socialArea .instagramNav {
     width: 30px;
     height: 30px;
-  }
-  nav .navbar-collapse .mobilArea form .socialArea .instagramNav {
+}
+
+nav .navbar-collapse .mobilArea form .socialArea .discodNav {
     width: 30px;
-    height: 30px;
-  }
-  nav .navbar-collapse .mobilArea form .socialArea .discodNav {
-    width: 36px;
-    height: 28px;
-  }
-  nav .navbar-collapse .mobilArea form .socialArea .mediumNav {
-    width: 34px;
-    height: 28px;
-  }
-  nav .navbar-collapse .mobilArea form .btnConnect {
+    height: 26px;
+}
+
+nav .navbar-collapse .mobilArea form .socialArea .mediumNav {
+    width: 30px;
+    height: 26px;
+}
+
+nav .navbar-collapse .mobilArea form .btnConnect {
     background-color: #f1036a;
     color: white;
     -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-            box-shadow: -1px 2px 0px 5px #a80068;
+    box-shadow: -1px 2px 0px 5px #a80068;
     border: 0px;
     outline: 0px;
     font-family: "BohemianSoul-Regular";
     padding: 3px 50px;
     border-radius: 5px;
     font-size: 24px;
-  }
-  .mainHeader {
+    margin-right: 15px;
+    cursor: url("../img/icon/cursourEye.png") 0 0, default !important;
+}
+
+.mainHeader {
     position: relative;
     height: 100vh;
-    background-image: url("../img/headerBg.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-  .mainHeader .headerArea {
+}
+
+.mainHeader .headerArea img:first-child {
+    z-index: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100% !important;
+    height: 48%;
+}
+
+.mainHeader .headerArea img:nth-child(2) {
     position: absolute;
-    top: 50%;
+    top: 0px;
+    left: 0px;
+    width: 100% !important;
+    height: 100%;
+}
+
+.mainHeader .headerArea img:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100% !important;
+    height: 100%;
+}
+
+.mainHeader .headerArea img:nth-child(4) {
+    position: absolute;
+    bottom: 0%;
+    z-index: 1003;
+    left: 0px;
+    width: 100% !important;
+    height: 100%;
+}
+
+.mainHeader .headerArea img:nth-child(5) {
+    width: 100%;
+    z-index: 0;
+    position: absolute;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    -webkit-animation: mymove 6s;
-            animation: mymove 6s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-  }
-  @-webkit-keyframes mymove {
-    0% {
-      top: 50%;
-    }
-    25% {
-      top: 45%;
-    }
-    50% {
-      top: 50%;
-    }
-    75% {
-      top: 45%;
-    }
-    100% {
-      top: 50%;
-    }
-  }
-  @keyframes mymove {
-    0% {
-      top: 50%;
-    }
-    25% {
-      top: 45%;
-    }
-    50% {
-      top: 50%;
-    }
-    75% {
-      top: 45%;
-    }
-    100% {
-      top: 50%;
-    }
-  }
-  .mainHeader .headerArea img {
-    width: 500px;
-    height: 500px;
-  }
-  .timeArea {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.mainHeader .headerArea img:nth-child(6) {
+    top: 0%;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+}
+
+.mainHeader .headerArea img:nth-child(7) {
+    width: 100%;
+    z-index: 1001;
+    position: absolute;
+    bottom: 10%;
+}
+
+.mainvideo {
+    max-width: 600px;
+    left: calc(50% - 300px);
+    position: absolute;
+    z-index: 99999;
+}
+
+.timeArea {
     background-color: #00051c;
-    padding: 150px 0px;
-  }
-  .timeArea .textMntdate {
+    padding: 100px 0px;
+}
+
+.timeArea .textMntdate {
     text-align: center;
-    font-size: 56px;
-    color: #15ceaf;
+    font-size: 42px;
+    color: white;
     font-family: "Cornerstone";
-  }
-  .timeArea .hood h3 {
+}
+
+.timeArea .textMntdate2 {
+    font-size: 42px !important;
+}
+
+.timeArea .hood h3 {
     text-align: center;
     color: #06eab3;
     font-size: 2rem;
     font-family: "Cornerstone";
-  }
-  .timeArea .date {
+}
+
+.timeArea .date {
     gap: 20px;
     margin: 30px 0px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 2.75rem;
-  }
-  .timeArea .date h3 {
+}
+
+.timeArea .date h3 {
     color: #06eab3;
     font-family: "Cornerstone";
     text-align: center;
     font-size: 2.75rem;
-  }
-  .timeArea #countdownTwo,
-  .timeArea #countdown {
+}
+
+.timeArea #countdownTwo,
+.timeArea #countdown {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     text-align: center;
-  }
-  .timeArea #countdownTwo span,
-  .timeArea #countdown span {
+}
+
+.timeArea #countdownTwo span,
+.timeArea #countdown span {
     font-size: 2.75rem;
     font-family: "Cornerstone";
     font-size: 26px;
     color: #06eab3;
-  }
-  .timeArea #countdownTwo .timeName,
-  .timeArea #countdown .timeName {
+}
+
+.timeArea #countdownTwo .timeName,
+.timeArea #countdown .timeName {
     font-size: 2rem;
     font-family: "Cornerstone";
     color: #06eab3;
     margin-top: 10px;
-  }
-  .timeArea .countdown-sectionTwo span {
+}
+
+.timeArea .countdown-sectionTwo span {
     color: #06eab3;
     font-family: "Cornerstone";
     text-align: center;
     font-size: 2rem !important;
-  }
-  .roadMap {
+}
+
+.roadMap {
     margin-bottom: 150px;
     margin-top: 150px;
     position: relative;
-  }
-  .roadMap .heightRoadMap {
-    height: 4000px;
-  }
-  .roadMap .heightRoadMap .rHood {
+}
+
+.roadMap .heightRoadMap {
+    height: 3930px;
+}
+
+.roadMap .heightRoadMap .rHood {
     text-align: center;
-  }
-  .roadMap .heightRoadMap .rHood h6 {
+}
+
+.roadMap .heightRoadMap .rHood h6 {
     font-size: 56px;
     color: #15ceaf;
     font-family: "Cornerstone";
-  }
-  .roadMap .heightRoadMap .rHood img {
+}
+
+.roadMap .heightRoadMap .rHood img {
     position: absolute;
-    left: 46%;
+    left: 33%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     margin-top: 100px;
     z-index: 10;
-  }
-  .roadMap .heightRoadMap .firstArea {
+}
+
+.roadMap .heightRoadMap .firstArea {
     text-align-last: center;
     margin-top: 350px;
-  }
-  .roadMap .heightRoadMap .firstArea p:first-child {
-    color: #3b3f51;
-    font-size: 36px;
-    text-align: center;
-    margin: 0px;
-    font-family: "BohemianSoul-Regular";
-  }
-  .roadMap .heightRoadMap .firstArea p:nth-child(2) {
+}
+
+.roadMap .heightRoadMap .firstArea p:first-child {
     color: white;
     font-size: 80px;
     text-align: center;
     margin: 0px;
     font-family: "BohemianSoul-Regular";
-  }
-  .roadMap .heightRoadMap .firstArea p:nth-child(3) {
-    font-size: 56px;
+}
+
+.roadMap .heightRoadMap .firstArea p:nth-child(2) {
     color: white;
+    font-size: 80px;
     text-align: center;
     margin: 0px;
     font-family: "BohemianSoul-Regular";
-  }
-  .roadMap .heightRoadMap .firstArea button {
+}
+
+.roadMap .heightRoadMap .firstArea p:nth-child(3) {
+    font-size: 18px;
+    color: #595c6b;
+    text-align: center;
+    margin: 0px;
+    margin: 0px 250px
+}
+
+.roadMap .heightRoadMap .firstArea p:nth-child(4) {
+    color: #595c6b;
+    font-size: 194px;
+    text-align: center;
+    margin: 0px;
+    font-family: "BohemianSoul-Regular";
+    position: absolute;
+    left: 25%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 292px;
+    z-index: -1;
+}
+
+.roadMap .heightRoadMap .firstArea button {
     background-color: #f1036a;
     color: white;
     -webkit-box-shadow: -1px 2px 0px 5px #a80068;
@@ -1976,52 +592,59 @@ footer .textArea p {
     border-radius: 5px;
     margin-top: 70px;
     font-size: 36px;
-  }
-  .roadMap .heightRoadMap .firstArea .imgArea img {
+}
+
+.roadMap .heightRoadMap .firstArea .imgArea img {
     width: 1000px;
     position: absolute;
     left: -140px;
     top: -148px;
     z-index: 11;
-  }
-  .roadMap .heightRoadMap .secondArea {
+}
+
+.roadMap .heightRoadMap .secondArea {
     text-align-last: center;
     margin-top: 350px;
     position: relative;
-  }
-  .roadMap .heightRoadMap .secondArea .textArea {
+}
+
+.roadMap .heightRoadMap .secondArea .textArea {
     display: block;
     text-align: -webkit-center;
-  }
-  .roadMap .heightRoadMap .secondArea .textArea p:first-child {
+}
+
+.roadMap .heightRoadMap .secondArea .textArea p:first-child {
     color: #595c6b;
-    font-size: 124px;
+    font-size: 66px;
     text-align: center;
     margin: 0px;
     font-family: "BohemianSoul-Regular";
     position: absolute;
-    right: 212px;
-    top: 108px;
+    right: 331px;
+    top: 124px;
     -webkit-transform: rotate(22deg);
     transform: rotate(22deg);
     z-index: -1;
-  }
-  .roadMap .heightRoadMap .secondArea .textArea p:nth-child(2) {
+}
+
+.roadMap .heightRoadMap .secondArea .textArea p:nth-child(2) {
     color: white;
     font-size: 80px;
     line-height: 106px;
     margin: 0px;
     margin-bottom: 20px;
     font-family: "BohemianSoul-Regular";
-  }
-  .roadMap .heightRoadMap .secondArea .textArea p:nth-child(3) {
+}
+
+.roadMap .heightRoadMap .secondArea .textArea p:nth-child(3) {
     font-size: 18px;
     color: #595c6b;
     text-align: center;
     margin: 0px;
-    margin: 0px 100px;
-  }
-  .roadMap .heightRoadMap .secondArea .textArea button {
+    margin: 0px 250px;
+}
+
+.roadMap .heightRoadMap .secondArea .textArea button {
     background-color: #f1036a;
     color: white;
     -webkit-box-shadow: -1px 2px 0px 5px #a80068;
@@ -2033,30 +656,36 @@ footer .textArea p {
     padding: 3px 50px;
     border-radius: 5px;
     margin-top: 70px;
-  }
-  .roadMap .heightRoadMap .secondArea .imgArea .opacityImag {
+}
+
+.roadMap .heightRoadMap .secondArea .imgArea .opacityImag {
+    opacity: 0.5;
     width: 1000px;
     position: absolute;
-    left: 127px;
+    left: 193px;
     top: -295px;
-  }
-  .roadMap .heightRoadMap .secondArea .imgArea .imgS {
+}
+
+.roadMap .heightRoadMap .secondArea .imgArea .imgS {
     width: 750px;
     position: absolute;
     right: -72px;
-    top: 26px;
+    top: 145px;
     z-index: 11;
-  }
-  .roadMap .heightRoadMap .thirtArea {
+}
+
+.roadMap .heightRoadMap .thirtArea {
     text-align-last: center;
-    margin-top: 850px;
-  }
-  .roadMap .heightRoadMap .thirtArea .textArea {
+    margin-top: 1050px;
+}
+
+.roadMap .heightRoadMap .thirtArea .textArea {
     position: relative;
     display: block;
     text-align: -webkit-center;
-  }
-  .roadMap .heightRoadMap .thirtArea .textArea p:first-child {
+}
+
+.roadMap .heightRoadMap .thirtArea .textArea p:first-child {
     color: #595c6b;
     font-size: 194px;
     text-align: center;
@@ -2065,26 +694,29 @@ footer .textArea p {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     top: -96px;
     z-index: -1;
-  }
-  .roadMap .heightRoadMap .thirtArea .textArea p:nth-child(2) {
+}
+
+.roadMap .heightRoadMap .thirtArea .textArea p:nth-child(2) {
     color: white;
     font-size: 80px;
     line-height: 106px;
     margin: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     font-family: "BohemianSoul-Regular";
-  }
-  .roadMap .heightRoadMap .thirtArea .textArea p:nth-child(3) {
+}
+
+.roadMap .heightRoadMap .thirtArea .textArea p:nth-child(3) {
     font-size: 18px;
     color: #595c6b;
     text-align: center;
     margin: 0px;
     margin: 0px 100px;
-  }
-  .roadMap .heightRoadMap .thirtArea .textArea button {
+}
+
+.roadMap .heightRoadMap .thirtArea .textArea button {
     background-color: #f1036a;
     color: white;
     -webkit-box-shadow: -1px 2px 0px 5px #a80068;
@@ -2096,30 +728,37 @@ footer .textArea p {
     padding: 3px 50px;
     border-radius: 5px;
     margin-top: 70px;
-  }
-  .roadMap .heightRoadMap .thirtArea .imgArea .opacityImag {
+}
+
+.roadMap .heightRoadMap .thirtArea .imgArea .opacityImag {
     width: 400px;
     position: absolute;
-    left: 130px;
+    left: 250px;
     top: -90px;
-  }
-  .roadMap .heightRoadMap .thirtArea .imgArea .imgS {
+    opacity: 0.3;
+}
+
+.roadMap .heightRoadMap .thirtArea .imgArea .imgS {
     width: 350px;
     position: absolute;
-    left: 300px;
+    left: 400px;
     top: 26px;
     z-index: 11;
-  }
-  .roadMap .heightRoadMap .fourthArea {
+}
+
+.roadMap .heightRoadMap .fourthArea {
     text-align-last: center;
-    margin-top: 400px;
-  }
-  .roadMap .heightRoadMap .fourthArea .textArea {
+    margin-top: 350px;
+}
+
+.roadMap .heightRoadMap .fourthArea .textArea {
     display: block;
     text-align: -webkit-center;
     position: relative;
-  }
-  .roadMap .heightRoadMap .fourthArea .textArea p:first-child {
+    margin-top: -50px;
+}
+
+.roadMap .heightRoadMap .fourthArea .textArea p:first-child {
     color: #595c6b;
     font-size: 194px;
     text-align: center;
@@ -2128,34 +767,38 @@ footer .textArea p {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     top: -95px;
     z-index: -1;
-  }
-  .roadMap .heightRoadMap .fourthArea .textArea p:nth-child(2) {
+}
+
+.roadMap .heightRoadMap .fourthArea .textArea p:nth-child(2) {
     color: white;
     font-size: 44px;
     line-height: 44px;
     margin: 0px;
     margin-bottom: 0px;
     font-family: "BohemianSoul-Regular";
-  }
-  .roadMap .heightRoadMap .fourthArea .textArea p:nth-child(3) {
+}
+
+.roadMap .heightRoadMap .fourthArea .textArea p:nth-child(3) {
     color: white;
     font-size: 80px;
     line-height: 106px;
     margin: 0px;
     margin-bottom: 50px;
     font-family: "BohemianSoul-Regular";
-  }
-  .roadMap .heightRoadMap .fourthArea .textArea p:nth-child(4) {
+}
+
+.roadMap .heightRoadMap .fourthArea .textArea p:nth-child(4) {
     font-size: 18px;
     color: #595c6b;
     text-align: center;
     margin: 0px;
-    margin: 0px 100px;
-  }
-  .roadMap .heightRoadMap .fourthArea .textArea button {
+    margin: 0px 250px;
+}
+
+.roadMap .heightRoadMap .fourthArea .textArea button {
     background-color: #f1036a;
     color: white;
     -webkit-box-shadow: -1px 2px 0px 5px #a80068;
@@ -2167,52 +810,74 @@ footer .textArea p {
     padding: 3px 50px;
     border-radius: 5px;
     margin-top: 70px;
-  }
-  .roadMap .heightRoadMap .fourthArea .imgArea {
+}
+
+.roadMap .heightRoadMap .fourthArea .imgArea {
     position: relative;
-  }
-  .roadMap .heightRoadMap .fourthArea .imgArea .imgS {
-    width: 800px;
+}
+
+.roadMap .heightRoadMap .fourthArea .imgArea .imgS {
+    width: 615px;
     position: absolute;
-    top: -100px;
-    left: 58%;
+    top: -95px;
+    left: 50%;
     z-index: 11;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  .roadMap .heightRoadMap .fiveArea {
+    transform: translateX(-50%);
+}
+
+.roadMap .heightRoadMap .fiveArea {
     text-align-last: center;
-    margin-top: 400px;
-  }
-  .roadMap .heightRoadMap .fiveArea .textArea {
+    margin-top: 350px;
+}
+
+.roadMap .heightRoadMap .fiveArea .textArea {
     display: block;
     text-align: -webkit-center;
     position: relative;
-  }
-  .roadMap .heightRoadMap .fiveArea .textArea p:first-child {
+}
+
+.roadMap .heightRoadMap .fiveArea .textArea p:first-child {
     color: white;
     font-size: 28px;
     line-height: 44px;
     margin: 0px;
     margin-bottom: 0px;
     font-family: "BohemianSoul-Regular";
-  }
-  .roadMap .heightRoadMap .fiveArea .textArea p:nth-child(2) {
+}
+
+.roadMap .heightRoadMap .fiveArea .textArea p:nth-child(2) {
     color: white;
     font-size: 60px;
     line-height: 72px;
     margin: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-family: "BohemianSoul-Regular";
-  }
-  .roadMap .heightRoadMap .fiveArea .textArea p:nth-child(3) {
+}
+
+.roadMap .heightRoadMap .fiveArea .textArea p:nth-child(3) {
     font-size: 18px;
     color: #595c6b;
     text-align: center;
     margin: 0px;
-    margin: 0px 100px;
-  }
-  .roadMap .heightRoadMap .fiveArea .textArea button {
+    margin: 0px 200px;
+}
+
+.roadMap .heightRoadMap .sixArea .textArea p:nth-child(4) {
+    color: #595c6b6e;
+    font-size: 194px;
+    text-align: center;
+    margin: 0px;
+    font-family: "BohemianSoul-Regular";
+    position: absolute;
+    left: -70px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -48px;
+    z-index: -1;
+}
+
+.roadMap .heightRoadMap .fiveArea .textArea button {
     background-color: #f1036a;
     color: white;
     -webkit-box-shadow: -1px 2px 0px 5px #a80068;
@@ -2224,109 +889,61 @@ footer .textArea p {
     padding: 3px 50px;
     border-radius: 5px;
     margin-top: 30px;
-  }
-  .roadMap .heightRoadMap .fiveArea .imgArea {
+}
+
+.roadMap .heightRoadMap .fiveArea .imgArea {
     position: relative;
-  }
-  .roadMap .heightRoadMap .fiveArea .imgArea .imgS {
+}
+
+.roadMap .heightRoadMap .fiveArea .imgArea .imgS {
     width: 800px;
     position: absolute;
     top: 14px;
     left: 67%;
     z-index: 11;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  .roadMap .heightRoadMap .sixArea {
+    transform: translateX(-50%);
+}
+
+.roadMap .heightRoadMap .sixArea {
     text-align-last: center;
     margin-top: 350px;
-  }
-  .roadMap .heightRoadMap .sixArea .textArea {
+}
+
+.roadMap .heightRoadMap .sixArea .textArea {
     display: block;
     text-align: -webkit-center;
     position: relative;
-  }
-  .roadMap .heightRoadMap .sixArea .textArea p:first-child {
+}
+
+.roadMap .heightRoadMap .sixArea .textArea p:first-child {
+    display: none;
     color: white;
     font-size: 28px;
     line-height: 44px;
     margin: 0px;
     margin-bottom: 0px;
     font-family: "BohemianSoul-Regular";
-  }
-  .roadMap .heightRoadMap .sixArea .textArea p:nth-child(2) {
-    color: white;
-    font-size: 60px;
-    line-height: 72px;
-    margin: 0px;
-    margin-bottom: 20px;
-    font-family: "BohemianSoul-Regular";
-  }
-  .roadMap .heightRoadMap .sixArea .textArea p:nth-child(3) {
-    font-size: 18px;
-    color: #595c6b;
-    text-align: center;
-    margin: 0px;
-    margin: 0px 100px;
-  }
-  .roadMap .heightRoadMap .sixArea .textArea button {
-    background-color: #f1036a;
-    color: white;
-    -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-    box-shadow: -1px 2px 0px 5px #a80068;
-    border: 0px;
-    font-size: 36px;
-    outline: 0px;
-    font-family: "BohemianSoul-Regular";
-    padding: 3px 50px;
-    border-radius: 5px;
-    margin-top: 70px;
-  }
-  .roadMap .heightRoadMap .sixArea .imgArea {
-    position: relative;
-  }
-  .roadMap .heightRoadMap .sixArea .imgArea .imgS {
-    width: 800px;
-    position: absolute;
-    top: 14px;
-    left: 67%;
-    z-index: 11;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  .roadMap .heightRoadMap .sevenArea {
-    text-align-last: center;
-    margin-top: 350px;
-  }
-  .roadMap .heightRoadMap .sevenArea .textArea {
-    display: block;
-    text-align: -webkit-center;
-    position: relative;
-  }
-  .roadMap .heightRoadMap .sevenArea .textArea p:first-child {
-    color: white;
-    font-size: 28px;
-    line-height: 44px;
-    margin: 0px;
-    margin-bottom: 0px;
-    font-family: "BohemianSoul-Regular";
-  }
-  .roadMap .heightRoadMap .sevenArea .textArea p:nth-child(2) {
+}
+
+.roadMap .heightRoadMap .sixArea .textArea p:nth-child(2) {
     color: white;
     font-size: 60px;
     line-height: 72px;
     margin: 0px;
     margin-bottom: 50px;
     font-family: "BohemianSoul-Regular";
-  }
-  .roadMap .heightRoadMap .sevenArea .textArea p:nth-child(3) {
+}
+
+.roadMap .heightRoadMap .sixArea .textArea p:nth-child(3) {
     font-size: 18px;
     color: #595c6b;
     text-align: center;
     margin: 0px;
-    margin: 0px 100px;
-  }
-  .roadMap .heightRoadMap .sevenArea .textArea button {
+    margin: 0px 200px;
+}
+
+.roadMap .heightRoadMap .sixArea .textArea button {
     background-color: #f1036a;
     color: white;
     -webkit-box-shadow: -1px 2px 0px 5px #a80068;
@@ -2338,40 +955,108 @@ footer .textArea p {
     padding: 3px 50px;
     border-radius: 5px;
     margin-top: 70px;
-  }
-  .roadMap .heightRoadMap .sevenArea .imgArea {
+}
+
+.roadMap .heightRoadMap .sixArea .imgArea {
     position: relative;
-  }
-  .roadMap .heightRoadMap .sevenArea .imgArea .imgS {
+}
+
+.roadMap .heightRoadMap .sixArea .imgArea .imgS {
     width: 800px;
     position: absolute;
     top: 14px;
     left: 67%;
     z-index: 11;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  .roadMap .container .buttonArea {
+    transform: translateX(-50%);
+}
+
+.roadMap .heightRoadMap .sevenArea {
+    text-align-last: center;
+    margin-top: 350px;
+}
+
+.roadMap .heightRoadMap .sevenArea .textArea {
+    display: block;
+    text-align: -webkit-center;
+    position: relative;
+}
+
+.roadMap .heightRoadMap .sevenArea .textArea p:first-child {
+    color: white;
+    font-size: 28px;
+    line-height: 44px;
+    margin: 0px;
+    margin-bottom: 0px;
+    font-family: "BohemianSoul-Regular";
+}
+
+.roadMap .heightRoadMap .sevenArea .textArea p:nth-child(2) {
+    color: white;
+    font-size: 60px;
+    line-height: 72px;
+    margin: 0px;
+    margin-bottom: 50px;
+    font-family: "BohemianSoul-Regular";
+}
+
+.roadMap .heightRoadMap .sevenArea .textArea p:nth-child(3) {
+    font-size: 18px;
+    color: #595c6b;
+    text-align: center;
+    margin: 0px;
+    margin: 0px 200px;
+}
+
+.roadMap .heightRoadMap .sevenArea .textArea button {
+    background-color: #f1036a;
+    color: white;
+    -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+    box-shadow: -1px 2px 0px 5px #a80068;
+    border: 0px;
+    font-size: 36px;
+    outline: 0px;
+    font-family: "BohemianSoul-Regular";
+    padding: 3px 50px;
+    border-radius: 5px;
+    margin-top: 70px;
+}
+
+.roadMap .heightRoadMap .sevenArea .imgArea {
+    position: relative;
+}
+
+.roadMap .heightRoadMap .sevenArea .imgArea .imgS {
+    width: 800px;
+    position: absolute;
+    top: 14px;
+    left: 67%;
+    z-index: 11;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.roadMap .container .buttonArea {
     text-align-last: center;
     display: block;
-  }
-  .roadMap .container .buttonArea button:first-child {
-    background-image: url("../img/icon/arrowB.png");
-    background-color: transparent;
-    background-size: 38px;
-    background-repeat: no-repeat;
-    background-position: right center;
-    padding: 20px 45px;
-    padding-left: 0px;
+}
+
+.roadMap .container .buttonArea button:first-child {
+    padding: 10px 50px !important;
+    padding: 1px 1px;
+    padding-left: 97px;
     color: #11a692;
-    font-size: 24px;
+    font-size: 30px;
     border: 0px;
     outline: 0px;
     font-family: "Cornerstone";
     z-index: 9999;
     margin-right: 66px;
-  }
-  .roadMap .container .buttonArea button:nth-child(2) {
+    word-spacing: -9px;
+    background-color: transparent;
+}
+
+.roadMap .container .buttonArea button:nth-child(2) {
     background-color: transparent;
     padding: 20px 45px;
     padding-left: 0px;
@@ -2381,16 +1066,18 @@ footer .textArea p {
     outline: 0px;
     font-family: "Cornerstone";
     z-index: 9999;
-    margin-right: -90px;
-  }
-  .sliderOne {
+    margin-right: -30px;
+}
+
+.sliderOne {
     position: relative;
-  }
-  .sliderOne .owl-carousel .owl-nav .owl-prev {
+}
+
+.sliderOne .owl-carousel .owl-nav .owl-prev {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     left: 200px;
     width: 25px;
     height: 25px;
@@ -2399,22 +1086,9 @@ footer .textArea p {
     background-repeat: no-repeat;
     background-position: center;
     font-size: 0px;
-  }
-  .sliderOne .owl-carousel .owl-nav .owl-next {
-    right: 100px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: 25px;
-    height: 25px;
-    background-image: url("../img/icon/next.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-size: 0px;
-  }
-  .sliderOne .owl-carousel .owl-dots {
+}
+
+.sliderOne .owl-carousel .owl-dots {
     gap: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2423,251 +1097,299 @@ footer .textArea p {
     bottom: 100px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     height: 10px;
     width: 300px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .sliderOne .owl-carousel .owl-dots button {
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.sliderOne .owl-carousel .owl-dots button {
     width: 10px;
     height: 10px;
     background-color: #a3a3a3;
     border-radius: 10px;
-  }
-  .sliderOne .owl-carousel .owl-item .textArea p {
+}
+
+.sliderOne .owl-carousel .owl-item .textArea p {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font-size: 46px;
     color: white;
     font-family: "Cornerstone";
-  }
-  .sliderRightLeft {
+}
+
+.sliderRightLeft {
     margin: 150px 0px;
-  }
-  .nftTExt {
+}
+
+.nftTExt {
     margin: 100px 0px;
-  }
-  .nftTExt .row {
+}
+
+.nftTExt .row {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .nftTExt .row .imgArea {
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nftTExt .row .imgArea {
     text-align: center;
-  }
-  .nftTExt .row .imgArea img {
+}
+
+.nftTExt .row .imgArea img {
     width: 350px;
     height: auto;
-  }
-  .nftTExt .row .textAreaBtn {
+}
+
+.nftTExt .row .textAreaBtn {
     text-align: center;
     text-align: -webkit-center;
     display: block;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .nftTExt .row .textAreaBtn .one {
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.nftTExt .row .textAreaBtn .one {
     font-family: "BohemianSoul-Regular";
     color: grey;
     font-size: 22px;
-  }
-  .nftTExt .row .textAreaBtn .two {
-    font-size: 18px;
+}
+
+.nftTExt .row .textAreaBtn .two {
+    font-size: 24px;
+    line-height: 30px;
     width: 450px;
     color: grey;
-    text-align: justify;
-  }
-  .nftTExt .row .textAreaBtn h6 {
+    text-align: center;
+}
+
+.nftTExt .row .textAreaBtn h6 {
     margin: 10px 0px;
     font-size: 46px;
     color: white;
     font-family: "BohemianSoul-Regular";
-  }
-  .nftTExt .row .textAreaBtn button {
+}
+
+.nftTExt .row .textAreaBtn button {
     background-color: #f1036a;
     color: white;
     -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-            box-shadow: -1px 2px 0px 5px #a80068;
+    box-shadow: -1px 2px 0px 5px #a80068;
     border: 0px;
     outline: 0px;
     font-family: "BohemianSoul-Regular";
     padding: 3px 50px;
     border-radius: 5px;
+    font-size: 24px;
     cursor: url("../img/icon/cursourEye.png") 0 0, default !important;
-  }
-  .owl-Two {
+}
+
+.owl-Two {
     margin-bottom: 70px;
-  }
-  footer {
+}
+
+footer {
     padding: 75px;
     background-image: url("../img/bgFooter.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     text-align: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  footer .logorea img {
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+footer .logorea img {
     width: 400px;
     height: 400px;
-  }
-  footer .socialArea {
+}
+
+footer .socialArea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 40px;
-  }
-  footer .socialArea img {
+}
+
+footer .socialArea img {
     width: 35px;
     height: 35px;
-  }
-  footer .socialArea .discort {
+}
+
+footer .socialArea .discort {
     width: 50px !important;
     height: 35px !important;
-  }
-  footer .socialArea .twitter {
+}
+
+footer .socialArea .twitter {
     width: 35px !important;
     height: 30px !important;
-  }
-  footer .textArea p {
-    font-size: 14px;
+}
+
+footer .textArea p {
+    font-size: 20px;
     margin-top: 30px;
     color: grey;
-  }
-  .theGame {
+}
+
+.theGame {
     overflow-x: hidden;
-  }
-  .spAboutusHeader {
+}
+
+.spAboutusHeader {
     background-image: url("../img/Fusion3.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100vh;
     position: relative;
-  }
-  .spAboutusHeader .headerArea {
+}
+
+.spAboutusHeader .headerArea {
     text-align: center;
     display: block;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  .spAboutusHeader .headerArea img {
+    transform: translate(-50%, -50%);
+}
+
+.spAboutusHeader .headerArea img {
     width: 550px;
     height: auto;
-  }
-  .spAboutusHeader .headerArea p {
-    margin-top: 20px;
-    color: grey;
-    text-align: start;
+}
+
+.spAboutusHeader .headerArea p {
+    margin-top: 50px;
+    color: white;
+    text-align: justify;
     width: 800px;
-    font-weight: 600;
-  }
-  .Ourteam {
-    margin: 200px 0px;
-  }
-  .Ourteam .textAreaTeam h6 {
-    font-size: 46px;
+    font-size: 24px;
+    opacity: 0.9;
+}
+
+.Ourteam {
+    margin: 100px 0px;
+}
+
+.Ourteam .textAreaTeam h6 {
+    font-size: 60px;
     text-align: center;
     color: white;
     font-family: "BohemianSoul-Regular";
     margin-bottom: 50px;
-  }
-  .Ourteam .textAreaTeam p {
+}
+
+.Ourteam .textAreaTeam p {
     color: white;
-    font-size: 18px;
-  }
-  .teamMate {
+    font-size: 24px;
+    opacity: 0.8;
+}
+
+.teamMate {
     margin: 150px 0px;
-  }
-  .teamMate .persons {
+}
+
+.teamMate .persons {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
-  }
-  .teamMate .persons .person {
+}
+
+.teamMate .persons .person {
     display: block;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     text-align: center;
-  }
-  .teamMate .persons .person img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-  }
-  .teamMate .persons .person .name {
+}
+
+.teamMate .persons .person img {
+    width: 150px;
+    height: 150px;
+}
+
+.teamMate .persons .person .name {
     color: #ccbf8b !important;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     margin-top: 10px;
     margin-bottom: 0px !important;
-  }
-  .teamMate .persons .person .position {
+}
+
+.teamMate .persons .person .position {
     color: grey;
-    font-size: 14px;
-  }
-  .joinTheTeam {
-    background-image: url("../img/Varlık9@2x.png");
+    font-size: 18px;
+}
+
+.joinTheTeam {
+    background-image: url("../img/Varlik92xx.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 100px 0px;
-  }
-  .joinTheTeam .textArea h6 {
-    font-size: 46px;
+    padding-top: 140px;
+}
+
+.joinTheTeam .textArea h6 {
+    font-size: 60px;
     color: white;
     font-family: "BohemianSoul-Regular";
-  }
-  .joinTheTeam .textArea p {
+}
+
+.joinTheTeam .textArea p {
     margin: 0px;
     color: white;
-  }
-  .faq {
-    margin-top: 167px;
-  }
-  .faq .specialRow {
-    height: 550px;
+    font-size: 24px;
+}
+
+.faq {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.faq .specialRow {
+    height: 900px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     place-content: center;
-  }
-  .faq .specialRow .hoodArea p {
+}
+
+.faq .specialRow .hoodArea p {
     font-size: 46px;
     color: #06eab3;
     font-family: "Cornerstone";
     margin-left: 70px;
-  }
-  .faq .specialRow .accordion-container {
+}
+
+.faq .specialRow .accordion-container {
     position: relative;
     width: 100%;
     outline: 0;
     cursor: pointer;
     margin-bottom: 100px !important;
-  }
-  .faq .specialRow .accordion-container .article-title {
+}
+
+.faq .specialRow .accordion-container .article-title {
     display: block;
     position: relative;
     margin: 30px 0px;
@@ -2676,8 +1398,9 @@ footer .textArea p {
     font-weight: normal;
     color: white;
     cursor: pointer;
-  }
-  .faq .specialRow .accordion-container .content-entry i {
+}
+
+.faq .specialRow .accordion-container .content-entry i {
     top: 10px;
     position: absolute;
     left: 12px;
@@ -2693,407 +1416,558 @@ footer .textArea p {
     background-size: 100% 100%;
     color: white;
     border-radius: 17px;
-  }
-  .faq .specialRow .accordion-container .content-entry i:before {
+}
+
+.faq .specialRow .accordion-container .content-entry i:before {
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 20px;
-    background-image: url("../img/icon/plus.png");
+    /*background-image: url("../img/icon/plus.png");*/
     background-size: 100% 100%;
     background-repeat: no-repeat;
     content: " ";
     height: 20px;
-  }
-  .faq .specialRow .accordion-container .content-entry.open i:before {
+}
+
+.faq .specialRow .accordion-container .content-entry.open i:before {
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 20px;
-    background-image: url("../img/icon/minus.png");
+    /*background-image: url("../img/icon/minus.png");*/
     background-size: 100% 100%;
     background-repeat: no-repeat;
     content: " ";
     height: 20px;
-  }
-  .faq .specialRow .accordion-content {
+}
+
+.faq .specialRow .accordion-content {
     display: none;
     color: white;
     margin-left: 80px;
-  }
-  .faq .specialRow #content {
+}
+
+.faq .specialRow .accordion-content p {
+    font-size: 20px;
+}
+
+.faq .specialRow #content {
     width: 100%;
-  }
-  .faq .specialRow .accordion-container,
-  .faq .specialRow #description {
+}
+
+.faq .specialRow .accordion-container,
+.faq .specialRow #description {
     width: 90%;
     margin: 1.875em auto;
-  }
-  .faq .specialRow #description p {
+}
+
+.faq .specialRow #description p {
     line-height: 1.5;
-  }
-  .faq .specialRow #description h2 {
+}
+
+.faq .specialRow #description h2 {
     text-align: center;
-  }
-  .theGameHeader {
+}
+
+@media all and (min-width: 860px) {
+    .faq .specialRow #content {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.theGameHeader {
     position: relative;
     height: 100vh;
     background-image: url("../img/theGameBg.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-  .theGameHeader .imgArea {
+    background-size: 115% 105%;
+}
+
+.theGameHeader .imgArea {
     position: absolute;
-    right: 10%;
+    left: 10%;
     top: 50%;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .theGameHeader .imgArea img {
-    width: 500px;
+    transform: translateY(-50%);
+}
+
+.theGameHeader .imgArea img {
+    width: 1000px;
     height: auto;
-  }
-  .gameArea {
+    padding-top: 200px;
+}
+
+.theGameHeader .imgArea .StextArea h6 {
+    margin-bottom: 50px;
+    font-size: 35px;
+    color: white;
+    font-family: "BohemianSoul-Regular";
+}
+
+.theGameHeader .imgArea .StextArea p {
+    width: 830px;
+    font-size: 24px;
+    color: white;
+    margin: 20px 0px;
+}
+
+.gameArea {
     height: 1000px;
     background-image: url("../img/g1BG.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-  }
-  .gameArea .imgArea img {
+    position: relative;
+    background-attachment: fixed;
+}
+
+.gameArea .imgArea img {
     position: absolute;
     left: -300px;
     width: 1000px;
-    height: auto;
-  }
-  .gameArea .textArea h6 {
-    font-size: 60px;
+    top: 0px;
+    height: 100%;
+    z-index: 10;
+}
+
+.gameArea .textArea {
+    width: 900px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.gameArea .textArea h6 {
+    font-size: 50px;
     text-align: start;
     color: white;
     font-family: "BohemianSoul-Regular";
-  }
-  .gameArea .textArea p {
-    font-size: 35px;
+}
+
+.gameArea .textArea p {
+    font-size: 25px;
     color: white;
-  }
-  .gameAreaTwo {
+    width: 700px;
+    margin-top: 25px;
+}
+
+.gameAreaTwo {
     height: 1200px;
     background-image: url("../img/g2bg.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-  }
-  .gameAreaTwo .imgArea img {
+    position: relative;
+    background-attachment: fixed;
+}
+
+.gameAreaTwo .imgArea img {
     position: absolute;
     right: 0px;
-    width: 600px;
+    width: 900px;
     height: auto;
-  }
-  .gameAreaTwo .textArea h6 {
-    font-size: 60px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.gameAreaTwo .textArea {
+    position: absolute;
+    top: 50%;
+    width: 900px;
+    left: 10%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.gameAreaTwo .textArea h6 {
+    font-size: 50px;
     text-align: start;
     color: white;
     font-family: "BohemianSoul-Regular";
-  }
-  .gameAreaTwo .textArea p {
-    font-size: 35px;
+}
+
+.gameAreaTwo .textArea p {
+    font-size: 25px;
     color: white;
-  }
-  .gameAreaThree {
+    width: 700px;
+    margin-top: 25px;
+}
+
+.gameAreaThree {
     height: 1200px;
     background-image: url("../img/g3BG.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-  }
-  .gameAreaThree .imgArea img {
+    position: relative;
+    background-attachment: fixed;
+}
+
+.gameAreaThree .imgArea img {
     position: absolute;
     left: -564px;
     width: 1200px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
     height: auto;
-  }
-  .gameAreaThree .textArea h6 {
-    font-size: 60px;
+}
+
+.gameAreaThree .textArea {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 800px;
+}
+
+.gameAreaThree .textArea h6 {
+    font-size: 50px;
     text-align: start;
     color: white;
     font-family: "BohemianSoul-Regular";
-  }
-  .gameAreaThree .textArea p {
-    font-size: 35px;
+}
+
+.gameAreaThree .textArea p {
+    font-size: 25px;
     color: white;
-  }
-  .gameAreaFour {
+    width: 700px;
+    margin-top: 25px;
+}
+
+.gameAreaFour {
     height: 1200px;
     background-image: url("../img/g4BG.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-  }
-  .gameAreaFour .imgArea img {
+    position: relative;
+    background-attachment: fixed;
+}
+
+.gameAreaFour .imgArea img {
+    position: absolute;
     width: 400px;
     height: auto;
     right: 200px;
-  }
-  .gameAreaFour .textArea h6 {
-    font-size: 60px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.gameAreaFour .textArea {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 900px;
+    left: 10%;
+}
+
+.gameAreaFour .textArea h6 {
+    font-size: 50px;
     text-align: start;
     color: white;
     font-family: "BohemianSoul-Regular";
-  }
-  .gameAreaFour .textArea p {
-    font-size: 35px;
+}
+
+.gameAreaFour .textArea p {
+    font-size: 25px;
     color: white;
-  }
-  .gameText .textArea {
+    margin-top: 25px;
+    width: 700px;
+}
+
+.gameText .textArea {
     text-align: center;
     margin: 150px 0px;
-  }
-  .gameText .textArea h6 {
+}
+
+.gameText .textArea h6 {
     color: white;
-    font-size: 60px;
+    font-size: 50px;
     font-family: "Cornerstone";
-  }
-  .gameText .textArea p {
+}
+
+.gameText .textArea p {
     color: white;
-    font-size: 35px;
-  }
-  .setupClan {
+    font-size: 25px;
+}
+
+.setupClan {
     background-image: url("../img/g5BG.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 250px 0px;
     height: 1200px;
+    background-attachment: fixed;
+    position: relative;
     /* marquee div container */
     /* nested div inside the container */
     /* span with text */
     /* keyframe */
-  }
-  .setupClan .col-12 {
+}
+
+.setupClan .col-12 {
     display: block;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     text-align: -webkit-center;
-  }
-  .setupClan .col-12 .textArea {
-    width: 550px;
+}
+
+.setupClan .col-12 .textArea {
+    width: 850px;
     margin: 150px 0px;
-  }
-  .setupClan .col-12 .textArea h6 {
+}
+
+.setupClan .col-12 .textArea h6 {
     color: white;
     font-size: 50px;
     text-align: start;
     font-family: "BohemianSoul-Regular";
     margin-bottom: 20px;
-  }
-  .setupClan .col-12 .textArea p {
+}
+
+.setupClan .col-12 .textArea p {
     text-align: start;
     font-size: 25px;
     color: white;
     margin: 20px 0px;
-  }
-  .setupClan .marquee {
-    font-size: 2vw;
+}
+
+.setupClan .marquee {
+    font-size: 1.6vw;
     color: #06eab3;
     font-family: "Cornerstone";
     height: 2.5vw;
     overflow: hidden;
     background-color: transparent;
     position: relative;
-    -webkit-transform: rotate(350deg);
-            transform: rotate(350deg);
-  }
-  .setupClan .marquee div {
+}
+
+.setupClan .marquee div {
     display: block;
-    width: 200%;
     position: absolute;
     overflow: hidden;
-    -webkit-animation: marquee 12s linear infinite;
-            animation: marquee 12s linear infinite;
-  }
-  .setupClan .marquee span {
+    animation: marquee 60s linear infinite;
+}
+
+.setupClan .marquee span {
     float: left;
     width: 50%;
-  }
-  .setupClan .clock {
+}
+
+.setupClan .clock {
     width: 35px;
     height: auto;
-  }
-  @-webkit-keyframes marquee {
+}
+
+@keyframes marquee {
     0% {
-      left: 0;
+        left: 0;
     }
     100% {
-      left: -100%;
+        left: -300%;
     }
-  }
-  @keyframes marquee {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: -100%;
-    }
-  }
-  .gamemode {
+}
+
+.gamemode {
     margin: 150px 0px;
-  }
-  .gamemode .textArea h6 {
+}
+
+.gamemode .textArea h6 {
     text-align: center;
-    font-size: 46px;
-    color: white;
-    font-family: "BohemianSoul-Regular";
-  }
-  .gamemode .textArea p {
-    font-size: 18px;
-    color: white;
-    margin-top: 30px;
-  }
-  .gamemode .cardArea {
-    background-image: url("../img/bgGameModeCard.png");
+    font-size: 64px;
+    color: #f9f9a8;
+    font-family: "Cornerstone";
+    margin-top: 50px;
+}
+
+.gamemode .cardArea {
     margin-top: 75px;
     text-align: center;
-    background-position-x: center;
-    background-position-y: 50px;
-    background-repeat: no-repeat;
-    background-size: 70% 70%;
-  }
-  .gamemode .cardArea .cardItems img {
-    width: 250px;
-    height: auto;
-  }
-  .gamemode .cardArea .cardItems .textArea {
-    padding: 0px 130px;
-  }
-  .gamemode .cardArea .cardItems .textArea h6 {
-    font-size: 26px;
+}
+
+.sCarFavicon {
+    width: auto !important;
+    height: auto !important;
+}
+
+.gamemode .cardArea .cardItems img {
+    width: 200px !important;
+    height: 200px !important;
+}
+
+.gamemode .cardArea .cardItems .textArea h6 {
+    font-size: 42px;
     color: #2ff3b5;
     font-family: "Cornerstone";
-    margin-top: 50px;
-  }
-  .gamemode .cardArea .cardItems .textArea p {
+    margin-top: 50px !important;
+}
+
+.gamemode .cardArea .cardItems .textArea p {
     text-align: start;
     color: white;
-    font-size: 18px;
-  }
-  .gamemode .cardArea .cardItemsTwo {
-    position: relative;
-  }
-  .gamemode .cardArea .cardItemsTwo img {
-    width: 250px;
-    height: auto;
-  }
-  .gamemode .cardArea .cardItemsTwo .imgBefore {
-    position: absolute;
-    top: -30px;
-    left: 25px;
+    font-size: 24px;
+    margin: 0px 30px;
+    height: 200px;
+    transform: translateY(14%);
+}
+
+.gamemode .cardArea .cardItemsTwo img {
     width: 150px;
-  }
-  .gamemode .cardArea .cardItemsTwo .textArea {
+    height: auto;
+}
+
+.gamemode .cardArea .cardItemsTwo .textArea {
     padding: 0px 1px;
-  }
-  .gamemode .cardArea .cardItemsTwo .textArea h6 {
-    font-size: 26px;
+}
+
+.gamemode .cardArea .cardItemsTwo .textArea h6 {
+    font-size: 42px;
     color: #2ff3b5;
     font-family: "Cornerstone";
     margin-top: 50px;
-  }
-  .gamemode .cardArea .cardItemsTwo .textArea p {
+}
+
+.gamemode .cardArea .cardItemsTwo .textArea p {
     text-align: start;
     color: white;
-    font-size: 18px;
-  }
-  .itsyourturn {
+    font-size: 24px;
+}
+
+.itsyourturn {
     text-align: center;
     display: block;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-bottom: 150px;
-  }
-  .itsyourturn h6 {
+}
+
+.itsyourturn h6 {
     color: white;
     -webkit-text-stroke: 2px #513e1d;
     font-size: 46px;
     position: relative;
     font-family: "BohemianSoul-Regular";
-  }
-  .itsyourturn h6 span {
+}
+
+.itsyourturn h6 span {
     width: 150px;
     position: absolute;
     color: #f1036a !important;
     -webkit-text-stroke: 0px;
     left: 338px;
     -webkit-transform: rotate(331deg);
-            transform: rotate(331deg);
+    transform: rotate(331deg);
     -webkit-text-stroke: 2px #513e1d;
-  }
-  .itsyourturn button {
+}
+
+.itsyourturn button {
     background-color: #f1036a;
     color: white;
     -webkit-box-shadow: -1px 2px 0px 5px #a80068;
-            box-shadow: -1px 2px 0px 5px #a80068;
+    box-shadow: -1px 2px 0px 5px #a80068;
     border: 0px;
     outline: 0px;
     font-family: "BohemianSoul-Regular";
     padding: 3px 50px;
     border-radius: 5px;
-  }
-  .manifestoText .textArea {
-    margin-top: 200px;
+    margin-top: 50px;
+}
+
+.manHeader {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/manBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-transition: all 0.7s ease-in;
+    -moz-transition: all 0.7s ease-in;
+    -o-transition: all 0.7s ease-in;
+    -ms-transition: all 0.7s ease-in;
+    transition: all 0.7s ease-in;
+}
+
+.manifestopng {
+    width: 1000px;
+}
+
+.manifestoText .textArea {
+    margin-top: 150px;
     margin-bottom: 150px;
-  }
-  .manifestoText .textArea h6 {
+    margin-left: 200px;
+}
+
+.manifestoText .textArea h6 {
     color: #333749;
     font-size: 106px;
     font-family: "Cornerstone";
-  }
-  .manifestoText .textArea p {
+}
+
+.manifestoText .textArea p {
     color: white;
     margin: 0px;
-    font-size: 18px;
-  }
-  .owlFour {
+    font-size: 24px;
+}
+
+.owlFour {
     margin: 150px 0px;
-  }
-  .openSea {
+}
+
+.openSea {
     background-image: url("../img/openSeaArea.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    padding-top: 200px;
-    padding-bottom: 100px;
-  }
-  .openSea .hoodBTn {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.openSea .hoodBTn {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     place-content: space-between;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .openSea .hoodBTn .hood {
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.openSea .hoodBTn .hood {
     text-align: center;
-  }
-  .openSea .hoodBTn .hood h6:first-child {
+    padding-top: 25px;
+}
+
+.openSea .hoodBTn .hood h6:first-child {
     font-family: "Cornerstone";
     color: black;
     font-size: 56px;
-  }
-  .openSea .hoodBTn .hood h6:nth-child(2) {
+}
+
+.openSea .hoodBTn .hood h6:nth-child(2) {
     font-family: "Cornerstone";
     color: white;
     font-size: 76px;
-  }
-  .openSea .hoodBTn .hood a img {
-    width: 70px;
+}
+
+.openSea .hoodBTn .hood a img {
+    width: 200px;
     height: auto;
     margin-top: 25px;
-  }
-  .openSea .hoodBTn .btn button {
+}
+
+.openSea .hoodBTn .btn button {
     width: 100%;
     border-radius: 25px;
     background-image: url("../img/icon/btnbg.png");
@@ -3103,1074 +1977,2719 @@ footer .textArea p {
     height: 100px;
     border: 0px;
     outline: 0px;
-  }
-  @-webkit-keyframes leftText {
+}
+
+@-webkit-keyframes leftText {
     from {
-      left: -1920;
+        left: -1920;
     }
     to {
-      left: 2000px;
+        left: 2000px;
     }
-  }
+}
+
+.lastImgArea {
+    margin: 50px 0px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1920px) {
+    .manifestopng {
+        width: 800px;
+    }
+    nav {
+        position: fixed !important;
+        width: 100% !important;
+        z-index: 10005;
+    }
+    nav .navbar-collapse {
+        display: block;
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: end;
+    }
+    nav .navbar-collapse .mobilArea {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    nav .navbar-collapse .mobilArea .navbar-nav {
+        -ms-flex-line-pack: justify;
+        align-content: space-between;
+        gap: 30px;
+        width: 100%;
+        -webkit-box-pack: right;
+        -ms-flex-pack: right;
+        justify-content: right;
+        margin-right: 20px !important;
+    }
+    nav .navbar-collapse .mobilArea .navbar-nav .nav-item .nav-link {
+        position: relative;
+        font-family: "Cornerstone";
+        color: white;
+        padding: 0px;
+        height: 100%;
+        font-size: 24px;
+        word-spacing: -8px;
+    }
+    nav .navbar-collapse .mobilArea form .socialArea {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 20px;
+        margin-right: 28px;
+    }
+    nav .navbar-collapse .mobilArea form .socialArea .twitterNav {
+        width: 30px;
+        height: 30px;
+    }
+    nav .navbar-collapse .mobilArea form .socialArea .instagramNav {
+        width: 30px;
+        height: 30px;
+    }
+    nav .navbar-collapse .mobilArea form .socialArea .discodNav {
+        width: 36px;
+        height: 28px;
+    }
+    nav .navbar-collapse .mobilArea form .socialArea .mediumNav {
+        width: 34px;
+        height: 28px;
+    }
+    nav .navbar-collapse .mobilArea form .btnConnect {
+        background-color: #f1036a;
+        color: white;
+        -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+        box-shadow: -1px 2px 0px 5px #a80068;
+        border: 0px;
+        outline: 0px;
+        font-family: "BohemianSoul-Regular";
+        padding: 3px 50px;
+        border-radius: 5px;
+        font-size: 24px;
+        cursor: url("../img/icon/cursourEye.png") 0 0, default !important;
+    }
+    .mainHeader {
+        position: relative;
+    }
+    .timeArea {
+        background-color: #00051c;
+        padding: 100px 0px;
+    }
+    .timeArea .textMntdate {
+        text-align: center;
+        font-size: 36px;
+        font-family: "Cornerstone";
+    }
+    .timeArea .hood h3 {
+        text-align: center;
+        color: #06eab3;
+        font-size: 2rem;
+        font-family: "Cornerstone";
+    }
+    .timeArea .date {
+        gap: 20px;
+        margin: 30px 0px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 2.75rem;
+    }
+    .timeArea .date h3 {
+        color: #06eab3;
+        font-family: "Cornerstone";
+        text-align: center;
+        font-size: 2.75rem;
+    }
+    .timeArea #countdownTwo,
+    .timeArea #countdown {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        gap: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: center;
+    }
+    .timeArea #countdownTwo span,
+    .timeArea #countdown span {
+        font-size: 2.75rem;
+        font-family: "Cornerstone";
+        font-size: 26px;
+        color: #06eab3;
+    }
+    .timeArea #countdownTwo .timeName,
+    .timeArea #countdown .timeName {
+        font-size: 2rem;
+        font-family: "Cornerstone";
+        color: #06eab3;
+        margin-top: 10px;
+    }
+    .timeArea .countdown-sectionTwo span {
+        color: #06eab3;
+        font-family: "Cornerstone";
+        text-align: center;
+        font-size: 2rem !important;
+    }
+    .roadMap {
+        margin-bottom: 150px;
+        margin-top: 150px;
+        position: relative;
+    }
+    .roadMap .heightRoadMap {
+        height: 3930px;
+    }
+    .roadMap .heightRoadMap .rHood {
+        text-align: center;
+    }
+    .roadMap .heightRoadMap .rHood h6 {
+        font-size: 56px;
+        color: #15ceaf;
+        font-family: "Cornerstone";
+    }
+    .roadMap .heightRoadMap .rHood img {
+        position: absolute;
+        left: 30%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin-top: 100px;
+        z-index: 10;
+    }
+    .roadMap .heightRoadMap .firstArea {
+        text-align-last: center;
+        margin-top: 350px;
+    }
+    .roadMap .heightRoadMap .firstArea p:first-child {
+        font-size: 56px;
+        color: white;
+        text-align: center;
+        margin: 0px;
+        font-family: "BohemianSoul-Regular";
+        margin-top: -90px;
+    }
+    .roadMap .heightRoadMap .firstArea p:nth-child(2) {
+        color: white;
+        font-size: 80px;
+        text-align: center;
+        margin: 0px;
+        font-family: "BohemianSoul-Regular";
+    }
+    .roadMap .heightRoadMap .firstArea p:nth-child(3) {
+        color: #3b3f51;
+        font-size: 30px;
+        text-align: center;
+        margin: 0px;
+        font-family: "BohemianSoul-Regular";
+        margin-top: 50px;
+    }
+    .roadMap .heightRoadMap .firstArea button {
+        background-color: #f1036a;
+        color: white;
+        -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+        box-shadow: -1px 2px 0px 5px #a80068;
+        border: 0px;
+        outline: 0px;
+        font-family: "BohemianSoul-Regular";
+        padding: 3px 50px;
+        border-radius: 5px;
+        margin-top: 70px;
+        font-size: 36px;
+    }
+    .roadMap .heightRoadMap .firstArea .imgArea img {
+        width: 1000px;
+        position: absolute;
+        left: -140px;
+        top: -148px;
+        z-index: 11;
+    }
+    .roadMap .heightRoadMap .secondArea {
+        text-align-last: center;
+        margin-top: 350px;
+        position: relative;
+    }
+    .roadMap .heightRoadMap .secondArea .textArea {
+        display: block;
+        text-align: -webkit-center;
+    }
+    .roadMap .heightRoadMap .secondArea .textArea p:first-child {
+        color: #595c6b;
+        font-size: 66px;
+        text-align: center;
+        margin: 0px;
+        font-family: "BohemianSoul-Regular";
+        position: absolute;
+        right: 275px;
+        top: 125px;
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg);
+        z-index: -1;
+    }
+    .roadMap .heightRoadMap .secondArea .textArea p:nth-child(2) {
+        color: white;
+        font-size: 80px;
+        line-height: 106px;
+        margin: 0px;
+        margin-bottom: 50px;
+        font-family: "BohemianSoul-Regular";
+    }
+    .roadMap .heightRoadMap .secondArea .textArea p:nth-child(3) {
+        font-size: 18px;
+        color: #595c6b;
+        text-align: center;
+        margin: 0px;
+        margin: 0px 230px;
+    }
+    .roadMap .heightRoadMap .secondArea .textArea button {
+        background-color: #f1036a;
+        color: white;
+        -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+        box-shadow: -1px 2px 0px 5px #a80068;
+        border: 0px;
+        font-size: 36px;
+        outline: 0px;
+        font-family: "BohemianSoul-Regular";
+        padding: 3px 50px;
+        border-radius: 5px;
+        margin-top: 70px;
+    }
+    .roadMap .heightRoadMap .secondArea .imgArea .opacityImag {
+        width: 1000px;
+        position: absolute;
+        left: 127px;
+        top: -295px;
+    }
+    .roadMap .heightRoadMap .secondArea .imgArea .imgS {
+        width: 750px;
+        position: absolute;
+        right: -100px;
+        top: 45px;
+        z-index: 11;
+    }
+    .roadMap .heightRoadMap .thirtArea {
+        text-align-last: center;
+        margin-top: 850px;
+    }
+    .roadMap .heightRoadMap .thirtArea .textArea {
+        position: relative;
+        display: block;
+        text-align: -webkit-center;
+    }
+    .roadMap .heightRoadMap .thirtArea .textArea p:first-child {
+        color: #595c6b;
+        font-size: 194px;
+        text-align: center;
+        margin: 0px;
+        font-family: "BohemianSoul-Regular";
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        top: -96px;
+        z-index: -1;
+    }
+    .roadMap .heightRoadMap .thirtArea .textArea p:nth-child(2) {
+        color: white;
+        font-size: 80px;
+        line-height: 106px;
+        margin: 0px;
+        margin-bottom: 80px;
+        font-family: "BohemianSoul-Regular";
+    }
+    .roadMap .heightRoadMap .thirtArea .textArea p:nth-child(3) {
+        font-size: 18px;
+        color: #595c6b;
+        text-align: center;
+        margin: 0px;
+        margin: 0px 200px;
+    }
+    .roadMap .heightRoadMap .thirtArea .textArea button {
+        background-color: #f1036a;
+        color: white;
+        -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+        box-shadow: -1px 2px 0px 5px #a80068;
+        border: 0px;
+        font-size: 36px;
+        outline: 0px;
+        font-family: "BohemianSoul-Regular";
+        padding: 3px 50px;
+        border-radius: 5px;
+        margin-top: 70px;
+    }
+    .roadMap .heightRoadMap .thirtArea .imgArea .opacityImag {
+        width: 400px;
+        position: absolute;
+        left: 130px;
+        top: -90px;
+    }
+    .roadMap .heightRoadMap .thirtArea .imgArea .imgS {
+        width: 350px;
+        position: absolute;
+        left: 300px;
+        top: 26px;
+        z-index: 11;
+    }
+    .roadMap .heightRoadMap .fourthArea {
+        text-align-last: center;
+        margin-top: 600px !important;
+    }
+    .roadMap .heightRoadMap .fourthArea .textArea {
+        display: block;
+        text-align: -webkit-center;
+        position: relative;
+    }
+    .roadMap .heightRoadMap .fourthArea .textArea p:first-child {
+        color: #595c6b;
+        font-size: 194px;
+        text-align: center;
+        margin: 0px;
+        font-family: "BohemianSoul-Regular";
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        top: -95px;
+        z-index: -1;
+    }
+    .roadMap .heightRoadMap .fourthArea .textArea p:nth-child(2) {
+        color: white;
+        font-size: 44px;
+        line-height: 44px;
+        margin: 0px;
+        margin-bottom: 0px;
+        font-family: "BohemianSoul-Regular";
+    }
+    .roadMap .heightRoadMap .fourthArea .textArea p:nth-child(3) {
+        color: white;
+        font-size: 80px;
+        line-height: 106px;
+        margin: 0px;
+        margin-bottom: 50px;
+        font-family: "BohemianSoul-Regular";
+    }
+    .roadMap .heightRoadMap .fourthArea .textArea p:nth-child(4) {
+        font-size: 18px;
+        color: #595c6b;
+        text-align: center;
+        margin: 0px;
+        margin: 0px 200px;
+    }
+    .roadMap .heightRoadMap .fourthArea .textArea button {
+        background-color: #f1036a;
+        color: white;
+        -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+        box-shadow: -1px 2px 0px 5px #a80068;
+        border: 0px;
+        font-size: 36px;
+        outline: 0px;
+        font-family: "BohemianSoul-Regular";
+        padding: 3px 50px;
+        border-radius: 5px;
+        margin-top: 70px;
+    }
+    .roadMap .heightRoadMap .fourthArea .imgArea {
+        position: relative;
+    }
+    .roadMap .heightRoadMap .fourthArea .imgArea .imgS {
+        width: 650px;
+        position: absolute;
+        top: -180px;
+        left: 49%;
+        z-index: 11;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .roadMap .heightRoadMap .fiveArea {
+        text-align-last: center;
+        margin-top: 300px;
+    }
+    .roadMap .heightRoadMap .fiveArea .textArea {
+        display: block;
+        text-align: -webkit-center;
+        position: relative;
+    }
+    .roadMap .heightRoadMap .fiveArea .textArea p:first-child {
+        color: white;
+        font-size: 28px;
+        line-height: 44px;
+        margin: 0px;
+        margin-bottom: 0px;
+        font-family: "BohemianSoul-Regular";
+    }
+    .roadMap .heightRoadMap .fiveArea .textArea p:nth-child(2) {
+        color: white;
+        font-size: 60px;
+        line-height: 72px;
+        margin: 0px;
+        margin-bottom: 50px;
+        font-family: "BohemianSoul-Regular";
+    }
+    .roadMap .heightRoadMap .fiveArea .textArea button {
+        background-color: #f1036a;
+        color: white;
+        -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+        box-shadow: -1px 2px 0px 5px #a80068;
+        border: 0px;
+        font-size: 36px;
+        outline: 0px;
+        font-family: "BohemianSoul-Regular";
+        padding: 3px 50px;
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+    .roadMap .heightRoadMap .fiveArea .imgArea {
+        position: relative;
+    }
+    .roadMap .heightRoadMap .fiveArea .imgArea .imgS {
+        width: 800px;
+        position: absolute;
+        top: 14px;
+        left: 67%;
+        z-index: 11;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .roadMap .heightRoadMap .sixArea {
+        text-align-last: center;
+        margin-top: 400px;
+    }
+    .roadMap .heightRoadMap .sixArea .textArea {
+        display: block;
+        text-align: -webkit-center;
+        position: relative;
+    }
+    .roadMap .heightRoadMap .sixArea .textArea p:first-child {
+        color: white;
+        font-size: 28px;
+        line-height: 44px;
+        margin: 0px;
+        margin-bottom: 0px;
+        font-family: "BohemianSoul-Regular";
+    }
+    .roadMap .heightRoadMap .sixArea .textArea p:nth-child(2) {
+        color: white;
+        font-size: 60px;
+        line-height: 72px;
+        margin: 0px;
+        margin-bottom: 50px;
+        font-family: "BohemianSoul-Regular";
+    }
+    .roadMap .heightRoadMap .sixArea .textArea button {
+        background-color: #f1036a;
+        color: white;
+        -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+        box-shadow: -1px 2px 0px 5px #a80068;
+        border: 0px;
+        font-size: 36px;
+        outline: 0px;
+        font-family: "BohemianSoul-Regular";
+        padding: 3px 50px;
+        border-radius: 5px;
+        margin-top: 70px;
+    }
+    .roadMap .heightRoadMap .sixArea .imgArea {
+        position: relative;
+    }
+    .roadMap .heightRoadMap .sixArea .imgArea .imgS {
+        width: 800px;
+        position: absolute;
+        top: 14px;
+        left: 67%;
+        z-index: 11;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .roadMap .heightRoadMap .sevenArea {
+        text-align-last: center;
+        margin-top: 350px;
+    }
+    .roadMap .heightRoadMap .sevenArea .textArea {
+        display: block;
+        text-align: -webkit-center;
+        position: relative;
+    }
+    .roadMap .heightRoadMap .sevenArea .textArea p:first-child {
+        color: white;
+        font-size: 28px;
+        line-height: 44px;
+        margin: 0px;
+        margin-bottom: 0px;
+        font-family: "BohemianSoul-Regular";
+    }
+    .roadMap .heightRoadMap .sevenArea .textArea p:nth-child(2) {
+        color: white;
+        font-size: 60px;
+        line-height: 72px;
+        margin: 0px;
+        margin-bottom: 50px;
+        font-family: "BohemianSoul-Regular";
+    }
+    .roadMap .heightRoadMap .sevenArea .textArea button {
+        background-color: #f1036a;
+        color: white;
+        -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+        box-shadow: -1px 2px 0px 5px #a80068;
+        border: 0px;
+        font-size: 36px;
+        outline: 0px;
+        font-family: "BohemianSoul-Regular";
+        padding: 3px 50px;
+        border-radius: 5px;
+        margin-top: 70px;
+    }
+    .roadMap .heightRoadMap .sevenArea .imgArea {
+        position: relative;
+    }
+    .roadMap .heightRoadMap .sevenArea .imgArea .imgS {
+        width: 800px;
+        position: absolute;
+        top: 14px;
+        left: 67%;
+        z-index: 11;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .roadMap .container .buttonArea {
+        text-align-last: center;
+        display: block;
+    }
+    .roadMap .container .buttonArea button:first-child {
+        background-color: transparent;
+        background-size: 38px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding: 1px 1px;
+        padding-left: 100px;
+        color: #11a692;
+        font-size: 24px;
+        border: 0px;
+        outline: 0px;
+        font-family: "Cornerstone";
+        z-index: 9999;
+        margin-right: -42px;
+    }
+    .roadMap .container .buttonArea button:nth-child(2) {
+        background-color: transparent;
+        padding: 20px 45px;
+        padding-left: 0px;
+        color: #11a692;
+        font-size: 46px;
+        border: 0px;
+        outline: 0px;
+        font-family: "Cornerstone";
+        z-index: 9999;
+        margin-right: -94px;
+    }
+    .sliderOne {
+        position: relative;
+    }
+    .sliderOne .owl-carousel .owl-nav .owl-prev {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 200px;
+        width: 25px;
+        height: 25px;
+        background-image: url("../img/icon/prev.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 0px;
+    }
+    .sliderOne .owl-carousel .owl-dots {
+        gap: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        height: 10px;
+        width: 300px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .sliderOne .owl-carousel .owl-dots button {
+        width: 10px;
+        height: 10px;
+        background-color: #a3a3a3;
+        border-radius: 10px;
+    }
+    .sliderOne .owl-carousel .owl-item .textArea p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 46px;
+        color: white;
+        font-family: "Cornerstone";
+    }
+    .sliderRightLeft {
+        margin: 150px 0px;
+    }
+    .nftTExt {
+        margin: 100px 0px;
+    }
+    .nftTExt .row {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .nftTExt .row .imgArea {
+        text-align: center;
+    }
+    .nftTExt .row .imgArea img {
+        width: 350px;
+        height: auto;
+    }
+    .nftTExt .row .textAreaBtn {
+        text-align: center;
+        text-align: -webkit-center;
+        display: block;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .nftTExt .row .textAreaBtn .one {
+        font-family: "BohemianSoul-Regular";
+        color: grey;
+        font-size: 22px;
+    }
+    .nftTExt .row .textAreaBtn .two {
+        font-size: 18px;
+        width: 350px;
+        color: grey;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .nftTExt .row .textAreaBtn h6 {
+        margin: 10px 0px;
+        font-size: 46px;
+        color: white;
+        font-family: "BohemianSoul-Regular";
+    }
+    .nftTExt .row .textAreaBtn button {
+        background-color: #f1036a;
+        color: white;
+        -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+        box-shadow: -1px 2px 0px 5px #a80068;
+        border: 0px;
+        outline: 0px;
+        font-family: "BohemianSoul-Regular";
+        padding: 3px 50px;
+        border-radius: 5px;
+        cursor: url("../img/icon/cursourEye.png") 0 0, default !important;
+    }
+    .owl-Two {
+        margin-bottom: 70px;
+    }
+    footer {
+        padding: 75px;
+        background-image: url("../img/bgFooter.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        text-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    footer .logorea img {
+        width: 400px;
+        height: 400px;
+    }
+    footer .socialArea {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    footer .socialArea img {
+        width: 35px;
+        height: 35px;
+    }
+    footer .socialArea .discort {
+        width: 50px !important;
+        height: 35px !important;
+    }
+    footer .socialArea .twitter {
+        width: 35px !important;
+        height: 30px !important;
+    }
+    footer .textArea p {
+        font-size: 14px;
+        margin-top: 30px;
+        color: grey;
+    }
+    .theGame {
+        overflow-x: hidden;
+    }
+    .spAboutusHeader {
+        background-image: url("../img/Fusion3.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100vh;
+        position: relative;
+    }
+    .spAboutusHeader .headerArea {
+        text-align: center;
+        display: block;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .spAboutusHeader .headerArea img {
+        width: 550px;
+        height: auto;
+    }
+    .spAboutusHeader .headerArea p {
+        margin-top: 20px;
+        color: white;
+        text-align: justify;
+        margin-top: 50px;
+        width: 900px;
+        font-weight: 600;
+    }
+    .Ourteam {
+        margin: 100px 0px;
+    }
+    .Ourteam .textAreaTeam h6 {
+        font-size: 46px;
+        text-align: center;
+        color: white;
+        font-family: "BohemianSoul-Regular";
+        margin-bottom: 50px;
+    }
+    .Ourteam .textAreaTeam p {
+        color: white;
+        font-size: 24px;
+        opacity: 0.8;
+    }
+    .teamMate {
+        margin: 150px 0px;
+    }
+    .teamMate .persons {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .teamMate .persons .person {
+        display: block;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .teamMate .persons .person img {
+        width: 200px;
+        height: 200px;
+    }
+    .teamMate .persons .person .name {
+        color: #ccbf8b !important;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 0px !important;
+    }
+    .teamMate .persons .person .position {
+        color: grey;
+        font-size: 14px;
+    }
+    .joinTheTeam {
+        background-image: url("../img/Varlik92xx.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .joinTheTeam .textArea h6 {
+        font-size: 46px;
+        color: white;
+        font-family: "BohemianSoul-Regular";
+    }
+    .joinTheTeam .textArea p {
+        margin: 0px;
+        color: white;
+    }
+    .faq {
+        margin-top: 167px;
+    }
+    .faq .specialRow {
+        height: 550px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        place-content: center;
+    }
+    .faq .specialRow .hoodArea p {
+        font-size: 46px;
+        color: #06eab3;
+        font-family: "Cornerstone";
+        margin-left: 70px;
+    }
+    .faq .specialRow .accordion-container {
+        position: relative;
+        width: 100%;
+        outline: 0;
+        cursor: pointer;
+        margin-bottom: 100px !important;
+    }
+    .faq .specialRow .accordion-container .article-title {
+        display: block;
+        position: relative;
+        margin: 30px 0px;
+        padding: 0.625em 0.625em 0.625em 4em;
+        font-size: 1.25em;
+        font-weight: normal;
+        color: white;
+        cursor: pointer;
+    }
+    .faq .specialRow .accordion-container .content-entry i {
+        top: 10px;
+        position: absolute;
+        left: 12px;
+        font-style: normal;
+        width: 30px;
+        height: 30px;
+        font-size: 1.625em;
+        position: absolute;
+        color: white;
+        left: 30px;
+        background-image: url("../img/icon/Varlık7@2x.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: white;
+        border-radius: 17px;
+    }
+    .faq .specialRow .accordion-container .content-entry i:before {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 20px;
+        /* background-image: url("../img/icon/plus.png");*/
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        content: " ";
+        height: 20px;
+    }
+    .faq .specialRow .accordion-container .content-entry.open i:before {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 20px;
+        /* background-image: url("../img/icon/minus.png");*/
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        content: " ";
+        height: 20px;
+    }
+    .faq .specialRow .accordion-content {
+        display: none;
+        color: white;
+        margin-left: 80px;
+    }
+    .faq .specialRow #content {
+        width: 100%;
+    }
+    .faq .specialRow .accordion-container,
+    .faq .specialRow #description {
+        width: 90%;
+        margin: 1.875em auto;
+    }
+    .faq .specialRow #description p {
+        line-height: 1.5;
+    }
+    .faq .specialRow #description h2 {
+        text-align: center;
+    }
+    .gameArea {
+        height: 1000px;
+        background-image: url("../img/g1BG.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gameArea .imgArea img {
+        position: absolute;
+        left: -235px;
+        width: 925px;
+        height: auto;
+    }
+    .gameArea .textArea h6 {
+        font-size: 60px;
+        text-align: start;
+        color: white;
+        font-family: "BohemianSoul-Regular";
+    }
+    .gameArea .textArea p {
+        font-size: 25px;
+        color: white;
+    }
+    .gameAreaTwo {
+        height: 1200px;
+        background-image: url("../img/g2bg.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gameAreaTwo .imgArea img {
+        position: absolute;
+        right: 0px;
+        width: 800px;
+        height: auto;
+    }
+    .gameAreaTwo .textArea h6 {
+        font-size: 60px;
+        text-align: start;
+        color: white;
+        font-family: "BohemianSoul-Regular";
+    }
+    .gameAreaTwo .textArea p {
+        font-size: 25px;
+        color: white;
+    }
+    .gameAreaThree {
+        height: 1200px;
+        background-image: url("../img/g3BG.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gameAreaThree .imgArea img {
+        position: absolute;
+        left: -564px;
+        width: 1200px;
+        height: auto;
+    }
+    .gameAreaThree .textArea h6 {
+        font-size: 60px;
+        text-align: start;
+        color: white;
+        font-family: "BohemianSoul-Regular";
+    }
+    .gameAreaThree .textArea p {
+        font-size: 25px;
+        color: white;
+    }
+    .gameAreaFour {
+        height: 1200px;
+        background-image: url("../img/g4BG.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .gameAreaFour .imgArea img {
+        width: 600px;
+        height: auto;
+        right: 200px;
+    }
+    .gameAreaFour .textArea h6 {
+        font-size: 60px;
+        text-align: start;
+        color: white;
+        font-family: "BohemianSoul-Regular";
+    }
+    .gameAreaFour .textArea p {
+        font-size: 25px;
+        color: white;
+    }
+    .gameText .textArea {
+        text-align: center;
+        margin: 150px 0px;
+    }
+    .gameText .textArea h6 {
+        color: white;
+        font-size: 60px;
+        font-family: "Cornerstone";
+    }
+    .gameText .textArea p {
+        color: white;
+        font-size: 35px;
+    }
+    .setupClan {
+        background-image: url("../img/g5BG.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding: 250px 0px;
+        height: 1200px;
+        /* marquee div container */
+        /* nested div inside the container */
+        /* span with text */
+        /* keyframe */
+    }
+    .setupClan .col-12 {
+        display: block;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: -webkit-center;
+    }
+    .setupClan .col-12 .textArea {
+        width: 550px;
+        margin: 150px 0px;
+    }
+    .setupClan .col-12 .textArea h6 {
+        color: white;
+        font-size: 60px;
+        text-align: start;
+        font-family: "BohemianSoul-Regular";
+        margin-bottom: 20px;
+    }
+    .setupClan .col-12 .textArea p {
+        text-align: start;
+        font-size: 25px;
+        color: white;
+        margin: 20px 0px;
+    }
+    .setupClan .marquee {
+        font-size: 2vw;
+        color: #06eab3;
+        font-family: "Cornerstone";
+        height: 2.5vw;
+        overflow: hidden;
+        background-color: transparent;
+        position: relative;
+    }
+    .setupClan .marquee div {
+        display: block;
+        width: 1500%;
+        position: absolute;
+        overflow: hidden;
+    }
+    .setupClan .marquee span {
+        float: left;
+        width: 50%;
+    }
+    .setupClan .clock {
+        width: 35px;
+        height: auto;
+    }
+    @-webkit-keyframes marquee {
+        0% {
+            left: 0;
+        }
+        100% {
+            left: -500%;
+        }
+    }
+    @keyframes marquee {
+        0% {
+            left: 0;
+        }
+        100% {
+            left: -500%;
+        }
+    }
+    .gamemode {
+        margin: 50px 0px;
+    }
+    .gamemode .textArea h6 {
+        font-size: 64px;
+    }
+    .gamemode .cardArea .cardItems img {
+        height: auto;
+    }
+    .gamemode .cardArea .cardItems .textArea h6 {
+        font-size: 26px;
+        color: #2ff3b5;
+        font-family: "Cornerstone";
+        margin-top: 50px;
+    }
+    .gamemode .cardArea .cardItems .textArea p {
+        text-align: start;
+        color: white;
+        font-size: 18px;
+    }
+    .itsyourturn {
+        text-align: center;
+        display: block;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-bottom: 150px;
+    }
+    .itsyourturn h6 {
+        color: white;
+        -webkit-text-stroke: 2px #513e1d;
+        font-size: 46px;
+        position: relative;
+        font-family: "BohemianSoul-Regular";
+    }
+    .itsyourturn h6 span {
+        width: 150px;
+        position: absolute;
+        color: #f1036a !important;
+        -webkit-text-stroke: 0px;
+        left: 338px;
+        -webkit-transform: rotate(331deg);
+        transform: rotate(331deg);
+        -webkit-text-stroke: 2px #513e1d;
+    }
+    .itsyourturn button {
+        background-color: #f1036a;
+        color: white;
+        -webkit-box-shadow: -1px 2px 0px 5px #a80068;
+        box-shadow: -1px 2px 0px 5px #a80068;
+        border: 0px;
+        outline: 0px;
+        font-family: "BohemianSoul-Regular";
+        padding: 3px 50px;
+        border-radius: 5px;
+    }
+    .manifestoText .textArea {
+        margin-top: 200px;
+        margin-bottom: 150px;
+    }
+    .manifestoText .textArea h6 {
+        color: #333749;
+        font-size: 106px;
+        font-family: "Cornerstone";
+    }
+    .manifestoText .textArea p {
+        color: white;
+        margin: 0px;
+        font-size: 18px;
+    }
+    .owlFour {
+        margin: 150px 0px;
+    }
+    .openSea {
+        background-image: url("../img/openSeaArea.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+    .openSea .hoodBTn {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        place-content: space-between;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .openSea .hoodBTn .hood {
+        text-align: center;
+    }
+    .openSea .hoodBTn .hood h6:first-child {
+        font-family: "Cornerstone";
+        color: black;
+        font-size: 56px;
+    }
+    .openSea .hoodBTn .hood h6:nth-child(2) {
+        font-family: "Cornerstone";
+        color: white;
+        font-size: 76px;
+    }
+    .openSea .hoodBTn .hood a img {
+        width: 275px;
+        height: auto;
+    }
+    .openSea .hoodBTn .btn button {
+        width: 100%;
+        border-radius: 25px;
+        background-image: url("../img/icon/btnbg.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 100px;
+        border: 0px;
+        outline: 0px;
+    }
+    @-webkit-keyframes leftText {
+        from {
+            left: -1920;
+        }
+        to {
+            left: 2000px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1800px) {
-  .roadMap .container-fluid .secondArea .imgArea .opacityImag {
-    left: 40px !important;
-  }
-  .gameAreaFour .textArea {
-    width: 600px !important;
-  }
-  .gameArea .textArea {
-    width: 600px !important;
-  }
+    .roadMap .container-fluid .secondArea .imgArea .opacityImag {
+        left: 40px !important;
+    }
+    .gameAreaFour .textArea {
+        width: 600px !important;
+    }
+    .gameArea .textArea {
+        width: 600px !important;
+    }
 }
 
 @media only screen and (max-width: 1700px) {
-  .mainHeader {
-    background-size: cover !important;
-  }
-  .gameArea .textArea {
-    width: 600px !important;
-  }
-  .gameAreaThree .textArea {
-    width: 600px !important;
-  }
-  .gameAreaTwo .textArea {
-    width: 600px !important;
-  }
-  .roadMap .container-fluid .firstArea .imgArea img {
-    width: 800px !important;
-    top: -50px !important;
-  }
-  .roadMap .container-fluid .secondArea .imgArea .opacityImag {
-    left: -7px !important;
-  }
+    .roadMap .heightRoadMap .fiveArea {
+        text-align-last: center;
+        margin-top: 250px;
+    }
+    .roadMap .container .buttonArea button:nth-child(2) {
+        margin-right: -190px;
+    }
+    .manifestopng {
+        width: 600px !important;
+    }
+    .gameArea .textArea {
+        width: 600px !important;
+    }
+    .gameAreaThree .textArea {
+        width: 600px !important;
+    }
+    .gameAreaTwo .textArea {
+        width: 600px !important;
+    }
+    .roadMap .container-fluid .firstArea .imgArea img {
+        width: 800px !important;
+        top: -50px !important;
+    }
+    .roadMap .container-fluid .secondArea .imgArea .opacityImag {
+        left: -7px !important;
+    }
 }
 
 @media only screen and (max-width: 1600px) {
-  .roadMap .container-fluid .secondArea .imgArea .opacityImag {
-    left: 32px !important;
-    width: 900px !important;
-  }
-  .roadMap .container-fluid .fourthArea .imgArea .imgS {
-    top: -170px !important;
-    width: 700px !important;
-  }
-  .roadMap .container-fluid .fiveArea {
-    margin-top: 300px !important;
-  }
-  .roadMap .container-fluid .sevenArea {
-    margin-top: 300px !important;
-  }
+    .roadMap .heightRoadMap .fourthArea {
+        text-align-last: center;
+        margin-top: 580px !important;
+    }
+    .roadMap .heightRoadMap .fiveArea .textArea p:nth-child(3) {
+        margin: 0px 150px;
+    }
+    .roadMap .heightRoadMap .sixArea .textArea p:nth-child(3) {
+        margin: 0px 150px;
+    }
+    .roadMap .heightRoadMap .sevenArea .textArea p:nth-child(3) {
+        margin: 0px 150px;
+    }
+    #logodesktopmain {
+        max-width: 950px !important;
+    }
+    .roadMap .container-fluid .secondArea .imgArea .opacityImag {
+        left: 32px !important;
+        width: 900px !important;
+    }
+    .roadMap .container-fluid .fourthArea .imgArea .imgS {
+        top: -170px !important;
+        width: 650px !important;
+    }
+    .roadMap .container-fluid .fiveArea {
+        margin-top: 300px !important;
+    }
+    .roadMap .container-fluid .sevenArea {
+        margin-top: 300px !important;
+    }
 }
 
 @media only screen and (max-width: 1500px) {
-  nav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    font-size: 20px !important;
-  }
-  .gameAreaThree .textArea {
-    width: 500px !important;
-  }
-  .gameAreaFour .imgArea img {
-    right: 100px !important;
-  }
-  .roadMap .container-fluid .secondArea .imgArea .opacityImag {
-    left: 78px !important;
-    width: 800px !important;
-  }
-  .roadMap .container-fluid .secondArea .imgArea .imgS {
-    width: 650px !important;
-  }
+    .gamemode .textArea h6 {
+        font-size: 46px;
+    }
+    .gameAreaFour .textArea p {
+        width: 600px !important;
+    }
+    .gameAreaTwo .textArea p {
+        width: 600px !important;
+    }
+    .gameArea .textArea p {
+        width: 600px !important;
+    }
+    .gameAreaThree .textArea p {
+        width: 600px !important;
+    }
+    .roadMap .container .buttonArea button:nth-child(2) {
+        margin-right: -70px;
+    }
+    #logodesktopmain {
+        max-width: 850px !important;
+    }
+    .roadMap .heightRoadMap .rHood img {
+        left: 24% !important;
+    }
+    .video h6 {
+        font-size: 90px;
+    }
+    nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        font-size: 20px !important;
+    }
+    .gameAreaThree .textArea {
+        width: 500px !important;
+    }
+    .gameAreaFour .imgArea img {
+        right: 100px !important;
+    }
+    .roadMap .container-fluid .secondArea .imgArea .opacityImag {
+        left: 78px !important;
+        width: 800px !important;
+    }
+    .roadMap .container-fluid .secondArea .imgArea .imgS {
+        width: 650px !important;
+    }
 }
 
 @media only screen and (max-width: 1400px) {
-  .gameArea .imgArea img {
-    width: 800px !important;
-  }
-  .itsyourturn h6 span {
-    left: 248px !important;
-  }
-  .gameAreaTwo .imgArea img {
-    width: 400px;
-  }
-  .gameAreaThree .imgArea img {
-    left: -364px;
-    width: 900px;
-  }
-  .gamemode .cardArea .cardItems img {
-    width: 200px !important;
-  }
-  .gamemode .cardArea .cardItems .textArea p {
-    text-align: center !important;
-  }
-  .gamemode .cardArea .cardItemsTwo .imgBefore {
-    width: 130px !important;
-  }
-  .gamemode .cardArea .cardItemsTwo img {
-    width: 200px !important;
-  }
-  .gamemode .cardArea .cardItemsTwo .textArea p {
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .firstArea p:nth-child(2) {
-    font-size: 60px !important;
-  }
-  .roadMap .container-fluid .firstArea p:nth-child(3) {
-    font-size: 36px !important;
-  }
-  .roadMap .container-fluid .firstArea button {
-    font-size: 27px !important;
-    outline: 0px !important;
-  }
-  .roadMap .container-fluid .firstArea .imgArea img {
-    width: 800px !important;
-  }
-  .roadMap .container-fluid .secondArea .textArea p:first-child {
-    right: 162px;
-    top: 90px;
-  }
-  .roadMap .container-fluid .secondArea .textArea p:nth-child(2) {
-    font-size: 60px;
-    line-height: 82px;
-  }
-  .roadMap .container-fluid .secondArea .textArea button {
-    font-size: 27px;
-    outline: 0px;
-    font-family: "BohemianSoul-Regular";
-    padding: 3px 50px;
-  }
-  .roadMap .container-fluid .secondArea .imgArea .opacityImag {
-    left: 13px !important;
-    top: -219px !important;
-  }
-  .roadMap .container-fluid .thirtArea .textArea p:first-child {
-    top: -58px !important;
-    font-size: 144px !important;
-  }
-  .roadMap .container-fluid .thirtArea .textArea p:nth-child(2) {
-    font-size: 60px;
-  }
-  .roadMap .container-fluid .thirtArea .textArea button {
-    font-size: 27px !important;
-    padding: 3px 50px !important;
-  }
-  .roadMap .container-fluid .thirtArea .imgArea .opacityImag {
-    width: 350px !important;
-  }
-  .roadMap .container-fluid .thirtArea .imgArea .imgS {
-    left: 194px !important;
-  }
-  .roadMap .container-fluid .fourthArea {
-    margin-top: 500px !important;
-  }
-  .roadMap .container-fluid .fourthArea .textArea p:first-child {
-    font-size: 137px !important;
-  }
-  .roadMap .container-fluid .fourthArea .textArea p:nth-child(2) {
-    font-size: 32px !important;
-  }
-  .roadMap .container-fluid .fourthArea .textArea p:nth-child(3) {
-    font-size: 56px !important;
-    line-height: 65px !important;
-  }
-  .roadMap .container-fluid .fourthArea .textArea button {
-    font-size: 27px;
-    outline: 0px;
-    font-family: "BohemianSoul-Regular";
-    padding: 3px 50px;
-  }
-  .roadMap .container-fluid .fourthArea .imgArea .imgS {
-    left: 63% !important;
-  }
+    .manifestoText .textArea {
+        margin-left: 100px !important;
+    }
+    .roadMap .heightRoadMap .sevenArea {
+        margin-top: 450px !important;
+    }
+    .roadMap .heightRoadMap .fourthArea {
+        text-align-last: center;
+        margin-top: 720px !important;
+    }
+    .roadMap .container .buttonArea button:nth-child(2) {
+        margin-right: -66px;
+    }
+    .roadMap .heightRoadMap .fiveArea .textArea p:nth-child(3) {
+        margin: 0px 100px;
+    }
+    .roadMap .heightRoadMap .sixArea .textArea p:nth-child(3) {
+        margin: 0px 100px;
+    }
+    .roadMap .heightRoadMap .sevenArea .textArea p:nth-child(3) {
+        margin: 0px 100px;
+    }
+    .roadMap .heightRoadMap .rHood img {
+        left: 20% !important;
+    }
+    .gameArea .imgArea img {
+        width: 800px !important;
+    }
+    .itsyourturn h6 span {
+        left: 248px !important;
+    }
+    .gameAreaTwo .imgArea img {
+        width: 400px;
+    }
+    .gameAreaThree .imgArea img {
+        left: -364px;
+        width: 900px;
+    }
+    .gamemode .cardArea .cardItems img {
+        width: 200px !important;
+    }
+    .gamemode .cardArea .cardItems .textArea p {
+        text-align: center !important;
+    }
+    .gamemode .cardArea .cardItemsTwo img {
+        width: 200px !important;
+    }
+    .gamemode .cardArea .cardItemsTwo .textArea p {
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .firstArea p:nth-child(2) {
+        font-size: 60px !important;
+    }
+    .roadMap .container-fluid .firstArea p:nth-child(3) {
+        font-size: 36px !important;
+    }
+    .roadMap .container-fluid .firstArea button {
+        font-size: 27px !important;
+        outline: 0px !important;
+    }
+    .roadMap .container-fluid .firstArea .imgArea img {
+        width: 800px !important;
+    }
+    .roadMap .container-fluid .secondArea .textArea p:first-child {
+        right: 162px;
+        top: 90px;
+    }
+    .roadMap .container-fluid .secondArea .textArea p:nth-child(2) {
+        font-size: 60px;
+        line-height: 82px;
+    }
+    .roadMap .container-fluid .secondArea .textArea button {
+        font-size: 27px;
+        outline: 0px;
+        font-family: "BohemianSoul-Regular";
+        padding: 3px 50px;
+    }
+    .roadMap .container-fluid .secondArea .imgArea .opacityImag {
+        left: 13px !important;
+        top: -219px !important;
+    }
+    .roadMap .container-fluid .thirtArea .textArea p:first-child {
+        top: -58px !important;
+        font-size: 144px !important;
+    }
+    .roadMap .container-fluid .thirtArea .textArea p:nth-child(2) {
+        font-size: 60px;
+    }
+    .roadMap .container-fluid .thirtArea .textArea button {
+        font-size: 27px !important;
+        padding: 3px 50px !important;
+    }
+    .roadMap .container-fluid .thirtArea .imgArea .opacityImag {
+        width: 350px !important;
+    }
+    .roadMap .container-fluid .thirtArea .imgArea .imgS {
+        left: 194px !important;
+    }
+    .roadMap .container-fluid .fourthArea {
+        margin-top: 750px !important;
+    }
+    .roadMap .container-fluid .fourthArea .textArea p:first-child {
+        font-size: 137px !important;
+    }
+    .roadMap .container-fluid .fourthArea .textArea p:nth-child(2) {
+        font-size: 32px !important;
+    }
+    .roadMap .container-fluid .fourthArea .textArea p:nth-child(3) {
+        font-size: 56px !important;
+        line-height: 65px !important;
+    }
+    .roadMap .container-fluid .fourthArea .textArea button {
+        font-size: 27px;
+        outline: 0px;
+        font-family: "BohemianSoul-Regular";
+        padding: 3px 50px;
+    }
+    .roadMap .container-fluid .fourthArea .imgArea .imgS {
+        left: 50% !important;
+        width: 500px !important;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
-  .gamemode .cardArea .cardItems img {
-    width: 200px !important;
-  }
-  .gamemode .cardArea .cardItems .textArea p {
-    text-align: center !important;
-  }
-  .gamemode .cardArea .cardItemsTwo .imgBefore {
-    width: 130px !important;
-  }
-  .gamemode .cardArea .cardItemsTwo img {
-    width: 200px !important;
-  }
-  .gamemode .cardArea .cardItemsTwo .textArea p {
-    text-align: center !important;
-  }
-  .gameArea {
-    background-size: cover !important;
-    background-position: center !important;
-  }
-  .gameArea .imgArea img {
-    width: 800px !important;
-  }
-  .roadMap .container-fluid .firstArea p:first-child {
-    font-size: 26px;
-  }
-  .roadMap .container-fluid .firstArea p:nth-child(2) {
-    font-size: 56px !important;
-  }
-  .roadMap .container-fluid .firstArea p:nth-child(3) {
-    font-size: 36px !important;
-  }
-  .roadMap .container-fluid .firstArea button {
-    font-size: 27px !important;
-    padding: 3px 50px !important;
-  }
-  .roadMap .container-fluid .firstArea .imgArea img {
-    top: -10px !important;
-    left: -76px;
-    width: 600px !important;
-  }
-  .roadMap .container-fluid .secondArea .textArea p:first-child {
-    font-size: 86px;
-    right: 126px;
-    top: 56px;
-  }
-  .roadMap .container-fluid .secondArea .textArea p:nth-child(2) {
-    font-size: 56px !important;
-    line-height: 66px !important;
-  }
-  .roadMap .container-fluid .secondArea .textArea button {
-    font-size: 27px !important;
-    padding: 3px 50px !important;
-  }
-  .roadMap .container-fluid .secondArea .imgArea .opacityImag {
-    left: 37px !important;
-    width: 700px !important;
-    top: -200px !important;
-  }
-  .roadMap .container-fluid .secondArea .imgArea .imgS {
-    width: 550px !important;
-  }
-  .roadMap .container-fluid .thirtArea .textArea button {
-    font-size: 27px !important;
-    padding: 3px 50px !important;
-  }
-  .roadMap .container-fluid .thirtArea .imgArea .opacityImag {
-    width: 350px !important;
-  }
-  .roadMap .container-fluid .thirtArea .imgArea .imgS {
-    width: 300px;
-  }
-  .roadMap .container-fluid .fourthArea {
-    margin-top: 550px !important;
-  }
-  .roadMap .container-fluid .fourthArea .textArea button {
-    font-size: 27px !important;
-    padding: 3px 50px !important;
-  }
-  .roadMap .container-fluid .fourthArea .imgArea .imgS {
-    top: -70px !important;
-    width: 500px !important;
-  }
-  nav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    font-size: 16px !important;
-  }
-  nav .navbar-collapse form .socialArea {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-    margin-right: 28px;
-  }
-  nav .navbar-collapse form .socialArea .twitterNav {
-    width: 20px !important;
-    height: 20px !important;
-  }
-  nav .navbar-collapse form .socialArea .instagramNav {
-    width: 24px !important;
-    height: 24px !important;
-  }
-  nav .navbar-collapse form .socialArea .discodNav {
-    width: 26px !important;
-    height: 22px !important;
-  }
-  nav .navbar-collapse form .socialArea .mediumNav {
-    width: 26px !important;
-    height: 20px !important;
-  }
-  nav .navbar-collapse form .btnConnect {
-    font-size: 18px !important;
-  }
+    .roadMap .heightRoadMap .thirtArea {
+        text-align-last: center;
+        margin-top: 1050px;
+    }
+    .roadMap .heightRoadMap .thirtArea .textArea p:nth-child(3) {
+        margin: 0px 100px !important;
+    }
+    .gameAreaFour .textArea p {
+        width: 500px !important;
+    }
+    .gameAreaTwo .textArea p {
+        width: 500px !important;
+    }
+    .gameArea .textArea p {
+        width: 500px !important;
+    }
+    .gameAreaThree .textArea p {
+        width: 500px !important;
+    }
+    .roadMap .heightRoadMap .sevenArea {
+        margin-top: 250px !important;
+    }
+    #logodesktopmain {
+        max-width: 650px !important;
+    }
+    .manifestopng {
+        width: 500px !important;
+    }
+    .video h6 {
+        font-size: 70px;
+    }
+    .gamemode .cardArea .cardItems img {
+        width: 200px !important;
+    }
+    .gamemode .cardArea .cardItems .textArea p {
+        text-align: center !important;
+    }
+    .gamemode .cardArea .cardItemsTwo img {
+        width: 200px !important;
+    }
+    .gamemode .cardArea .cardItemsTwo .textArea p {
+        text-align: center !important;
+    }
+    .gameArea {
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    .gameArea .imgArea img {
+        width: 800px !important;
+    }
+    .roadMap .container-fluid .firstArea p:first-child {
+        font-size: 26px;
+    }
+    .roadMap .container-fluid .firstArea p:nth-child(2) {
+        font-size: 56px !important;
+    }
+    .roadMap .container-fluid .firstArea p:nth-child(3) {
+        font-size: 36px !important;
+    }
+    .roadMap .container-fluid .firstArea button {
+        font-size: 27px !important;
+        padding: 3px 50px !important;
+    }
+    .roadMap .container-fluid .firstArea .imgArea img {
+        top: -10px !important;
+        left: -76px;
+        width: 600px !important;
+    }
+    .roadMap .container-fluid .secondArea .textArea p:first-child {
+        font-size: 60px;
+        right: 115px;
+        top: 67px;
+    }
+    .roadMap .container-fluid .secondArea .textArea p:nth-child(2) {
+        font-size: 56px !important;
+        line-height: 66px !important;
+    }
+    .roadMap .container-fluid .secondArea .textArea button {
+        font-size: 27px !important;
+        padding: 3px 50px !important;
+    }
+    .roadMap .container-fluid .secondArea .imgArea .opacityImag {
+        left: 37px !important;
+        width: 700px !important;
+        top: -200px !important;
+    }
+    .roadMap .container-fluid .secondArea .imgArea .imgS {
+        width: 550px !important;
+    }
+    .roadMap .container-fluid .thirtArea .textArea button {
+        font-size: 27px !important;
+        padding: 3px 50px !important;
+    }
+    .roadMap .container-fluid .thirtArea .imgArea .opacityImag {
+        width: 350px !important;
+    }
+    .roadMap .container-fluid .thirtArea .imgArea .imgS {
+        width: 300px;
+    }
+    .roadMap .container-fluid .fourthArea .textArea button {
+        font-size: 27px !important;
+        padding: 3px 50px !important;
+    }
+    .roadMap .container-fluid .fourthArea .imgArea .imgS {
+        top: -70px !important;
+        width: 500px !important;
+    }
+    nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        font-size: 16px !important;
+    }
+    nav .navbar-collapse form .socialArea {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 20px;
+        margin-right: 28px;
+    }
+    nav .navbar-collapse form .socialArea .twitterNav {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    nav .navbar-collapse form .socialArea .instagramNav {
+        width: 24px !important;
+        height: 24px !important;
+    }
+    nav .navbar-collapse form .socialArea .discodNav {
+        width: 26px !important;
+        height: 22px !important;
+    }
+    nav .navbar-collapse form .socialArea .mediumNav {
+        width: 26px !important;
+        height: 20px !important;
+    }
+    nav .navbar-collapse form .btnConnect {
+        font-size: 18px !important;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
-  .mainHeader {
-    background-position-x: -200px;
-  }
-  .gamemode .cardArea {
-    background-size: 100% !important;
-    background-position: center !important;
-  }
-  .theGameHeader {
-    background-size: cover !important;
-  }
-  .gameAreaTwo {
-    height: 800px;
-    background-size: cover !important;
-    background-position: start;
-  }
-  .gameAreaThree {
-    height: 800px;
-    background-size: cover !important;
-    background-position: center;
-  }
-  .gameAreaThree .imgArea img {
-    width: 800px !important;
-  }
-  .gameAreaTwo {
-    background-size: cover !important;
-    background-position: left !important;
-  }
-  .gameAreaTwo .imgArea img {
-    width: 400px;
-  }
-  .gameAreaTwo .textArea h6 {
-    font-size: 42px !important;
-  }
-  .gameAreaTwo .textArea p {
-    font-size: 24px !important;
-  }
-  .gameAreaThree .imgArea img {
-    width: 400px;
-  }
-  .gameAreaThree .textArea h6 {
-    font-size: 42px !important;
-  }
-  .gameAreaThree .textArea p {
-    font-size: 24px !important;
-  }
-  .gameAreaFour {
-    height: 800px !important;
-    background-size: cover !important;
-    background-position: center !important;
-  }
-  .gameAreaFour .imgArea img {
-    width: 300px;
-    right: 100px;
-  }
-  .gameAreaFour .textArea h6 {
-    font-size: 42px !important;
-  }
-  .gameAreaFour .textArea p {
-    font-size: 24px !important;
-  }
-  .gameArea {
-    background-size: cover !important;
-    background-position: center !important;
-  }
-  .gameArea .textArea {
-    width: 400px !important;
-  }
-  .gameArea .textArea h6 {
-    font-size: 42px !important;
-  }
-  .gameArea .textArea p {
-    font-size: 24px !important;
-  }
-  .setupClan {
-    background-size: cover;
-    height: 800px;
-  }
-  .setupClan .col-12 .textArea {
-    margin: 0px 0px !important;
-    margin-bottom: 100px !important;
-  }
-  .gameText .textArea h6 {
-    font-size: 42px;
-  }
-  .gameText .textArea p {
-    color: white;
-    font-size: 24px !important;
-  }
-  nav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    font-size: 14px !important;
-  }
-  nav .navbar-collapse form .btnConnect {
-    padding: 3px 20px !important;
-    font-size: 14px;
-  }
-  .mainHeader .headerArea img {
-    width: 350px;
-    height: 350px;
-  }
-  footer .logorea img {
-    width: 250px !important;
-    height: 250px !important;
-  }
-  .itsyourturn h6 span {
-    left: 160px !important;
-  }
-  .openSea .hoodBTn .hood h6:first-child {
-    font-size: 42px;
-  }
-  .openSea .hoodBTn .hood h6:last-child {
-    font-size: 54px;
-  }
-  .roadMap .container-fluid .firstArea .phaseArea .phaseImg {
-    margin-bottom: 100px;
-  }
-  .roadMap .container-fluid .firstArea p:first-child {
-    font-size: 26px !important;
-  }
-  .roadMap .container-fluid .firstArea p:nth-child(2) {
-    font-size: 56px !important;
-  }
-  .roadMap .container-fluid .firstArea p:nth-child(3) {
-    font-size: 36px !important;
-  }
-  .roadMap .container-fluid .firstArea .imgArea img {
-    width: 550px !important;
-    left: -67px !important;
-    top: -20px !important;
-  }
-  .roadMap .container-fluid .secondArea .phaseImg {
-    margin-bottom: 100px;
-  }
-  .roadMap .container-fluid .secondArea .imgArea .opacityImag {
-    left: 19px !important;
-  }
-  .roadMap .container-fluid .thirtArea .phaseImg {
-    margin-bottom: 100px;
-  }
-  .roadMap .container-fluid .thirtArea .imgArea .imgS {
-    left: 240px !important;
-  }
-  .roadMap .container-fluid .fourthArea .phaseImg {
-    margin-bottom: 100px;
-  }
+    .roadMap .heightRoadMap .thirtArea {
+        text-align-last: center;
+        margin-top: 1100px;
+    }
+    .roadMap .container-fluid .fourthArea {
+        margin-top: 450px !important;
+    }
+    .gameArea .imgArea img {
+        width: 700px !important;
+        top: 86px !important;
+    }
+    .gameAreaTwo .textArea {
+        width: 500px !important;
+    }
+    .setupClan .col-12 .textArea {
+        width: 500px !important;
+    }
+    .gameAreaFour .textArea {
+        width: 500px !important;
+    }
+    .setupClan .col-12 .textArea h6 {
+        font-size: 42px;
+    }
+    .setupClan .col-12 .textArea p {
+        font-size: 25px;
+    }
+    .roadMap .container .buttonArea button:nth-child(2) {
+        margin-right: -17%;
+    }
+    .theGameHeader .imgArea img {
+        width: 600px;
+        height: auto;
+    }
+    .mainHeader {
+        background-position-x: -200px;
+    }
+    .gamemode .cardArea {
+        background-size: 100% !important;
+        background-position: center !important;
+    }
+    .theGameHeader {
+        background-size: cover !important;
+    }
+    .gameAreaTwo {
+        height: 800px;
+        background-size: cover !important;
+        background-position: start;
+    }
+    .gameAreaThree {
+        height: 800px;
+        background-size: cover !important;
+        background-position: center;
+    }
+    .gameAreaThree .imgArea img {
+        width: 800px !important;
+    }
+    .gameAreaTwo {
+        background-size: cover !important;
+        background-position: left !important;
+    }
+    .gameAreaTwo .imgArea img {
+        width: 550px;
+    }
+    .gameAreaTwo .textArea h6 {
+        font-size: 42px !important;
+    }
+    .gameAreaTwo .textArea p {
+        font-size: 24px !important;
+    }
+    .gameAreaThree .imgArea img {
+        width: 400px;
+    }
+    .gameAreaThree .textArea h6 {
+        font-size: 42px !important;
+    }
+    .gameAreaThree .textArea p {
+        font-size: 24px !important;
+    }
+    .gameAreaFour {
+        height: 800px !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    .gameAreaFour .imgArea img {
+        width: 300px;
+        right: 100px;
+    }
+    .gameAreaFour .textArea h6 {
+        font-size: 42px !important;
+    }
+    .gameAreaFour .textArea p {
+        font-size: 24px !important;
+    }
+    .gameArea {
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    .gameArea .textArea {
+        width: 500px !important;
+    }
+    .gameArea .textArea h6 {
+        font-size: 42px !important;
+    }
+    .gameArea .textArea p {
+        font-size: 24px !important;
+    }
+    .setupClan {
+        background-size: cover;
+        height: 800px;
+    }
+    .setupClan .col-12 .textArea {
+        margin: 0px 0px !important;
+        margin-bottom: 100px !important;
+    }
+    .gameText .textArea h6 {
+        font-size: 42px;
+    }
+    .gameText .textArea p {
+        color: white;
+        font-size: 24px !important;
+    }
+    nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        font-size: 14px !important;
+    }
+    nav .navbar-collapse form .btnConnect {
+        padding: 3px 20px !important;
+        font-size: 14px;
+    }
+    footer .logorea img {
+        width: 250px !important;
+        height: 250px !important;
+    }
+    .itsyourturn h6 span {
+        left: 160px !important;
+    }
+    .openSea .hoodBTn .hood h6:first-child {
+        font-size: 42px;
+    }
+    .openSea .hoodBTn .hood h6:last-child {
+        font-size: 54px;
+    }
+    .roadMap .container-fluid .firstArea .phaseArea .phaseImg {
+        margin-bottom: 100px;
+    }
+    .roadMap .container-fluid .firstArea p:first-child {
+        font-size: 26px !important;
+    }
+    .roadMap .container-fluid .firstArea p:nth-child(2) {
+        font-size: 56px !important;
+    }
+    .roadMap .container-fluid .firstArea p:nth-child(3) {
+        font-size: 36px !important;
+    }
+    .roadMap .container-fluid .firstArea .imgArea img {
+        width: 550px !important;
+        left: -67px !important;
+        top: -20px !important;
+    }
+    .roadMap .container-fluid .secondArea .phaseImg {
+        margin-bottom: 100px;
+    }
+    .roadMap .container-fluid .secondArea .imgArea .opacityImag {
+        left: 19px !important;
+    }
+    .roadMap .container-fluid .thirtArea .phaseImg {
+        margin-bottom: 100px;
+    }
+    .roadMap .container-fluid .thirtArea .imgArea .imgS {
+        left: 240px !important;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
-  .gamemode .cardArea .cardItems img {
-    width: 150px !important;
-  }
-  .gamemode .cardArea .cardItems .textArea {
-    padding: 0px 30px !important;
-  }
-  .gamemode .cardArea .cardItems .textArea p {
-    text-align: center !important;
-  }
-  .gamemode .cardArea .cardItemsTwo .imgBefore {
-    width: 130px !important;
-  }
-  .gamemode .cardArea .cardItemsTwo img {
-    width: 150px !important;
-  }
-  .gamemode .cardArea .cardItemsTwo .textArea p {
-    text-align: center !important;
-  }
-  .gameAreaTwo .textArea {
-    width: 400px !important;
-  }
-  .roadMap .container-fluid .secondArea .imgArea .opacityImag {
-    width: 600px !important;
-    left: 63px !important;
-  }
-  .roadMap .container-fluid .thirtArea .imgArea .opacityImag {
-    width: 350px !important;
-  }
-  .roadMap .container-fluid .thirtArea .imgArea .imgS {
-    width: 300px;
-    left: 190px !important;
-  }
-  .roadMap .container-fluid .fourthArea {
-    margin-top: 350px !important;
-  }
-  .roadMap .container-fluid .fourthArea .imgArea .imgS {
-    top: 0px !important;
-  }
-  .roadMap .container-fluid .fiveArea {
-    margin-top: 230px !important;
-  }
-  .roadMap .container-fluid .sixArea {
-    margin-top: 200px !important;
-  }
-  nav .navbar-collapse form .btnConnect {
-    font-size: 14px !important;
-  }
+    .gameArea .imgArea img {
+        top: 50% !important;
+    }
+    .gameArea .textArea h6 {
+        font-size: 36px !important;
+    }
+    .gameAreaTwo .textArea h6 {
+        font-size: 36px !important;
+    }
+    .gameAreaThree .textArea h6 {
+        font-size: 36px !important;
+    }
+    .gameAreaFour .textArea h6 {
+        font-size: 36px !important;
+    }
+    .gameAreaFour .textArea p {
+        font-size: 18px !important;
+        width: 400px !important;
+    }
+    .gameArea .textArea p {
+        font-size: 18px !important;
+        width: 400px !important;
+    }
+    .gameAreaTwo .textArea p {
+        font-size: 18px !important;
+        width: 400px !important;
+    }
+    .gameAreaThree .textArea p {
+        font-size: 18px !important;
+        width: 400px !important;
+    }
+    .setupClan .col-12 .textArea h6 {
+        font-size: 50px;
+    }
+    .manifestoText .textArea {
+        margin-left: 50px !important;
+    }
+    .roadMap .heightRoadMap .thirtArea {
+        margin-top: 1050px !important;
+    }
+    .roadMap .container .buttonArea button:nth-child(2) {
+        margin-right: -3% !important;
+    }
+    .roadMap .heightRoadMap .rHood img {
+        left: 12% !important;
+    }
+    .gamemode .cardArea .cardItems img {
+        width: 150px !important;
+    }
+    .gamemode .cardArea .cardItems .textArea {
+        padding: 0px 30px !important;
+    }
+    .gamemode .cardArea .cardItems .textArea p {
+        text-align: center !important;
+    }
+    .gamemode .cardArea .cardItemsTwo img {
+        width: 150px !important;
+    }
+    .gamemode .cardArea .cardItemsTwo .textArea p {
+        text-align: center !important;
+    }
+    .gameAreaTwo .textArea {
+        width: 400px !important;
+    }
+    .roadMap .container-fluid .secondArea .imgArea .opacityImag {
+        width: 600px !important;
+        left: 63px !important;
+    }
+    .roadMap .container-fluid .thirtArea .imgArea .opacityImag {
+        width: 350px !important;
+    }
+    .roadMap .container-fluid .thirtArea .imgArea .imgS {
+        width: 300px;
+        left: 190px !important;
+    }
+    .roadMap .container-fluid .fourthArea {
+        margin-top: 350px !important;
+    }
+    .roadMap .container-fluid .fourthArea .imgArea .imgS {
+        top: 0px !important;
+    }
+    .roadMap .container-fluid .fiveArea {
+        margin-top: 400px !important;
+    }
+    .roadMap .container-fluid .sixArea {
+        margin-top: 250px !important;
+    }
+    nav .navbar-collapse form .btnConnect {
+        font-size: 14px !important;
+    }
 }
 
 @media only screen and (max-width: 992px) {
-  .gameArea .imgArea img {
-    position: absolute;
-    width: 600px !important;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .gameArea .textArea {
-    width: 350px !important;
-  }
-  .gameArea .textArea h6 {
-    font-size: 30px !important;
-  }
-  .gameArea .textArea p {
-    font-size: 18px !important;
-  }
-  .gameAreaTwo .textArea h6 {
-    font-size: 30px !important;
-  }
-  .gameAreaTwo .textArea p {
-    font-size: 18px !important;
-  }
-  .gameAreaThree .imgArea img {
-    left: -264px !important;
-    width: 600px !important;
-  }
-  .gameAreaThree .textArea {
-    width: 350px !important;
-  }
-  .gameAreaThree .textArea h6 {
-    font-size: 30px !important;
-  }
-  .gameAreaThree .textArea p {
-    font-size: 18px !important;
-  }
-  .gameAreaFour .imgArea img {
-    width: 250px !important;
-    right: 20px !important;
-  }
-  .gameAreaFour .textArea {
-    width: 400px !important;
-  }
-  .gameAreaFour .textArea h6 {
-    font-size: 30px !important;
-  }
-  .gameAreaFour .textArea p {
-    font-size: 18px !important;
-  }
-  .setupClan .marquee {
-    height: 34px !important;
-    font-size: 20px !important;
-  }
-  .gamemode .textArea {
-    text-align: center;
-  }
-  .gamemode .cardArea .cardItems img {
-    width: 150px !important;
-  }
-  .gamemode .cardArea .cardItemsTwo .textArea {
-    padding: 0px 20px;
-  }
-  .theGameHeader {
-    background-image: url("../img/theGameBg.png");
-    background-size: cover !important;
-  }
-  .theGameHeader .imgArea {
-    position: absolute;
-    right: unset !important;
-    left: 50% !important;
-    top: 50% !important;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  .setupClan .col-12 .textArea {
-    margin: 0px 0px !important;
-    margin-bottom: 100px !important;
-  }
-  .setupClan .col-12 .textArea h6 {
-    text-align: center;
-  }
-  .setupClan .col-12 .textArea p {
-    text-align: center;
-  }
-  .menuActive {
-    color: #06eab3 !important;
-  }
-  .menuActive::after {
-    width: 10%;
-    height: 20px;
-    content: " ";
-    position: absolute;
-    bottom: -15px;
-    left: -2px;
-    background-image: url("../img/icon/navbottom.png");
-    background-repeat: no-repeat;
-    background-size: 100% 60%;
-    background-position: center;
-    position: absolute;
-    left: 49%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  nav {
-    position: relative;
-  }
-  nav .navbar-collapse {
-    height: 100vh;
-  }
-  nav .navbar-collapse .mobilArea {
-    display: block !important;
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  nav .navbar-collapse .mobilArea .navbar-nav .nav-item {
-    text-align: center !important;
-  }
-  nav .navbar-collapse .mobilArea .navbar-nav .nav-item:first-child {
-    margin-top: 50px;
-  }
-  nav .navbar-collapse .mobilArea form {
-    -webkit-box-pack: center;
+    .roadMap .container-fluid .secondArea .textArea p:first-child {
+        right: 252px !important;
+        top: 90px !important;
+        font-size: 70px !important;
+    }
+    .setupClan .col-12 .textArea p {
+        font-size: 22px;
+    }
+    .gameAreaTwo .imgArea img {
+        width: 450px;
+    }
+    .teamMate .persons {
+        display: -ms-grid;
+        -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .joinTheTeam {
+        background-image: unset;
+        background-color: #b20341;
+        padding-top: 100px !important;
+    }
+    .aımgS {
+        width: 100%;
+        height: auto;
+    }
+    .setupClan {
+        padding: 50px 0px !important;
+    }
+    .theGameHeader .imgArea img {
+        padding-top: 0px !important;
+    }
+    .topImg {
+        height: 100px;
+    }
+    .bottomImg {
+        height: 100px;
+    }
+    .bottomImgT {
+        height: 100px;
+    }
+    .itsyourturn {
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+    }
+    .itsyourturn {
+        margin-bottom: 70px !important;
+    }
+    .owlFour {
+        margin: 70px 0px !important;
+    }
+    .manifestoText .textArea {
+        margin-bottom: 0px !important;
+    }
+    .manifestoText .textArea {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    .manifestopng {
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+    .wicked {
+        width: 100%;
+    }
+    .video h6 {
+        font-size: 50px;
+    }
+    .headerAreaMobil {
+        position: relative;
+        height: 100vh;
+        background-image: url("../img/headerBg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: -800px;
+    }
+    .headerAreaMobil .mobillogo {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
+        -webkit-animation: mymove 6s;
+        animation: mymove 6s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        position: absolute;
+    }
+    @-webkit-keyframes mymove {
+        0% {
+            top: 50%;
+        }
+        25% {
+            top: 45%;
+        }
+        50% {
+            top: 50%;
+        }
+        75% {
+            top: 45%;
+        }
+        100% {
+            top: 50%;
+        }
+    }
+    @keyframes mymove {
+        0% {
+            top: 50%;
+        }
+        25% {
+            top: 45%;
+        }
+        50% {
+            top: 50%;
+        }
+        75% {
+            top: 45%;
+        }
+        100% {
+            top: 50%;
+        }
+    }
+    .headerAreaMobil .mobillogo .logoItem {
+        width: 500px !important;
+        height: 500px !important;
+    }
+    .dropdown-menu {
+        background-color: transparent !important;
+        border: 0px !important;
+        padding-left: 0px !important;
+    }
+    .dropdown-menu li {
+        text-align: center;
+    }
+    .dropdown-menu li a {
+        text-align: center;
+        font-size: 14px !important;
+        padding-right: 0px !important;
+    }
+    .gameArea .imgArea img {
+        position: absolute;
+        width: 600px !important;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .gameArea .textArea {
+        width: 350px !important;
+    }
+    .gameArea .textArea h6 {
+        font-size: 30px !important;
+    }
+    .gameArea .textArea p {
+        font-size: 18px !important;
+    }
+    .gameAreaTwo .textArea h6 {
+        font-size: 30px !important;
+    }
+    .gameAreaTwo .textArea p {
+        font-size: 18px !important;
+    }
+    .gameAreaThree .imgArea img {
+        left: -264px !important;
+        width: 600px !important;
+    }
+    .gameAreaThree .textArea {
+        width: 350px !important;
+    }
+    .gameAreaThree .textArea h6 {
+        font-size: 30px !important;
+    }
+    .gameAreaThree .textArea p {
+        font-size: 18px !important;
+    }
+    .gameAreaFour .imgArea img {
+        width: 250px !important;
+        right: 20px !important;
+    }
+    .gameAreaFour .textArea {
+        width: 400px !important;
+    }
+    .gameAreaFour .textArea h6 {
+        font-size: 30px !important;
+    }
+    .gameAreaFour .textArea p {
+        font-size: 18px !important;
+    }
+    .setupClan .marquee {
+        height: 34px !important;
+        font-size: 20px !important;
+    }
+    .gamemode .cardArea .cardItems img {
+        width: 150px !important;
+    }
+    .gamemode .cardArea .cardItemsTwo .textArea {
+        padding: 0px 20px;
+    }
+    .theGameHeader {
+        background-image: url("../img/theGameBg.png");
+        background-size: cover !important;
+    }
+    .theGameHeader .imgArea {
+        position: absolute;
+        right: unset !important;
+        left: 50% !important;
+        top: 50% !important;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .setupClan .col-12 .textArea {
+        margin: 0px 0px !important;
+        margin-bottom: 100px !important;
+        width: 550px !important;
+        margin-top: 150px !important;
+    }
+    .setupClan .col-12 .textArea h6 {
+        text-align: center;
+    }
+    .menuActive {
+        color: #06eab3 !important;
+    }
+    .menuActive::after {
+        width: 10%;
+        height: 20px;
+        content: " ";
+        position: absolute;
+        bottom: -15px;
+        left: -2px;
+        background-image: url("../img/icon/navbottom.png");
+        background-repeat: no-repeat;
+        background-size: 100% 60%;
+        background-position: center;
+        position: absolute;
+        left: 49%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    nav {
+        position: relative;
+    }
+    nav .navbar-collapse {
+        height: 100vh;
+        top: -1000px;
+        width: 100vw;
+        position: absolute;
+    }
+    nav .navbar-collapse .mobilArea {
+        display: block !important;
+        background-color: black;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -82%);
+        transform: translate(-50%, -82%);
+    }
+    nav .navbar-collapse .mobilArea .navbar-nav .nav-item {
+        text-align: center !important;
+    }
+    nav .navbar-collapse .mobilArea .navbar-nav .nav-item:first-child {
+        margin-top: 50px;
+    }
+    nav .navbar-collapse .mobilArea form {
+        -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
+        justify-content: center;
+        -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    margin-top: 30px;
-  }
-  .nftTExt .row .textAreaBtn .two {
-    width: 300px !important;
-  }
-  .sliderOne .owl-carousel .owl-nav .owl-prev {
-    width: 25px !important;
-    height: 25px !important;
-  }
-  .sliderOne .owl-carousel .owl-nav .owl-next {
-    width: 25px !important;
-    height: 25px !important;
-  }
-  .spAboutusHeader {
-    background-size: cover !important;
-  }
-  .spAboutusHeader .headerArea img {
-    width: 350px !important;
-  }
-  .spAboutusHeader .headerArea p {
-    width: 600px !important;
-  }
-  .joinTheTeam {
-    background-size: cover !important;
-    background-position: right;
-  }
-  footer {
-    background-size: cover;
-  }
-  .itsyourturn h6 span {
-    left: 128px !important;
-  }
-  .openSea {
-    padding-top: 200px !important;
-  }
-  .openSea .hoodBTn {
-    display: block !important;
-    text-align: center;
-  }
-  .roadMap {
-    margin-bottom: 350px;
-  }
-  .roadMap .heightRoadMap {
-    height: 100%;
-  }
-  .roadMap .heightRoadMap .firstArea {
-    margin-top: 150px !important;
-  }
-  .roadMap .heightRoadMap .firstArea button {
-    font-size: 20px !important;
-  }
-  .roadMap .heightRoadMap .secondArea {
-    margin-top: 150px !important;
-  }
-  .roadMap .heightRoadMap .secondArea .textArea p:first-child {
-    top: 200px !important;
-  }
-  .roadMap .heightRoadMap .secondArea .textArea button {
-    font-size: 20px !important;
-  }
-  .roadMap .heightRoadMap .thirtArea {
-    margin-top: 150px !important;
-  }
-  .roadMap .heightRoadMap .thirtArea .textArea button {
-    font-size: 20px !important;
-  }
-  .roadMap .heightRoadMap .fourthArea {
-    margin-top: 150px !important;
-  }
-  .roadMap .heightRoadMap .fourthArea .textArea p:first-child {
-    font-size: 124px !important;
-  }
-  .roadMap .heightRoadMap .fourthArea .textArea p:nth-child(2) {
-    font-size: 26px !important;
-  }
-  .roadMap .heightRoadMap .fourthArea .textArea p:nth-child(3) {
-    font-size: 42px !important;
-    line-height: 46px !important;
-    margin: 0px 30px;
-  }
-  .roadMap .heightRoadMap .fourthArea .textArea p:nth-child(4) {
-    text-align: center !important;
-  }
-  .roadMap .heightRoadMap .fourthArea .textArea button {
-    font-size: 20px !important;
-  }
-  .roadMap .heightRoadMap .fiveArea {
-    margin-top: 150px !important;
-  }
-  .roadMap .heightRoadMap .fiveArea .textArea p:nth-child(2) {
-    font-size: 42px !important;
-    line-height: 46px !important;
-  }
-  .roadMap .heightRoadMap .fiveArea .textArea p:nth-child(3) {
-    margin: 0px !important;
-  }
-  .roadMap .heightRoadMap .fiveArea .textArea button {
-    font-size: 20px !important;
-  }
-  .roadMap .heightRoadMap .sixArea {
-    margin-top: 150px !important;
-  }
-  .roadMap .heightRoadMap .sixArea .textArea p:nth-child(2) {
-    font-size: 42px !important;
-    line-height: 46px !important;
-  }
-  .roadMap .heightRoadMap .sixArea .textArea p:nth-child(3) {
-    text-align: center !important;
-    margin: 0px !important;
-  }
-  .roadMap .heightRoadMap .sixArea .textArea button {
-    font-size: 20px !important;
-  }
-  .roadMap .heightRoadMap .sevenArea {
-    margin-top: 150px !important;
-  }
-  .roadMap .heightRoadMap .sevenArea .textArea p:nth-child(2) {
-    font-size: 42px !important;
-    line-height: 46px !important;
-  }
-  .roadMap .heightRoadMap .sevenArea .textArea p:nth-child(3) {
-    margin: 0px !important;
-    text-align: center !important;
-  }
-  .roadMap .heightRoadMap .sevenArea .textArea button {
-    font-size: 20px !important;
-  }
-  .roadMap .heightRoadMap .phaseArea {
-    display: -ms-grid !important;
-    display: grid !important;
-    place-items: center;
-  }
-  .roadMap .heightRoadMap .phaseArea img {
-    margin-top: 25px;
-  }
-  .roadMap .heightRoadMap .phaseArea img:first-child {
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
-  .roadMap .heightRoadMap .phaseArea .phaseFour {
-    margin-bottom: 50px !important;
-  }
-  .roadMap .heightRoadMap .phaseArea .logo {
-    width: 500px;
-  }
-  .roadMap .container .buttonArea {
-    position: relative;
-  }
-  .roadMap .container .buttonArea button:first-child {
-    margin-right: 0px !important;
-    position: absolute;
-    bottom: -250px;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    font-size: 20px;
-  }
-  .roadMap .container .buttonArea button:nth-child(2) {
-    margin-right: -50px !important;
-    position: absolute;
-    bottom: -250px;
-    padding: 0px !important;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
+        align-items: center;
+        margin-top: 30px;
+    }
+    .nftTExt .row .textAreaBtn .two {
+        width: 300px !important;
+    }
+    .sliderOne .owl-carousel .owl-nav .owl-prev {
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .sliderOne .owl-carousel .owl-nav .owl-next {
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .spAboutusHeader {
+        background-size: cover !important;
+    }
+    .spAboutusHeader .headerArea img {
+        width: 350px !important;
+    }
+    .spAboutusHeader .headerArea p {
+        width: 600px !important;
+    }
+    .joinTheTeam {
+        background-size: cover !important;
+        background-position: right;
+    }
+    footer {
+        background-size: cover;
+    }
+    .itsyourturn h6 span {
+        left: 128px !important;
+    }
+    .openSea {
+        padding-top: 200px !important;
+    }
+    .openSea .hoodBTn {
+        display: block !important;
+        text-align: center;
+    }
+    .roadMap {
+        margin-bottom: 350px;
+    }
+    .roadMap {
+        margin-bottom: 350px;
+    }
+    .roadMap .heightRoadMap {
+        height: 100%;
+    }
+    .roadMap .heightRoadMap .firstArea {
+        margin-top: 150px !important;
+    }
+    .roadMap .heightRoadMap .firstArea button {
+        font-size: 20px !important;
+    }
+    .roadMap .heightRoadMap .secondArea {
+        margin-top: 150px !important;
+    }
+    .roadMap .heightRoadMap .secondArea .textArea button {
+        font-size: 20px !important;
+    }
+    .roadMap .heightRoadMap .thirtArea {
+        margin-top: 150px !important;
+    }
+    .roadMap .heightRoadMap .thirtArea .textArea button {
+        font-size: 20px !important;
+    }
+    .roadMap .heightRoadMap .fourthArea {
+        margin-top: 150px !important;
+    }
+    .roadMap .heightRoadMap .fourthArea .textArea p:first-child {
+        font-size: 124px !important;
+    }
+    .roadMap .heightRoadMap .fourthArea .textArea p:nth-child(2) {
+        font-size: 26px !important;
+    }
+    .roadMap .heightRoadMap .fourthArea .textArea p:nth-child(3) {
+        font-size: 42px !important;
+        line-height: 46px !important;
+        margin: 0px 30px;
+    }
+    .roadMap .heightRoadMap .fourthArea .textArea p:nth-child(4) {
+        text-align: center !important;
+    }
+    .roadMap .heightRoadMap .fourthArea .textArea button {
+        font-size: 20px !important;
+    }
+    .roadMap .heightRoadMap .fiveArea {
+        margin-top: 150px !important;
+    }
+    .roadMap .heightRoadMap .fiveArea .textArea p:nth-child(2) {
+        font-size: 42px !important;
+        line-height: 46px !important;
+    }
+    .roadMap .heightRoadMap .fiveArea .textArea p:nth-child(3) {
+        margin: 0px 100px !important;
+    }
+    .roadMap .heightRoadMap .fiveArea .textArea button {
+        font-size: 20px !important;
+    }
+    .roadMap .heightRoadMap .sixArea {
+        margin-top: 150px !important;
+    }
+    .roadMap .heightRoadMap .sixArea .textArea p:nth-child(2) {
+        font-size: 42px !important;
+        line-height: 46px !important;
+    }
+    .roadMap .heightRoadMap .sixArea .textArea p:nth-child(3) {
+        text-align: center !important;
+        margin: 0px 100px !important;
+    }
+    .roadMap .heightRoadMap .sixArea .textArea button {
+        font-size: 20px !important;
+    }
+    .roadMap .heightRoadMap .sevenArea {
+        margin-top: 150px !important;
+    }
+    .roadMap .heightRoadMap .sevenArea .textArea p:nth-child(2) {
+        font-size: 42px !important;
+        line-height: 46px !important;
+    }
+    .roadMap .heightRoadMap .sevenArea .textArea p:nth-child(3) {
+        margin: 0px 100px !important;
+        text-align: center !important;
+    }
+    .roadMap .heightRoadMap .sevenArea .textArea button {
+        font-size: 20px !important;
+    }
+    .roadMap .heightRoadMap .phaseArea {
+        display: -ms-grid !important;
+        display: grid !important;
+        place-items: center;
+    }
+    .roadMap .heightRoadMap .phaseArea img {
+        margin-top: 0px !important;
+    }
+    .roadMap .heightRoadMap .phaseArea img:first-child {
+        margin-top: 100px;
+        margin-bottom: 0px;
+    }
+    .roadMap .heightRoadMap .phaseArea .phaseFour {
+        margin-bottom: 30px !important;
+    }
+    .roadMap .heightRoadMap .phaseArea .logo {
+        width: 500px;
+    }
+    .roadMap .container .buttonArea {
+        position: relative;
+    }
+    .roadMap .container .buttonArea button:first-child {
+        margin-right: 0px !important;
+        position: absolute;
+        bottom: -250px;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        padding: 0px;
+    }
+    .roadMap .container .buttonArea button:nth-child(2) {
+        margin-right: -50px !important;
+        position: absolute;
+        bottom: -250px;
+        padding: 0px !important;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
 }
 
 @media only screen and (max-width: 768px) {
-  .nftTExt .row .textAreaBtn .one {
-    margin-top: 50px;
-  }
-  .gameAreaFour .textArea {
-    left: 50% !important;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    text-align: center !important;
-  }
-  .gameAreaFour .textArea h6 {
-    font-size: 50px !important;
-    text-align: center !important;
-  }
-  .gameAreaFour .textArea p {
-    font-size: 25px !important;
-  }
-  .gameAreaThree .textArea {
-    left: 50% !important;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    text-align: center !important;
-  }
-  .gameAreaThree .textArea h6 {
-    font-size: 50px !important;
-    text-align: center !important;
-  }
-  .gameAreaThree .textArea p {
-    font-size: 25px !important;
-  }
-  .gameAreaTwo .textArea {
-    left: 50% !important;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    text-align: center !important;
-  }
-  .gameAreaTwo .textArea h6 {
-    font-size: 50px !important;
-    text-align: center !important;
-  }
-  .gameAreaTwo .textArea p {
-    font-size: 25px !important;
-  }
-  .gameArea .textArea {
-    left: 50% !important;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    text-align: center !important;
-  }
-  .gameArea .textArea h6 {
-    font-size: 50px !important;
-    text-align: center !important;
-  }
-  .gameArea .textArea p {
-    font-size: 25px !important;
-  }
-  .spAboutusHeader .headerArea {
-    width: 100% !important;
-  }
-  .spAboutusHeader .headerArea img {
-    width: 350px !important;
-  }
-  .spAboutusHeader .headerArea p {
-    width: 100% !important;
-    padding: 20px 30px;
-  }
-  .setupClan .col-12 .textArea {
-    width: 100% !important;
-  }
-  .teamMate .persons {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr;
+    .setupClan .col-12 .textArea h6 {
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    .theGameHeader .imgArea .StextArea h6 {
+        text-align: center;
+    }
+    .theGameHeader .imgArea .StextArea p {
+        text-align: center;
+    }
+    .video h6 {
+        font-size: 30px;
+    }
+    .joinDefense {
+        background-size: 100% 100%;
+    }
+    .theGameHeader .imgArea img {
+        width: 450px;
+        height: auto;
+        padding-top: 50px !important;
+    }
+    .nftTExt .row .textAreaBtn .one {
+        margin-top: 50px;
+    }
+    .gameAreaFour .textArea {
+        left: 50% !important;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .gameAreaFour .textArea h6 {
+        font-size: 50px !important;
+        margin-bottom: 50px !important;
+        text-align: center !important;
+    }
+    .gameAreaFour .textArea p {
+        font-size: 25px !important;
+    }
+    .gameAreaThree .textArea {
+        left: 50% !important;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .gameAreaThree .textArea h6 {
+        font-size: 50px !important;
+        text-align: center !important;
+        margin-bottom: 50px !important;
+    }
+    .gameAreaThree .textArea p {
+        font-size: 25px !important;
+    }
+    .gameAreaTwo .textArea {
+        left: 50% !important;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .gameAreaTwo .textArea h6 {
+        font-size: 50px !important;
+        text-align: center !important;
+        margin-bottom: 50px !important;
+    }
+    .gameAreaTwo .textArea p {
+        font-size: 25px !important;
+    }
+    .gameArea .textArea {
+        left: 50% !important;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .gameArea .textArea h6 {
+        font-size: 50px !important;
+        text-align: center !important;
+        margin-bottom: 50px !important;
+    }
+    .gameArea .textArea p {
+        font-size: 25px !important;
+    }
+    .spAboutusHeader .headerArea {
+        width: 100% !important;
+    }
+    .spAboutusHeader .headerArea img {
+        width: 350px !important;
+    }
+    .spAboutusHeader .headerArea p {
+        width: 100% !important;
+        padding: 20px 30px;
+    }
+    .setupClan .col-12 .textArea {
+        width: 100% !important;
+    }
+    .teamMate .persons {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr !important;
-        grid-template-columns: 1fr 1fr 1fr 1fr !important;
-  }
-  .itsyourturn h6 {
-    line-height: 82px !important;
-  }
-  .itsyourturn h6 span {
-    left: 83px !important;
-  }
-  .openSea {
-    padding-top: 200px !important;
-  }
-  .openSea .hoodBTn {
-    text-align-last: center;
-    display: block;
-  }
-  .openSea .hoodBTn .hood h6:first-child {
-    text-align: center;
-    font-size: 36px !important;
-  }
-  .openSea .hoodBTn .hood h6:last-child {
-    text-align: center;
-    font-size: 56px !important;
-  }
+        -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .itsyourturn h6 {
+        line-height: 82px !important;
+    }
+    .itsyourturn h6 span {
+        left: 83px !important;
+    }
+    .openSea {
+        padding-top: 200px !important;
+    }
+    .openSea .hoodBTn {
+        text-align-last: center;
+        display: block;
+    }
+    .openSea .hoodBTn .hood h6:first-child {
+        text-align: center;
+        font-size: 36px !important;
+    }
+    .openSea .hoodBTn .hood h6:last-child {
+        text-align: center;
+        font-size: 56px !important;
+    }
 }
 
 @media only screen and (max-width: 576px) {
-  .phaseArea .logo {
-    width: 100% !important;
-  }
-  .gameAreaFour .textArea {
-    width: 100% !important;
-  }
-  .gameAreaThree .textArea {
-    width: 100% !important;
-  }
-  .gameAreaTwo .textArea {
-    width: 100% !important;
-  }
-  .gameArea .textArea {
-    width: 100% !important;
-  }
-  .faq .specialRow {
-    height: 700px;
-  }
-  .roadMap .container-fluid .firstArea p:first-child {
-    margin: 0px !important;
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .firstArea p:nth-child(2) {
-    margin: 0px !important;
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .firstArea p:nth-child(3) {
-    margin: 0px !important;
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .secondArea .textArea p:first-child {
-    margin: 0px !important;
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .secondArea .textArea p:nth-child(2) {
-    margin: 0px !important;
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .secondArea .textArea p:nth-child(3) {
-    margin: 0px !important;
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .thirtArea .textArea p:first-child {
-    margin: 0px !important;
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .thirtArea .textArea p:nth-child(2) {
-    margin: 0px !important;
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .thirtArea .textArea p:nth-child(3) {
-    margin: 0px !important;
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .fourthArea .textArea p:first-child {
-    margin: 0px !important;
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .fourthArea .textArea p:nth-child(2) {
-    margin: 0px !important;
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .fourthArea .textArea p:nth-child(3) {
-    margin: 0px !important;
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .fourthArea .textArea p:nth-child(4) {
-    margin: 0px !important;
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .fiveArea .textArea p:first-child {
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .fiveArea .textArea p:nth-child(2) {
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .fiveArea .textArea p:nth-child(3) {
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .sixArea {
-    margin-top: 150px !important;
-  }
-  .roadMap .container-fluid .sixArea .textArea p:first-child {
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .sixArea .textArea p:nth-child(2) {
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .sixArea .textArea p:nth-child(3) {
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .sevenArea .textArea p:first-child {
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .sevenArea .textArea p:nth-child(2) {
-    text-align: center !important;
-  }
-  .roadMap .container-fluid .sevenArea .textArea p:nth-child(3) {
-    text-align: center !important;
-  }
-  .theGameHeader .imgArea img {
-    width: 300px;
-    height: auto;
-  }
-  .Ourteam {
-    text-align: center;
-  }
-  .joinTheTeam {
-    text-align: center;
-  }
-  .spAboutusHeader .headerArea {
-    width: 100% !important;
-  }
-  .spAboutusHeader .headerArea img {
-    width: 250px !important;
-  }
-  .spAboutusHeader .headerArea p {
-    width: 100% !important;
-    text-align: center !important;
-    padding: 20px 30px;
-  }
-  .sliderOne .owl-carousel .owl-nav .owl-prev {
-    width: 15px !important;
-    height: 15px !important;
-    left: 30px !important;
-  }
-  .sliderOne .owl-carousel .owl-nav .owl-next {
-    width: 15px !important;
-    height: 15px !important;
-    right: 30px !important;
-  }
-  .sliderOne .owl-carousel .owl-dots {
-    bottom: 10px !important;
-  }
-  .teamMate .persons {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr;
+    .timeArea {
+        padding: 400px 0px;
+        padding-bottom: 50px;
+    }
+    .setupClan .marquee div {
+        animation: marquee 25s linear infinite !important;
+    }
+    .gamemode .cardArea .cardItems .textArea p {
+        margin-bottom: 50px;
+    }
+    .gamemode .cardArea .cardItems img {
+        margin-bottom: 0px !important;
+    }
+    .setupClan .col-12 .textArea p {
+        font-size: 20px;
+    }
+    .gameAreaFour .textArea p {
+        font-size: 20px !important;
+        margin: 0px 20px !important;
+    }
+    .gameAreaThree .textArea p {
+        font-size: 20px !important;
+        margin: 0px 20px !important;
+    }
+    .gameArea .textArea p {
+        font-size: 20px !important;
+        margin: 0px 20px !important;
+    }
+    .gameAreaTwo .textArea p {
+        font-size: 25px !important;
+        font-size: 20px !important;
+        margin: 0px 20px;
+    }
+    .setupClan .col-12 .textArea p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .headerAreaMobil {
+        background-position-x: -1000px;
+    }
+    .mobilArea {
+        top: 60% !important;
+    }
+    .phaseArea .logo {
+        width: 100% !important;
+    }
+    .gameAreaFour .textArea {
+        width: 100% !important;
+    }
+    .gameAreaThree .textArea {
+        width: 100% !important;
+    }
+    .gameAreaTwo .textArea {
+        width: 100% !important;
+    }
+    .gameArea .textArea {
+        width: 100% !important;
+    }
+    .faq .specialRow {
+        height: 700px;
+    }
+    .roadMap .container-fluid .firstArea p:first-child {
+        margin: 0px !important;
+        font-size: 22px !important;
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .firstArea p:nth-child(2) {
+        margin: 0px !important;
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .firstArea p:nth-child(3) {
+        margin: 0px !important;
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .secondArea .textArea p:first-child {
+        margin: 0px !important;
+        font-size: 50px !important;
+        top: 165px !important;
+        right: 20px !important;
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .secondArea .textArea p:nth-child(2) {
+        margin: 0px !important;
+        text-align: center !important;
+    }
+    .roadMap .heightRoadMap .phaseArea img:first-child {
+        margin-bottom: 65px;
+    }
+    .roadMap .container-fluid .secondArea .textArea p:nth-child(3) {
+        margin: 0px 30px !important;
+        margin-top: 20px !important;
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .thirtArea .textArea p:first-child {
+        margin: 0px !important;
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .thirtArea .textArea p:nth-child(2) {
+        margin: 0px !important;
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .thirtArea .textArea p:nth-child(3) {
+        margin: 0px !important;
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .fourthArea .textArea p:first-child {
+        margin: 0px !important;
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .fourthArea .textArea p:nth-child(2) {
+        margin: 0px !important;
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .fourthArea .textArea p:nth-child(3) {
+        margin: 0px !important;
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .fourthArea .textArea p:nth-child(4) {
+        margin: 0px !important;
+        text-align: center !important;
+        margin-top: 20px;
+    }
+    .roadMap .container-fluid .fiveArea .textArea p:first-child {
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .fiveArea .textArea p:nth-child(2) {
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .fiveArea .textArea p:nth-child(3) {
+        text-align: center !important;
+        margin: 0px !important;
+    }
+    .roadMap .container-fluid .sixArea {
+        margin-top: 150px !important;
+    }
+    .roadMap .container-fluid .sixArea .textArea p:first-child {
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .sixArea .textArea p:nth-child(2) {
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .sixArea .textArea p:nth-child(3) {
+        margin: 0px !important;
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .sevenArea .textArea p:first-child {
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .sevenArea .textArea p:nth-child(2) {
+        text-align: center !important;
+    }
+    .roadMap .container-fluid .sevenArea .textArea p:nth-child(3) {
+        text-align: center !important;
+        margin: 0px !important;
+    }
+    .theGameHeader .imgArea img {
+        width: 300px;
+        height: auto;
+        margin-top: 150px;
+    }
+    .Ourteam {
+        text-align: center;
+    }
+    .joinTheTeam {
+        text-align: center;
+    }
+    .spAboutusHeader .headerArea {
+        width: 100% !important;
+    }
+    .spAboutusHeader .headerArea img {
+        width: 250px !important;
+    }
+    .spAboutusHeader .headerArea p {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 20px 30px;
+    }
+    .sliderOne .owl-carousel .owl-nav .owl-prev {
+        width: 15px !important;
+        height: 15px !important;
+        left: 30px !important;
+    }
+    .sliderOne .owl-carousel .owl-nav .owl-next {
+        width: 15px !important;
+        height: 15px !important;
+        right: 30px !important;
+    }
+    .sliderOne .owl-carousel .owl-dots {
+        bottom: 10px !important;
+    }
+    .teamMate .persons {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr !important;
-        grid-template-columns: 1fr 1fr 1fr !important;
-  }
-  .manifestoText .textArea h6 {
-    font-size: 56px;
-  }
-  .openSea .hoodBTn .btn button {
-    width: 320px !important;
-  }
-  footer {
-    padding: 0px !important;
-  }
-  .openSea .hoodBTn .hood h6:first-child {
-    font-size: 26px !important;
-  }
-  .openSea .hoodBTn .hood h6:last-child {
-    font-size: 36px !important;
-  }
-  .openSea .hoodBTn .btn button {
-    height: 70px !important;
-  }
+        -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .manifestoText .textArea h6 {
+        font-size: 56px;
+    }
+    .openSea .hoodBTn .btn button {
+        width: 320px !important;
+    }
+    footer {
+        padding: 0px !important;
+    }
+    .openSea .hoodBTn .hood h6:first-child {
+        font-size: 24px !important;
+    }
+    .openSea .hoodBTn .hood h6:last-child {
+        font-size: 36px !important;
+    }
+    .openSea .hoodBTn .btn button {
+        height: 70px !important;
+    }
 }
 
 @media only screen and (max-width: 468px) {
-  .teamMate .persons {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr;
+    .teamMate .persons .person img {
+        width: 100px;
+        height: 100px;
+    }
+    .headerAreaMobil .mobillogo .logoItem {
+        width: 350px !important;
+        height: auto !important;
+    }
+    .teamMate .persons {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-    -ms-grid-columns: 1fr 1fr !important;
+        -ms-grid-columns: 1fr 1fr !important;
         grid-template-columns: 1fr 1fr !important;
-  }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .itsyourturn h6 span {
+        left: 44% !important;
+    }
 }
 
 @media only screen and (max-width: 360px) {
-  .itsyourturn h6 span {
-    left: 134px !important;
-  }
+    .itsyourturn h6 span {
+        left: 134px !important;
+    }
 }
+
+
 /*# sourceMappingURL=main.css.map */

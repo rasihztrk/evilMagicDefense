@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <a class="navbar-brand" href="./">
             <img class="ms-3 img-fluid" src="./assets/img/icon/logo.png" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -13,22 +13,25 @@
                         <a class="nav-link" href="./">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./#journey">JOURNEY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./theGame.php">THE GAME</a>
+                        <a class="nav-link" href="./theGame.php">GAME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./manifesto.php">MANIFESTO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./aboutUs.php">ABOUT US</a>
+                        <a class="nav-link" href="./aboutUs.php">TEAM</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link eyes" href="#">GALLERY</a>
+                    <li class="nav-item me-3">
+                        <a class="nav-link eyes" href="javascript:void(0);">GALLERY</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="EMD_Pitch Deck.pdf" target="_blank">DOCS</a>
+                    <li class="nav-item dropdown d-none">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            DOCS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="natoshi dropdown-item " href="javascript:void(0);">WhitePaper </a></li>
+                            <li><a class="natoshi dropdown-item " href="./EMD_Pitch_Deck.pdf" target="_blank">Pitchteck</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <form class="d-flex align-items-center">
@@ -47,7 +50,7 @@
                         </a>
                     </div>
                     <a href="">
-                        <button class="btnConnect">Connect</button>
+                        <button class="btnConnect">Mint</button>
                     </a>
                 </form>
             </div>

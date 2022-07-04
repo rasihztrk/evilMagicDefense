@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVİL MAGİC DEFENSE</title>
-    <link rel="shortcut icon" type="image/jpg" href="./assets/img/icon/logoFI.png" />
+    <title>Evil Magic Defense</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/icon/favi.png">
     <link href="./assets/css/main.css" rel="stylesheet" type="text-css" />
 </head>
 
@@ -20,15 +20,19 @@
             <div class="row">
                 <div class="col-12">
                     <div class="imgArea">
+
                     </div>
                 </div>
             </div>
         </div>
+        <div class="manHeader">
+            <div class="buttonOff changeBgB"></div>
+        </div>
     </header>
     <section class="manifestoText">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-5">
                     <div class="textArea">
                         <h6>MANIFESTO</h6>
                         <p>Until now, you've always been told stories where, good guy wins. Evil
@@ -40,17 +44,19 @@
                             great hair? And villains, who died for spending too much time to tell
                             their elaborate evil plans? </p><br>
                         <p>Our story is not like that! <br>
-                            Our main character is an evil wizard. He is clever. He is farsighted, Charismatic.
+                            Our main character is an evil wizard. He is clever. He is farsighted. Charismatic.
                             And quiet manipulative. He surely knows how to bring even the most ancient
                             civilizations to their knees! Shouldn't this be what we expect from a
                             main character anyway?</p><br>
                         <p>Come and be on the winning side. Let's do the unusual together, show those
                             knights in shining armour who we really are! Let's set up evil headquarters,
-                            have adorable but creepy minions... Let's build our own community and
-                            show them who's boss!
+                            have adorable but creepy minions... Let's build our own community and show them who the boss is!
                         </p><br>
                         <p>Come and be part of our Evil Magic League. This time;</p>
                     </div>
+                </div>
+                <div class="col-12 col-lg-7 d-flex justify-content-center">
+                    <img class="manifestopng" src="./assets/img/icon/manifest.png" alt="">
                 </div>
             </div>
         </div>
